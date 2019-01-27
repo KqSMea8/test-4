@@ -1,0 +1,252 @@
+.select-button
+  position relative
+  display inline-block
+  p
+    font-size 14px
+  // .default
+  //   display block
+  //   width 1.2*100px
+  //   height 0.4*100px
+  //   position relative
+  //   font-size 0.16*100px
+  //   color $common-font-normal
+  //   border 1px solid $common-border-dark
+  //   letter-spacing 0.0006*100px
+  //   text-align justify
+  //   opacity 0.6
+  //   cursor pointer
+  //   &::after
+  //     position absolute
+  //     content ''
+  //     bottom 0.1*100px
+  //     right 0.23*100px
+  //     width .09*100px
+  //     height .09*100px
+  //     opacity 0.6
+  //     border .002*100px solid $common-border-normal
+  //     border-bottom none
+  //     border-right none
+  //     _rotate(45deg)
+  //   &.hidden::after
+  //     position absolute
+  //     content ''
+  //     bottom .15*100px
+  //     right .23*100px
+  //     width .09*100px
+  //     height .09*100px
+  //     opacity 0.6
+  //     border .002*100px solid $common-border-normal
+  //     border-bottom none
+  //     border-right none
+  //     _rotate(-135deg)
+  .main
+    box-sizing()
+    position relative
+    padding-left .16*100px
+    font-size .14*100px
+    color $common-font-normal
+    letter-spacing 0
+    text-align left
+    line-height .36*100px
+    border 1px solid $common-border-main
+    border-radius (.02*100px)
+    cursor pointer
+    &::after
+      position absolute
+      content ''
+      width 7px
+      height 7px
+      bottom 12px
+      right .1*100px
+      border 1px solid $common-border-main
+      border-left none
+      border-top none
+      _rotate(-135deg)
+      transition all .1s linear
+    &.hidden
+      border 1px solid $common-border-dark
+      &:hover
+        box-shadow none
+    &.hidden::after
+      position absolute
+      content ''
+      width 7px
+      height 7px
+      bottom .13*100px
+      right .1*100px
+      border 1px solid $common-border-minor
+      border-left none
+      border-top none
+      _rotate(45deg)
+      transition all .1s linear
+    &:hover
+      color $common-font-normal
+      border-color $common-border-main
+      box-shadow: 0 0 6px 0 $common-border-focus
+    &.simple
+      min-width 56px
+      box-shadow none
+      color $common-font-main
+      border none
+      &:hover
+        border none
+        background-color transparent
+        color $common-font-main
+    &.simple::after
+      right 20%
+      margin-right -0.055*100px
+      border-color $common-border-main
+  .base-list
+    position absolute
+    overflow hidden
+    width 100%
+    background $common-bg-none
+    box-shadow 0 0 10px 0 $common-border-dark;
+    // border 0.01*100px solid $cola2225
+    border-radius(2px)
+    z-index 99
+    &.hide
+      display none
+    li
+      width 100%
+      height 0.4*100px
+      padding 0 .1*100px 0 .1*100px
+      font-size .14*100px
+      text-align center
+      color $common-font-normal
+      letter-spacing 0
+      line-height .4*100px
+      cursor pointer
+      &:hover
+        background $common-bg-hover
+      &.active
+        background $common-bg-disable
+      p
+        font-size 14px
+  .tradePro
+    position relative
+    //min-width 86px
+    min-width 100px
+    height 22px
+    // min-height 16px
+    line-height 22px
+    padding-right 22px
+    border 1px solid $common-border-select-pro
+    cursor pointer
+    p
+      font-size 12px
+      color $common-font-pro
+      letter-spacing 0.04px
+      text-align center
+    i
+      position absolute
+      top 0
+      right 0
+      width 22px
+      height 100%
+      // min-height 16px
+      background $select-pro-normal no-repeat center center
+      background-size 8px auto
+      &.selected
+        background $select-pro-click no-repeat center center
+        background-size 8px auto
+  .tradePro-list
+    position absolute
+    right 0
+    width 100%
+    background $common-bg-select-tradePro
+    box-shadow 0 1px 5px 0 $common-bg-select-tradePro;
+    z-index 1000
+    &.hide
+      display none
+    li
+      position relative
+      height 22px
+      padding-left 12px
+      padding-right 22px
+      line-height 22px
+      cursor pointer
+      text-align center
+      letter-spacing 0.04px
+      &:hover
+        background $common-bg-selected-tradePro
+        p
+          color $common-font-selected-pro
+      &.active
+        color $common-font-selected-pro
+        p
+          &::after
+            position absolute
+            content ''
+            left 100%
+            top 0
+            width 22px
+            height 100%
+            background $select-pro-choice no-repeat center center
+            background-size 8.2px auto
+        &:hover
+          p
+            color $common-font-selected-pro
+      p
+        position absolute
+        left 12px
+        font-size 12px
+        color $common-font-pro
+        text-align left
+
+  .h5
+    box-sizing()
+    position relative
+    padding-left .16*100px
+    font-size .14*100px
+    color $common-font-h5
+    letter-spacing 0
+    text-align left
+    line-height .36*100px
+    border 1px solid $common-border-main
+    border-radius (.02*100px)
+    cursor pointer
+    &::after
+      position absolute
+      content ''
+      width 7px
+      height 7px
+      bottom 12px
+      right .1*100px
+      border 1px solid $common-border-main-h5
+      border-left none
+      border-top none
+      _rotate(-135deg)
+      transition all .1s linear
+    &.hidden
+      border 1px solid $common-border-dark
+      &:hover
+        box-shadow none
+    &.hidden::after
+      position absolute
+      content ''
+      width 7px
+      height 7px
+      bottom .13*100px
+      right .1*100px
+      border 1px solid $common-border-minor
+      border-left none
+      border-top none
+      _rotate(45deg)
+      transition all .1s linear
+    &:hover
+      color $common-font-h5
+      border-color $common-border-main-h5
+    &.simple
+      min-width 56px
+      box-shadow none
+      color $common-font-main
+      border none
+      &:hover
+        border none
+        background-color transparent
+        color $common-font-main
+    &.simple::after
+      right 20%
+      margin-right -0.055*100px
+      border-color $common-border-main

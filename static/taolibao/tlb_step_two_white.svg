@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="50px" viewBox="0 0 58 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>tlb_step_two_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="***切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+        <g id="其他" transform="translate(-625.000000, -306.000000)">
+            <g id="tlb_step_two_white" transform="translate(624.000000, 301.000000)">
+                <rect id="Rectangle-26" fill="#D8D8D8" opacity="0" x="0" y="0" width="60" height="60"></rect>
+                <g id="Group-27" transform="translate(1.000000, 5.000000)" fill="#FFFFFF">
+                    <path d="M54.0001,0.0005 L4.0001,0.0005 C1.7911,0.0005 0.0001,1.7905 0.0001,4.0005 L0.0001,36.0005 C0.0001,38.2095 1.7911,40.0005 4.0001,40.0005 L54.0001,40.0005 C56.2091,40.0005 58.0001,38.2095 58.0001,36.0005 L58.0001,4.0005 C58.0001,1.7905 56.2091,0.0005 54.0001,0.0005 M54.0001,2.0005 C55.1031,2.0005 56.0001,2.8965 56.0001,4.0005 L56.0001,36.0005 C56.0001,37.1035 55.1031,38.0005 54.0001,38.0005 L4.0001,38.0005 C2.8971,38.0005 2.0001,37.1035 2.0001,36.0005 L2.0001,4.0005 C2.0001,2.8965 2.8971,2.0005 4.0001,2.0005 L54.0001,2.0005" id="Fill-1"></path>
+                    <path d="M38,48 L45,48 L45,50 L13,50 L13,48 L20,48 L20,38 L22,38 L22,48 L36,48 L36,38 L38,38 L38,48 Z M26,10 L26,8 L50,8 L50,10 L26,10 Z M26,18 L26,16 L50,16 L50,18 L26,18 Z M8,26 L8,24 L50,24 L50,26 L8,26 Z M0,34 L0,32 L58,32 L58,34 L0,34 Z" id="Combined-Shape"></path>
+                    <path d="M18,7 L10,7 C8.896,7 8,7.895 8,9 L8,17 C8,18.104 8.896,19 10,19 L18,19 C19.104,19 20,18.104 20,17 L20,9 C20,7.895 19.104,7 18,7 Z M10,17 L18,17 L18,9 L10,9 L10,17 Z" id="Fill-12"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

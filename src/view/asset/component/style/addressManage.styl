@@ -1,0 +1,242 @@
+.address-manage-wrap
+  position relative
+  padding 40px 0 0 0
+  h3
+    position absolute
+    top -70px
+    left 0
+    width 100%
+    height 60px
+    line-height 60px
+    color $asset-font-legal
+    text-align justify
+    border-bottom 1px solid $asset-border-normal
+    span
+      font-size 16px
+      color $asset-font-legal
+      cursor pointer
+    span.active
+      color $asset-font-normal
+  .form
+    padding-left 25px
+    div.section
+      margin-bottom 20px
+      color $asset-font-normal
+      .section-title
+        float left
+        display block
+        width 1.4*100px
+        font-size 16px
+        line-height .23*100px
+      .base-input-wrap
+        float left
+        width 300px
+        height 36px
+        line-height 36px
+    .coinname
+      position relative
+      .search-list
+        position relative
+        width 100%
+        margin-top 4px
+        background-color $asset-bg-none
+        box-shadow 0 0 10px 0 $asset-bg-shadow;
+        z-index 99
+        border-radius(2px)
+        &.hide
+          display none
+        li
+          font-size 14px
+          height 36px
+          line-height 36px
+          padding-left 0.15*100px
+          cursor pointer
+          &:hover
+            background-color $asset-bg-active
+    .address input,
+    .remarks input
+      width 480px
+      height 36px
+    .add-button
+      width 56px
+      height 36px
+      margin 0 0 40px 1.4*100px
+      font-size .14*100px
+      line-height 36px
+      color $asset-font-none
+      background-color $asset-bg-main
+      border-radius(2px)
+  .list
+    padding 32px 0 0 25px
+    border-top .01*100px solid $asset-line-minor
+    .empty
+      height 488px
+      background $empty-white no-repeat center center
+      p
+        position relative
+        top 60px
+        font-size 12px
+        text-align center
+        line-height 488px
+        color $asset-font-legal
+    .section-title
+      float left
+      width 140px
+      height 36px
+      line-height 36px
+      font-size 16px
+      color $asset-font-normal
+    .list-container
+      float left
+      width 6.25*100px
+      .list-head
+        font-size 14px
+        line-height .3*100px
+        color $asset-font-thead
+        .list-head-first
+          position relative
+          float left
+          width 144px
+          font-size 14px
+          .base-input-wrap
+            width 120px
+            height 36px
+            input
+              width 100%
+            &.search2::after
+              width 28%
+            .search-list
+              position relative
+              width 100%
+              margin-top 4px
+              background-color $asset-bg-none
+              box-shadow 0 0 10px 0 $asset-bg-shadow;
+              z-index 99
+              border-radius(2px)
+              &.hide
+                display none
+              li
+                font-size 14px
+                height 36px
+                line-height 36px
+                padding-left 0.15*100px
+                color $asset-font-normal
+                cursor pointer
+                &:hover
+                  background-color $asset-bg-active
+        .list-head-second
+          float left
+          width 2.2*100px
+          font-size 14px
+        .list-head-third
+          float left
+          font-size 14px
+      .list-item
+        border-bottom .01*100px solid $asset-line-minor
+        span
+          display inline-block
+          height 52px
+          font-size .14*100px
+          line-height 52px
+        span:nth-child(1)
+          width 144px
+          padding-left 14px
+        span:nth-child(2)
+          width 220px
+        span:nth-child(3)
+          position relative
+          display inline-block
+          width 50px
+          cursor pointer
+          &::after
+            position: absolute;
+            content: '';
+            width: 6px;
+            height: 6px;
+            bottom: 24px;
+            right: 5px;
+            border: 1px solid #999;
+            border-left: none;
+            border-top: none;
+            _rotate(45deg)
+            transition all .1s linear
+          &:hover
+            color $asset-font-main
+            &::after
+              border-color $asset-border-main
+          &.active
+            color $asset-font-main
+            &::after
+              bottom: 20px;
+              _rotate(-135deg)
+              border-color $asset-border-main
+      .list-info
+        padding 0 14px 16px 14px
+        border-bottom .01*100px solid $asset-bg-normal
+        background-color $asset-bg-title
+        .info-prompt
+          p
+            line-height .4*100px
+            text-align center
+        .info-content
+          div
+            float left
+            font-size .12*100px
+            line-height 36px
+            color $asset-font-thead
+          div.name
+            width 130px
+          div.address
+            position relative
+            margin 0
+            width 220px
+            height 36px
+            img
+              float left
+              height 14px
+              margin-right 6px
+              cursor pointer
+            p
+              float left
+              width 190px
+              font-size .14*100px
+              line-height .16*100px
+              word-break break-all
+            .code
+              position absolute
+              top .44*100px
+              left -.8*100px
+              width 1.8*100px
+              height 1.8*100px
+              padding .1*100px
+              background-color $asset-bg-none
+              box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.3)
+              z-index 100
+              canvas
+                position absolute
+                top .1*100px
+                left .1*100px
+                width 1.6*100px !important
+                height 1.6*100px !important
+            .code::before
+              position relative
+              top -.22*100px
+              left .74*100px
+              content ''
+              display block
+              width 0
+              height 0
+              border-top .06*100px solid transparent
+              border-right .06*100px solid transparent
+              border-bottom .06*100px solid $asset-bg-none
+              border-left .06*100px solid transparent
+          div.delete
+            button
+              font-size .14*100px
+              padding .02*100px .12*100px
+              border .01*100px solid $asset-font-negative
+              border-radius .02*100px
+              color $asset-font-negative
+              cursor pointer
+              &:hover
+                background-color transparent

@@ -1,0 +1,182 @@
+.my-investment
+  .total-asset
+    width 950px
+    height 28px
+    line-height 28px
+    margin 20px auto 24px
+    span
+      &:first-of-type
+        font-size 14px
+      &:nth-of-type(2)
+        font-size 20px
+      &:last-of-type
+        font-size 14px
+        color $asset-bg-legal
+  .rate
+    width 950px
+    //height 147px
+    margin 0 auto 20px
+    background $asset-bg-title
+    padding-bottom 26px
+    h1
+      display flex
+      align-items center
+      justify-content space-between
+      padding 10px 20px
+      border-bottom 1px solid $asset-line-title
+      span
+        font-size 14px
+        img
+          width 24px
+          height 24px
+          margin-right 10px
+          vertical-align middle
+      button
+        padding 8px 14px
+        border 1px solid $asset-border-minor
+        border-radius(2px)
+        background $asset-bg-btn
+        font-size 14px
+        cursor pointer
+    table
+      width 950px
+      margin-top 25px
+      tr
+        text-align center
+        &:first-of-type
+          td
+            font-size 20px
+            padding-bottom 10px
+        &:nth-of-type(2)
+          td
+            font-size 14px
+            color $asset-font-legal
+            &.lock
+              .pop-parent
+                .img
+                  position relative
+                  display inline-block
+                  margin-right 0.05*100px
+                  background $yiwen-active-light no-repeat center center
+                  width 12px
+                  height 12px
+                  cursor pointer
+                .pop-children
+                  left 80%
+                  bottom -35px
+                  transform translateX(-50%)
+                  height 32px
+                  line-height 32px
+                  z-index 99
+                  white-space nowrap
+  .investment-list
+    width 1000px
+    &.cn
+      thead
+        font-size 12px
+        color $asset-font-legal
+        text-align justify
+        height 36px
+        line-height 36px
+        background $asset-bg-title
+        th:nth-child(1)
+          padding-left 24px
+      tbody
+        tr
+          border-bottom 1px solid $asset-border-minor
+          td
+            height 60px
+            line-height 60px
+            font-size 14px
+            color $asset-font-normal
+            text-align justify
+            min-width 145px
+            vertical-align middle
+            a,span
+              color $asset-font-main
+              font-size 14px
+              cursor pointer
+          td:nth-child(1)
+            min-width 0px
+            padding 0 10px 0  24px
+          td:nth-child(2)
+            line-height 25px
+          td:nth-child(1), td:nth-child(6)
+            color $asset-font-main
+          td:nth-child(6)
+            a,span
+              margin-right 20px
+              padding 8px 14px
+              border 1px solid $asset-border-minor
+              border-radius(2px)
+              background $asset-bg-btn
+              font-size 14px
+              cursor pointer
+              color $asset-font-normal
+            b
+              padding 8px 14px
+              background $asset-bg-disable
+              color $asset-font-none
+              font-size 14px
+              margin-right 20px
+              border-radius(2px)
+    &.en
+      thead
+        font-size 12px
+        color $asset-font-legal
+        text-align justify
+        height 54px
+        line-height 54px
+        background $asset-bg-title
+        th:nth-child(1)
+          padding-left 24px
+        th:nth-child(5)
+          width 108px
+          line-height 27px
+          vertical-align middle
+      tbody
+        tr
+          border-bottom 1px solid $asset-border-minor
+          td
+            height 106px
+            font-size 14px
+            color $asset-font-normal
+            text-align justify
+            min-width 145px
+            vertical-align middle
+            a,span
+              color $asset-font-main
+              font-size 14px
+              cursor pointer
+          td:nth-child(1)
+            min-width 220px
+            padding 0 10px 0  24px
+          td:nth-child(2)
+            line-height 25px
+          td:nth-child(1), td:nth-child(6)
+            color $asset-font-main
+          td:nth-child(5)
+            min-width 0px
+          td:nth-child(6)
+            width 206px
+            line-height 45px
+            padding-right 10px
+            a,span
+              padding 8px 14px
+              margin-right 10px
+              border 1px solid $asset-border-minor
+              border-radius(2px)
+              background $asset-bg-btn
+              font-size 14px
+              cursor pointer
+              color $asset-font-normal
+            span:last-child
+              height 36px
+              padding 8px 40px
+            b
+              padding 8px 14px
+              margin-right 10px
+              background $asset-bg-disable
+              color $asset-font-none
+              font-size 14px
+              border-radius(2px)

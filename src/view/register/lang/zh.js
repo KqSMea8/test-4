@@ -1,0 +1,30 @@
+import {EXCHANGE_NAME_USD as nameUsd} from "@/config/VariableConfig";
+
+export default {
+  "login-readUser": "《服务条款》",
+  "login-passAgainPlaceholder": "请再输入一遍密码",
+  "register-read": "我已阅读并同意QB",
+  "register-account": "已有账号？",
+  "register-login": "立即登录",
+  "register-succ": "注册成功",
+  "login-account": "还没有账号？",
+  "login-register": "立即注册",
+  "register-inputPhone": "请输入手机号",
+  "register-inputVerifyPhone": "请输入手机号验证码",
+  "register-inputEmail": "请输入邮箱账号",
+  "register-inputVerifyEmail": "请输入邮箱验证码",
+  "register-inputNewPwd": "请输入新密码",
+  "register-checkEmail": "邮箱格式不正确",
+  "register-checkPhone": "手机号有误",
+  "register-checkNewPwd": "密码格式不正确",
+  "register-checkAgainPwd": "两次输入不一致",
+  "register-inviteLind": "邀请链接",
+  "register-inviteLindSucc": "专属链接已复制，快去分享吧～",
+  "register-inviteLindGet": "分享链接获得更多QB！",
+  "register-inviteLindGet2": "邀请一人注册获得50QB！",
+  "register-reg-alert": "恭喜您已成功注册获得",
+  "register-reg-nameUsd": `{num}${nameUsd}`,
+  "register-invite": "QB数字货币交易平台上线啦！现在注册抢QB奖励，邀请再赚50QB/人，马上点击注册链接来赚钱啦",
+  "register-invite-11": "QB数字货币交易平台上线啦！双11活动期间，注册送50QB，邀请再赚60QB/人，马上点击注册链接来赚钱啦",
+};
+

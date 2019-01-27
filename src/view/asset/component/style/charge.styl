@@ -1,0 +1,321 @@
+// @import "./base.styl"
+.asset
+  .charge
+    a
+      color $asset-font-main
+      // &:hover
+      //   color $asset-font-main-hover
+      // &:active
+      //   color $asset-font-main-active
+    h3
+      width 100%
+      height 60px
+      padding-left 24px
+      line-height 60px
+      font-size 18px
+      color $asset-font-main
+      background $asset-bg-title
+      font-weight bold
+      button
+        float right
+        width 60px
+        height 36px
+        margin 12px 24px 0 0
+    .charge-content
+      padding 40px 0 0 0
+      .select
+        margin-bottom 0.4*100px
+        .search
+          padding-left 24px
+          .title
+            float left
+            width 146px
+            font-size 16px
+            color $asset-font-normal
+          .currency-asset
+            float left
+            width 300px
+            .input
+              width 300px
+              height 36px
+              .search-list
+                position relative
+                width 100%
+                margin-top 4px
+                background-color $asset-bg-none
+                box-shadow 0 0 10px 0 $asset-bg-shadow;
+                z-index 99
+                border-radius(2px)
+                &.hide
+                  display none
+                li
+                  font-size 14px
+                  height 36px
+                  line-height 36px
+                  padding-left 0.15*100px
+                  cursor pointer
+                  &:hover
+                    background-color $asset-bg-active
+            ul
+              width 100%
+              margin-top 16px
+              li
+                width 100%
+                height 30px
+                line-height 30px
+                color $asset-font-normal
+                letter-spacing 0
+                span
+                  float left
+                  font-size 14px
+                i
+                  float right
+                  font-size 14px
+      .address
+        position relative
+        width 980px
+        height 195px
+        padding 40px 0 0 14px
+        margin-bottom 40px
+        margin-left 10px
+        background-color $asset-bg-title
+        .tips
+          margin-bottom 0.32*100px
+          color $asset-font-negative
+          letter-spacing 0
+        .currency-address
+          margin-bottom 0.24*100px
+          .title
+            float left
+            width 146px
+            font-size 16px
+            color $asset-font-normal
+            letter-spacing 0
+          input
+            float left
+            width 450px
+            height 36px
+            line-height 36px
+            padding-left 14px
+            font-size 14px
+            border-radius(0.02*100px)
+            color $asset-font-normal
+            background $asset-bg-none
+            border 1px solid $asset-border-minor
+        .handel
+          position relative
+          margin-left 146px
+          button
+            padding 0 14px
+            height 36px
+            line-height 36px
+            margin-right 10px
+          .qrcode-wrap
+            display none
+            position fixed
+            top 0
+            left 0
+            right 0
+            bottom 0
+            background $asset-bg-tip
+            z-index 668
+            &.show
+              display block
+            .qrcode
+              position absolute
+              top 50%
+              left 50%
+              transform translateX(-50%) translateY(-50%)
+              width 560px
+              height 424px
+              padding-top 40px
+              background $asset-bg-none
+              border-radius 6px
+              text-align center
+              img
+                position absolute
+                width 16px
+                height 16px
+                top 40px
+                right 40px
+                cursor pointer
+              h4
+                padding-left 40px
+                margin-bottom 40px
+                text-align left
+                span
+                  font-size .2*100px
+              canvas
+                width 240px !important
+                height 240px !important
+                margin-bottom 16px
+              p
+                font-size 14px
+                color #000000
+          //.qrcode
+          //  display none
+          //  position absolute
+          //  top -0.25*100px
+          //  left 0
+          //  width 1.5*100px
+          //  height 1.5*100px
+          //  border 0.01*100px solid $asset-line-minor;
+          //  background $asset-font-normal
+          //  &.show
+          //    display block
+          //  canvas
+          //    position absolute
+          //    left 0.11*100px
+          //    top 0.11*100px
+          //    width 1.28*100px !important
+          //    height 1.28*100px !important
+      .tip
+        width 100%
+        padding-bottom 0.24*100px
+        padding-left 24px
+        border-bottom 0.01*100px solid $asset-line-minor
+        .title
+          float left
+          width 163px
+          font-size 16px
+          color $asset-font-normal
+          letter-spacing 0
+        ol
+          float left
+          li
+            list-style-type disc
+            width 100%
+            font-size 0.14*100px
+            line-height 0.14*100px
+            margin-bottom 0.14*100px
+            color $asset-font-normal
+            letter-spacing 0
+            span
+              font-size 14px
+            i
+              color $asset-font-main
+              font-size 14px
+            a
+              font-size 0.14*100px
+      .to-trade
+        width 100%
+        min-height 80px
+        padding 0.24*100px 0 0 24px
+        border-bottom 0.01*100px solid $asset-line-minor
+        .title
+          float left
+          width 146px
+          font-size 16px
+          color $asset-font-normal
+          letter-spacing 0
+        .bts
+          overflow hidden
+        a
+          float left
+          margin-bottom 0.2*100px
+        button
+          width 1*100px
+          height 0.34*100px
+          margin-right 0.2*100px
+          color $asset-font-normal
+          background-color $asset-bg-none
+          border 1px solid $asset-border-minor
+          &:hover
+            color $asset-font-main
+            border-color $asset-border-main
+      .history
+        // display flex
+        // justify-content flex-start
+        overflow hidden
+        width 100%
+        padding 44px 20px 0 24px
+        .title
+          float left
+          width 146px
+          font-size 16px
+        .kong
+          float left
+          width 7.5*100px
+          height 1*100px
+          line-height 1*100px
+          text-align center
+          font-size 0.16*100px
+          color $asset-font-minor
+          letter-spacing 0
+        table
+          float left
+          margin-bottom 0.2*100px
+          text-align left
+          th,td
+            height 0.3*100px
+            font-size 0.14*100px
+            color $asset-font-legal
+            letter-spacing 0
+            &.time
+              width 1.63*100px
+            &.currency
+              width 0.73*100px
+            &.amount
+              width 0.89*100px
+            &.send
+              width 85px
+            &.receive
+              width 225px
+            &.confirm
+              width 0.92*100px
+            &.state
+              width 0.82*100px
+          td
+            height 0.32*100px
+            line-height 0.32*100px
+            font-size 0.14*100px
+            color $asset-font-normal
+            letter-spacing 0
+            i
+              display block
+              width 100%
+              line-height 0.32*100px
+              overflow hidden
+              white-space nowrap
+              text-overflow ellipsis
+            &.send
+              i
+                font-size 14px
+                width 100px
+            &.receive
+              i
+                font-size 14px
+                width 225px
+            &.amount
+              i
+                font-size 14px
+                width 0.89*100px
+            a
+              font-size 14px
+              text-decoration underline
+            span
+              font-size 14px
+              color $asset-font-main
+        .pagina
+          float left
+          width 100%
+          display flex
+          justify-content flex-end
+          padding 0 25px 25px 0
+        .more
+          text-align left
+          float right
+          width 80px
+          a
+            position relative
+            display block
+            font-size 14px
+            &::after
+              position absolute
+              content ''
+              right 0
+              top 0
+              width 20px
+              height 100%
+              background $asset-more no-repeat center center
+              background-size 100% 100%

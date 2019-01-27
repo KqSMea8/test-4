@@ -1,0 +1,262 @@
+// @import "./base.styl"
+.asset
+  .hist
+    position relative
+    a
+      color $asset-font-main
+      cursor pointer
+      // &:hover
+      //   color $asset-font-main-hover
+      // &:active
+      //   color $asset-font-main-active
+    .title
+      button
+        position absolute
+        right 24px
+        top -48px
+    .kong
+      position relative
+      height 250px
+      text-align center
+      letter-spacing 0
+      background-size auto 101px
+      p
+        position absolute
+        left 50%
+        top 200px
+        margin-left -42px
+        font-size 16px
+        color $asset-font-minor
+    .filtrate
+      width 100%
+      height 76px
+      line-height 76px
+      padding-left 26px
+      ul
+        float left
+        li.item
+          float left
+          width 158px
+          span
+            margin-right 10px
+            font-size 14px
+            color $asset-font-legal
+            text-align justify
+            color $asset-font-normal
+            letter-spacing 0.0006*100px
+            text-align justify
+          .select
+            width 0.8*100px
+            height 36px
+            font-size 14px
+            line-height 36px
+          &:nth-child(2)
+            width 220px
+            .select
+              width 150px
+      .datepicker
+        float left
+        width 2.5*100px
+      .handel
+        float right
+        margin-right 24px
+        button
+          height 36px
+          padding 0 14px
+          font-size 14px
+          line-height 36px
+          margin-left 10px
+          &.reset
+            color $asset-font-normal
+            border-color $asset-border-minor
+            &:hover
+              color $asset-font-main
+              border-color $asset-border-main
+              background-color transparent
+    .table
+      width 100%
+      margin-bottom 20px
+      thead
+        tr
+          background $asset-bg-title
+      th,td
+        height 36px
+        box-sizing()
+        line-height 36px
+        font-size 12px
+        color $asset-font-legal
+        text-align justify
+        &.time
+          width 137px
+          padding-left 34px
+        &.currency
+          width 80px
+        &.cash
+          width 88px
+          padding-right 0.1*100px
+        // &.balan
+        //   width 88px
+        //   padding-right 0.1*100px
+        &.confirm
+          text-align center
+        &.send
+          width 80px
+        &.receive
+          width 186px
+        &.state
+          width 79px
+        &.fee
+          width 62px
+        &.option
+          width 61px
+      tbody
+        height 0.7*100px
+        line-height 0.7*100px
+        tr
+          border-bottom 0.01*100px solid $asset-border-minor
+          &:hover
+            background $asset-bg-active
+          &.empty
+            border none
+            &:hover
+              background $asset-bg-none
+            td
+              width 1000px
+              height 488px
+              background $empty-white no-repeat center center
+              p
+                position relative
+                top 60px
+                font-size 12px
+                text-align center
+                line-height 488px
+                color $asset-font-legal
+          td
+            height 0.7*100px
+            line-height 0.7*100px
+            font-size 0.14*100px
+            color $asset-font-normal
+            letter-spacing 0.0006*100px
+            text-align justify
+            img
+              position relative
+              width 0.16*100px
+              height 0.16*100px
+              top 0.02*100px
+              margin-right 0.03*100px
+            i
+              display block
+              width 100%
+              font-size 14px
+              line-height 0.7*100px
+              overflow hidden
+              white-space nowrap
+              text-overflow ellipsis
+            &.send, &.receive
+              b
+                top -0.05*100px
+                left 50%
+                transform translateX(-56%)
+                -ms-transform translateX(-56%)
+                -moz-transform translateX(-56%)
+                -webkit-transform translateX(-56%)
+                -o-transform translateX(-56%)
+            // &.send
+            //   i
+            //     position relative
+            //     width 1.28*100px
+            //     padding-right 0.28*100px
+            //     &::after
+            //       position absolute
+            //       right 0
+            //       top 0
+            //       content ' >'
+            //       width 0.28*100px
+            //       height 0.7*100px
+            //       text-align center
+            &.receive
+              i
+                width 1.86*100px
+              b
+                top -0.05*100px
+                left 50%
+                transform translateX(-56%)
+                -ms-transform translateX(-56%)
+                -moz-transform translateX(-56%)
+                -webkit-transform translateX(-56%)
+                -o-transform translateX(-56%)
+              .pop-children
+                height 30px
+                line-height 30px
+                white-space nowrap
+            &.time
+              padding-left 34px
+              .pop-children
+                height 30px
+                line-height 30px
+                white-space nowrap
+              b
+                top -0.05*100px
+                left -0.2*100px
+                min-width 155px
+                white-space nowrap
+            &.cash
+              &.red
+                color $asset-font-negative
+              &.green
+                color $asset-font-add
+             &.state
+              &.pending
+                color $asset-font-negative
+              &.failed
+                color $asset-font-minor
+              &.complete
+                color $asset-font-add
+              span
+                font-size 14px
+            &.confirm
+              text-align center
+              a
+                color $asset-font-add
+    .otc-table
+      th,td
+        &.time
+          width 240px
+          padding-left 34px
+        &.currency
+          width 120px
+        &.cash
+          width 150px
+        &.type
+          width 150px
+        &.state
+          width 160px
+        &.direction
+          width 190px
+        &.fee
+          padding-right 10px
+          min-width 80px
+      tbody
+        tr
+          height 60px
+          td.fee
+            padding-right 10px
+    .pagin
+      display flex
+      justify-content flex-end
+      padding 0 25px
+
+.asset-otc
+  .hist
+    .filtrate
+      ul
+        li.item
+          &:nth-child(1), &:nth-child(2)
+            width 180px
+            .select
+              width 100px
+      .datepicker
+        width 320px
+        margin-left 20px
+        input
+          width 144px

@@ -1,0 +1,103 @@
+#trade_pro_pair
+  .trade-pair-deal-title
+    display flex
+    height 50px
+    align-items center
+    .trade-pair-deal-info
+      display flex
+      align-items center
+      padding-left 30px
+      margin-right 30px
+      b
+        font-size 20px
+        margin-right 30px
+        color $trade-font-title
+        position relative
+        cursor pointer
+        &:after
+          position absolute
+          content ''
+          width 11px
+          height 11px
+          background $trade-pro-select no-repeat center / 11px 11px
+          top 50%
+          transform translateY(-50%)
+          right -15px
+        &.market-b
+          position relative
+          &:after
+            position absolute
+            content ''
+            width 11px
+            height 11px
+            background $icon-select-active no-repeat center / 11px 11px
+            top 50%
+            transform translateY(-50%)
+            right -15px
+      a
+        padding 0 10px
+        height 18px
+        line-height 18px
+        text-align center
+        background $trade-little-bg
+        border-radius 2px
+        display inline-block
+        color $trade-font-normal
+        font-size 10px
+    .trade-pair-deal-items
+      margin-right 30px
+      color $trade-font-normal
+      height 100%
+      padding 13px 0
+      span
+        font-size 12px
+      p
+        font-size 10px
+        color $trade-font-thead
+        margin-bottom 5px
+      .trade-pair-deal-price
+        font-size 18px
+        color $trade-font-normal
+      .market-up
+        color $trade-change-positive
+      .market-down
+        color $trade-change-negative
+    .trade-pro-price
+      line-height 50px
+      padding 0
+
+//  .trade-pair-deal-info
+//    display flex
+//    align-items center
+//    img
+//      width .34rem
+//      height .34rem
+//      margin-right .1rem
+//    b
+//      font-size .24rem
+//      color $trade-font-title
+//      margin-right .02rem
+//    //padding 0 .01rem
+//    em
+//      font-size .16rem
+//      color $trade-font-title
+//      margin-right .26rem
+//      margin-top .06rem
+//    span
+//      a
+//        color $trade-market-materials
+//        font-size .12rem
+//  .trade-pair-deal-items
+//    p
+//      margin-bottom .08rem
+//    div
+//      color $trade-font-normal
+//    .market-up
+//      color $trade-change-positive
+//    .market-down
+//      color $trade-change-negative
+//.trade-pair-deal-price
+//  width 100%
+//  text-align center
+//  color $trade-font-normal
+//  font-size .16rem

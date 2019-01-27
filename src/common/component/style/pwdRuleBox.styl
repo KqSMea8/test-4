@@ -1,0 +1,33 @@
+.pwd-rule-wrap
+  position absolute
+  right -220px
+  top 0
+  width 208px
+  background $common-bg-none
+  padding 10px 18px 4px 10px
+  box-shadow 0 0 10px 0 $common-border-dark
+  &:before
+    position absolute
+    top 18px
+    left -12px
+    content ''
+    border-width 6px
+    border-style solid dashed dashed dashed
+    border-color transparent $common-bg-none transparent transparent
+    font-size 0
+    line-height 0
+  li
+    position relative
+    margin-bottom 6px
+    color $common-font-pwd
+    padding-left 8px
+    &:before
+      position absolute
+      left 0
+      top 50%
+      transform translateY(-50%)
+      content ""
+      width 2px
+      height 2px
+      background-color $common-font-pwd
+      border-radius 50%

@@ -1,0 +1,291 @@
+// @import "./base.styl"
+.asset
+  .balance
+    .asset-wallet
+      a
+        color $asset-font-main
+        cursor pointer
+        // &:hover
+        //   color $asset-font-main-hover
+        // &:active
+        //   color $asset-font-main-active
+      .input-wrap
+        .input
+          display inline-block
+          margin 0 48px 20px 24px
+          .search-list
+            position absolute
+            width 100%
+            margin-top 4px
+            background-color $asset-bg-none
+            box-shadow 0 0 10px 0 $asset-bg-shadow;
+            z-index 99
+            border-radius(2px)
+            &.hide
+              display none
+            li
+              font-size 14px
+              height 36px
+              line-height 36px
+              padding-left 0.15*100px
+              color $asset-font-normal
+              cursor pointer
+              &:hover
+                background-color $asset-bg-active
+          input
+            width 300px
+            height 36px
+        span
+          float right
+          position relative
+          display inline-block
+          border 1px solid $asset-border-hide-little
+          padding 0 34px
+          font-size 14px
+          min-width 146px
+          height 36px
+          line-height 36px
+          margin-right 24px
+          color $asset-font-main
+          border-radius(2px)
+          cursor pointer
+          i
+            position absolute
+            width 34px
+            height 100%
+            left 0.06*100px
+            background $asset-show-little center center no-repeat
+            background-size 14px auto
+          &:hover
+            color $asset-font-none
+            background-color $asset-bg-hide-little
+            border-color $asset-border-hide-little
+            i
+              background $asset-show-little-hover center center no-repeat
+              background-size 14px auto
+            b
+              &.pop-parent
+                .img
+                  background $yiwen-active-main no-repeat center center
+                .pop-children
+                  white-space nowrap
+          &.active
+            i
+              background $asset-hide-little center center no-repeat
+              background-size 14px auto
+            &:hover
+              i
+                background $asset-hide-little-hover center center no-repeat
+                background-size 14px auto
+
+          b
+            position absolute
+            top 8px
+            height 12px
+            line-height 12px
+            &.pop-parent
+              .img
+                position relative
+                display inline-block
+                top 4px
+                left 11px
+                width 12px
+                height 12px
+                margin-right 5px
+                background $yiwen-active no-repeat center center
+              .pop-children
+                width 138px
+                left -53px
+                top -48px
+                min-width 136px
+                height 32px
+                line-height 32px
+                color $asset-font-none
+                z-index 99
+                white-space nowrap
+                &::before
+                  left 50%
+      table
+        width 100%
+        thead
+          background $asset-bg-title
+          th
+            min-width 100px
+            height 36px
+            font-size 12px
+            color $asset-font-legal
+            text-align justify
+            line-height 36px
+            &.avail, &.total
+              text-align right
+            &.lock, &.tobtc, &.tolegal
+              text-align right
+              .pop-parent .img
+                position relative
+                display inline-block
+                width 12px
+                height 12px
+                margin-right 0.05*100px
+                background $yiwen-active-light no-repeat center center
+            &.currency, &.avail, &.lock, &.tobtc, &.tolegal, &.total
+              cursor pointer
+              &:hover
+                color $asset-font-main
+                text-decoration underline
+            &.lock
+              .pop-parent
+                top 1px
+                left 3px
+                .pop-children
+                  left -101px
+                  top -48px
+                  min-width 217px
+                  height 32px
+                  line-height 32px
+                  z-index 99
+                  white-space nowrap
+                  &.en
+                    min-width 575px
+                    left -280px
+                  &::before
+                   left 50%
+            &.tobtc, &.tolegal,
+              .pop-parent
+                top 1px
+                left 3px
+                .pop-children
+                  left -74px
+                  top -48px
+                  min-width 150px
+                  height 32px
+                  line-height 32px
+                  width 180px
+                  z-index 99
+                  white-space nowrap
+                  &::before
+                    left 81px
+            &.currency
+              padding-left 30px
+            &.handle
+              min-width 180px
+              padding-left 50px
+              text-align left
+            .img
+              position relative
+              top 1px
+              left 2.5px
+              width 12px
+              height 12px
+        tbody
+          tr
+            position relative
+            border-bottom 0.01*100px solid $asset-line-minor
+            &:hover
+              background-color $asset-bg-active
+            &.empty
+              &:hover
+                background-color $asset-bg-none
+              td
+                width 1000px
+                height 415px
+                background $empty-white no-repeat center center
+                p
+                  position relative
+                  top 60px
+                  font-size 12px
+                  text-align center
+                  line-height 416px
+                  color $asset-font-legal
+          tr:nth-last-child(1)
+            border-bottom none
+          td
+            height 60px
+            line-height 60px
+            font-size 14px
+            color $asset-font-normal
+            letter-spacing 0.0006*100px
+            text-align justify
+            &.total
+              text-align right
+            &.fullname
+              a
+                color $asset-font-normal
+                &:hover
+                  color $asset-font-main
+                  text-decoration underline
+            &.avail
+              text-align right
+            &.lock, &.tobtc, &.tolegal
+              text-align right
+              padding-left 30px
+            img
+              position relative
+              top 0.02*100px
+              width 0.16*100px
+              height 0.16*100px
+              margin-right 0.05*100px
+            &.currency
+              padding-left 0.3*100px
+              // span
+              //   width 0.16*100px
+              //   height 0.16*100px
+              //   background $asset-bg-btn
+            &.handle
+              padding-left 50px
+              text-align left
+                // button
+                //   background-color $asset-bg-btn
+                //   color $asset-font-main
+                //   &:hover, &:active
+                //     background-color $asset-bg-btn
+                //     color $asset-font-main
+                // &:hover
+                //   ul
+                //     display block
+                // &.disable:hover
+                //   ul
+                //     display none
+                // ul
+                //   display none
+                //   position absolute
+                //   top 0.31*100px
+                //   left -0.15*100px
+                //   z-index 999
+                //   border-radius(0.02*100px)
+                //   li
+                //     min-width 0.95*100px
+                //     height 0.4*100px
+                //     line-height 0.4*100px
+                //     background $asset-bg-btn
+                //     font-size 0.14*100px
+                //     text-align center
+                //     cursor pointer
+                //     &:hover
+                //       background-color $asset-bg-main
+                //       color $asset-font-none
+                //     &:active
+                //       background-color $asset-bg-main-active
+                //       color $asset-font-main
+              button
+                min-width 56px
+                height 36px
+                font-size 14px
+                line-height 36px
+                margin-right 18px
+                background-color $asset-bg-none
+                color $asset-font-normal
+                border 1px solid $asset-border-minor
+                &:hover
+                  color $asset-font-main
+                  border 1px solid $asset-border-main
+                &.disable
+                  cursor not-allowed
+                  color $asset-font-none
+                  background-color $asset-bg-disable
+                  border none
+                  &:hover
+                    color $asset-font-none
+                    background-color $asset-bg-disable
+                // &.withdraw
+                //   // width 0.7*100px
+

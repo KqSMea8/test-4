@@ -1,0 +1,492 @@
+////@import "../../../common/css/variable.styl"
+#trade_order_pro
+  width 100%
+  height 100%
+  .trade-order-pro-title
+    height 30px
+    display flex
+    padding 0 20px 0 10px
+    align-items center
+    font-size 14px
+    justify-content space-between
+    border-bottom 1px solid $trade-pro-main-bg
+    .order-pro-item
+      display flex
+      align-items center
+      height 100%
+      .order-pro-items
+        padding 0 10px
+        height 100%
+        line-height 30px
+        border-top 2px solid $trade-pro-model-bg
+        font-size 14px
+        text-align center
+        color $trade-font-title
+        border-right 1px solid $trade-pro-main-bg
+        cursor pointer
+      .order-pro-items-active
+        color $trade-pro-active
+        border-top 2px solid $trade-pro-active
+        background $trade-pro-bg-title
+  .order-pro-hide
+    a
+      display inline-block
+      width 60px
+      height 29px
+      color $trade-font-normal
+      border-right 1px solid $trade-pro-main-bg
+      font-size 12px
+      position relative
+      line-height 29px
+      margin-right 10px
+      &:after
+        content ''
+        background $trade-pro-more
+        background-size 16px 10px
+        position absolute
+        width 16px
+        height 10px
+        top 10px
+        right 6px
+  input
+    width 10px
+    height 10px
+    background-color #E8E8EA
+    margin-right 10px
+    vertical-align middle
+    -webkit-appearance checkbox
+    //&:checked
+    //  background-image $header-news
+  //-webkit-appearance radio
+  .order-pro-content
+    width 100%
+    height 233px
+    //overflow hidden
+    .trade-pro-order-none
+      overflow hidden
+      width 100%
+      height 100%
+      line-height 203px
+      text-align center
+      font-size 12px
+      color $trade-font-thead
+      background $empty-black no-repeat center 40px / 150px 100px
+      p
+        width 100%
+        font-size 12px
+        text-align center
+        line-height 300px
+    .thead
+      width 100%
+      height 30px
+      background $trade-pro-bg-title
+      line-height 30px
+      p
+        float left
+        font-size 12px
+        text-align center
+        //overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+        .pop-parent
+          margin-left 4px
+          display inline-block
+          vertical-align middle
+          img
+            position relative
+            top 1px
+            cursor pointer
+          .pop-trade-children
+            white-space normal
+            top -63px
+            left -112px
+        .cancel-pro
+          width 59px
+          height 22px
+          line-height 22px
+          color $trade-font-title
+          background $trade-pro-active
+          display inline-block
+          cursor pointer
+          border-radius(2px)
+          text-align center
+        .cancel-pro-dis
+          background $trade-pro-bg-dis
+        &:nth-of-type(1)
+          padding-left 20px
+          text-align left
+    .simplePro
+      tr
+        &.empty
+          border none
+          td
+            width 100%
+            height 203px
+            padding-left 0
+            border none
+            background $empty-black no-repeat center 40px / 150px 100px;
+            p
+              width 100%
+              position relative
+              top 60px
+              font-size 12px
+              text-align center
+              line-height 180px
+      p, td
+        &:nth-of-type(1)
+          width 12%
+        &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5)
+          width 22%
+    &.order-pro-content-0, &.order-pro-content-1
+      p, td
+        &:nth-of-type(1)
+          width 16%
+        &:nth-of-type(2)
+          width 12%
+        &:nth-of-type(3)
+          width 8%
+        &:nth-of-type(4)
+          width 12.4%
+        &:nth-of-type(5)
+          width 9.4%
+        &:nth-of-type(6)
+          width 9.4%
+        &:nth-of-type(7)
+          width 10.6%
+        &:nth-of-type(8)
+          width 10.6%
+        &:nth-of-type(9)
+          width 11.6%
+    &.order-pro-content-2
+      p, td
+        &:nth-of-type(1)
+          width 16%
+        &:nth-of-type(2)
+          width 14.4%
+        &:nth-of-type(3)
+          width 12%
+        &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7)
+          width 14.4%
+    table
+      width 100%
+      tbody
+        tr
+          height 39px
+          line-height 39px
+          border-bottom 1px solid $trade-pro-bg-title
+          td
+            overflow hidden
+            text-overflow ellipsis
+            white-space nowrap
+            font-size 12px
+            text-align center
+            //border 1px solid $trade-pro-main-bg
+            &:nth-of-type(1)
+              padding-left 20px
+              text-align left
+          .pro-order-cancel
+            color $trade-pro-active
+            cursor pointer
+          .checking
+            color $trade-pro-active
+  .trade-order-pro-shadow
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(203, 212, 225, 0.3);
+    z-index: 6665;
+    .trade-order-shadow
+      position absolute
+      top 50%
+      left 50%
+      transform: translate(-50%, -50%);
+      width 560px
+      background $trade-pro-bg-title
+      padding 40px
+      border-radius 6px
+      .trade-order-detail-title
+        height 28px
+        display flex
+        justify-content space-between
+        align-items center
+        margin-bottom 40px
+        span
+          font-size 20px
+          color $trade-font-normal
+        em
+          width 16px
+          height 16px
+          display inline-block
+          background $exchange-close-button no-repeat center / 16px 16px
+          cursor pointer
+      .trade-order-detail-thead
+        width 100%
+        display flex
+        margin-bottom 16px
+        color $trade-font-thead
+        div
+          font-size 14px
+        div:nth-of-type(1)
+          width 39%
+        div:nth-of-type(2)
+          width 20%
+        div:nth-of-type(3)
+          width 20%
+        div:nth-of-type(4)
+          width 21%
+      #trade_order_detail_content
+        table
+          width 100%
+          tr
+            height 52px
+            line-height 52px
+            border-top 1px solid $trade-pro-order-detail-line
+            td
+              font-size 14px
+              color $trade-font-normal
+            td:nth-of-type(1)
+              width 39%
+            td:nth-of-type(2)
+              width 20%
+            td:nth-of-type(3)
+              width 20%
+            td:nth-of-type(4)
+              width 21%
+
+//.trade-order-table-wrap
+//  width 560px
+//  height 155px
+//  overflow-y auto
+//  table
+//    width 100%
+//    height 100%
+//    border-radius 2px
+//    tr
+//      height 30px
+//      line-height 30px
+//      background $trade-pro-order-detail-bg
+//      opacity .8
+//      td
+//        border 1px solid $trade-pro-detail-line
+//        text-align center
+//        color $trade-pro-bg-title
+//    thead
+//      td
+//        font-size 14px
+//    tbody
+//      td
+//        font-size 12px
+//.trade-order-close
+//  width 100%
+//  height 74px
+//  text-align center
+//  display flex
+//  align-items center
+//  justify-content center
+//  span
+//    width 120px
+//    display inline-block
+//    height 34px
+//    color $trade-font-normal
+//    line-height 34px
+//    background $trade-pro-active
+//    font-size 14px
+//    cursor pointer
+//.trade-current-order
+//  &:nth-of-type(2)
+//    margin-bottom 0
+//  background $trade-model-bg
+//  //padding .16rem .4rem .16rem .16rem
+//  min-height 1.75rem
+//  margin-bottom .02rem
+//  padding-bottom .16rem
+//  .trade-current-title
+//    display flex
+//    align-items center
+//    height .4rem
+//    line-height .4rem
+//    justify-content space-between
+//    background $trade-bg-title
+//    padding-left .16rem
+//    font-size .12rem
+//    h3
+//      color $trade-font-title
+//      font-size .12rem
+//    .order-jump
+//      color: $trade-font-thead
+//      font-size .12rem
+//      margin-right .16rem
+//      &:hover
+//        color: $trade-font-normal
+//    //margin-right 7.2rem
+//    .reset-handle
+//      font-size .12rem
+//      margin-left .49rem
+//      cursor pointer
+//      position relative
+//      &:hover
+//        color $trade-font-normal
+//      &:nth-of-type(1):before
+//        content ''
+//        position absolute
+//        width .12rem
+//        height .12rem
+//        background $trade-reset
+//        background-size contain
+//        top .14rem
+//        left -.16rem
+//      &:nth-of-type(2):before
+//        content ''
+//        position absolute
+//        width .12rem
+//        height .12rem
+//        background $trade-reset
+//        background-size contain
+//        top .14rem
+//        left -.16rem
+//      &:nth-of-type(3):before
+//        content ''
+//        position absolute
+//        width .12rem
+//        height .12rem
+//        background $trade-reset-all
+//        background-size contain
+//        top .14rem
+//        left -.16rem
+//    .reset-handle:nth-of-type(1):hover::before
+//      background $trade-reset-hover
+//      background-size contain
+//    .reset-handle:nth-of-type(2):hover::before
+//      background $trade-reset-hover
+//      background-size contain
+//    .reset-handle:nth-of-type(3):hover::before
+//      background $trade-reset-all-hover
+//      background-size contain
+//  .trade-current-table
+//    width 11.12rem
+//    margin-top .16rem
+//    //padding-left .32rem
+//    margin-left .32rem
+//    font-size .11rem
+//    .cancel
+//      cursor: 'pointer'
+//    td
+//      padding-top .1rem
+//    .pop-parent
+//      position relative
+//      margin-left .04rem
+//      display inline-block
+//      vertical-align middle
+//      .pop-children
+//        position absolute
+//        top 50%
+//        left 100%
+//        transform translate(0.13rem, -50%)
+//        min-width 136px
+//        width 1.7rem
+//        height auto
+//        padding .03rem
+//        font-size .1rem
+//        line-height .14rem
+//        text-align justify
+//        z-index 99
+//    tbody
+//      td
+//        color $trade-font-normal
+//  .trader-order-none
+//    height 1.19rem
+//    line-height 1.19rem
+//    text-align center
+//    font-size .2rem
+//
+//.trade-order-shadow
+//  position fixed
+//  top 0
+//  left 0
+//  bottom 0
+//  right 0
+//  background $trade-order-shadow
+//  z-index 6665
+//  .trade-order-detail
+//    position absolute
+//    top 50%
+//    left 50%
+//    transform translate(-50%, -50%)
+//    background $col292B
+//    width 7rem
+//    padding-bottom .2rem
+//    max-height: 80vh
+//    border-radius .02rem
+//    z-index 6666
+//    overflow-y auto
+//    &::-webkit-scrollbar-button
+//      display none
+//    &::-webkit-scrollbar
+//      position relative
+//      width .03rem
+//      height 100%
+//    &::-webkit-scrollbar-track
+//      width .03rem
+//      background $trade-scrollbar-track
+//    &::-webkit-scrollbar-thumb
+//      width .03rem
+//      background $trade-scrollbar-thumb
+//    h3
+//      padding .11rem 0
+//      margin-bottom .2rem
+//      font-size .14rem
+//      line-height .21rem
+//      text-align center
+//      color $trade-font-normal
+//      background-color $trade-bg-title
+//    .trade-order-content
+//      width 6.68rem
+//      height 1.01rem
+//      margin 0 auto
+//      border-bottom .02rem dashed $trade-order-detail-dash
+//      border-radius .02rem
+//      background $trade-order-detail-bg
+//      display flex
+//      color $col3335
+//      justify-content space-around
+//      .trade-order-info
+//        height 100%
+//        padding .2rem 0
+//        p
+//          margin-bottom .25rem
+//          text-align center
+//          color $trade-font-normal
+//        span
+//          color $trade-font-thead
+//    .trade-order-table
+//      width 100%
+//      font-size .12rem
+//      line-height .28rem
+//      text-align center
+//      thead
+//        color $trade-font-thead
+//      tbody
+//        color $trade-font-normal
+//    .trade-order-close
+//      cursor pointer
+//      width 1.6rem
+//      margin 0 auto
+//      height .35rem
+//      color $trade-font-title
+//      background $trade-order-detail-close
+//      line-height .35rem
+//      text-align center
+//    .trade-order-table-wrap
+//      width 6.68rem
+//      padding .19rem 0
+//      margin 0 auto .2rem
+//      background $trade-order-detail-bg
+//
+.reset-pop
+  .reset-pop-location
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    z-index 9999

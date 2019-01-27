@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="18px" viewBox="0 0 28 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>label_ch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-673.000000, -242.000000)">
+            <g id="label_ch" transform="translate(673.000000, 242.000000)">
+                <path d="M5,12.5 L0,9 L5,5.5 L5,2 C5,0.8954305 5.8954305,2.02906125e-16 7,0 L26,0 C27.1045695,-2.02906125e-16 28,0.8954305 28,2 L28,16 C28,17.1045695 27.1045695,18 26,18 L7,18 C5.8954305,18 5,17.1045695 5,16 L5,12.5 Z" id="Combined-Shape-Copy" fill="#FF9E2F"></path>
+                <text id="荐" font-family="PingFang-SC-Regular, PingFang SC" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="10" y="13">荐</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

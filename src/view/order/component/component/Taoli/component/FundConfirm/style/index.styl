@@ -1,0 +1,103 @@
+@import "./variable.styl"
+
+.fund-confirm
+  .fund-confirm-notice, .fund-confirm-step
+    width 190px
+    ol
+      padding 16px 20px 20px
+      background $order-bg-main
+      font-size 14px
+      color $order-font-content
+      line-height 21px
+
+  .fund-confirm-notice
+    float left
+
+  .fund-confirm-right
+    float right
+
+  .fund-confirm-step
+    width 1000px
+
+  .fund-confirm-con
+    width 1000px
+    margin-bottom 10px
+    .fund-confirm-info
+      //padding 20px
+      background $order-bg-main
+      .fund-confirm-info-top
+        display flex
+        justify-content space-between
+        align-items center
+        padding 20px
+        border-bottom 1px solid $order-line-title
+        ul
+          li:nth-child(1)
+            margin-bottom 10px
+            font-size 20px
+            color $order-font-content
+          li:nth-child(2)
+            font-size 12px
+            color $order-font-remind
+        table
+          tr
+            text-align center
+            td:nth-of-type(2)
+              padding 0 40px
+            &:nth-child(1)
+              td
+                padding-bottom 10px
+                font-size 16px
+                color $order-font-content
+            &:nth-child(2)
+              td
+                font-size 12px
+                color $order-font-remind
+      .fund-confirm-info-bottom
+        padding 20px 20px 40px
+        table
+          tr
+            td
+              padding-bottom 10px
+              font-size 14px
+              color $order-font-content
+              &:nth-of-type(1)
+                padding-right 20px
+        ol
+          text-align right
+          li:nth-child(1)
+            margin-bottom 20px
+            font-size 14px
+            color $order-font-warn
+            i
+              font-size 30px
+          li:nth-child(2)
+            span
+              color $order-font-cancel
+              font-size 14px
+              cursor pointer
+            button
+              padding 8px 33px
+              margin-left 20px
+              color $order-font-btn
+              background $order-bg-btn
+
+  .fund-confirm-time
+    width 1200px
+    background $order-bg-main
+    text-align center
+    box-shadow 0 4px 4px 0 #E0E0E0
+    padding 10px 0
+    margin-bottom 20px
+    p
+      img
+        width 20px
+        height 20px
+        margin-right 10px
+        vertical-align text-bottom
+      span
+        font-size 14px
+        span
+          font-size 20px
+          color $order-font-warn
+

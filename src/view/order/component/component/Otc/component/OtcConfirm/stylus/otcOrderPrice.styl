@@ -1,0 +1,63 @@
+.otc-order-price
+	width 100%
+	height 186px
+	background $colFFFF
+	padding 25px 0 0 24px
+	.order-price-s
+		font-size 14px
+		color $otc-order-font-main
+		margin-bottom 20px
+		span
+			font-size 20px
+			font-weight 500
+			color $otc-order-font-main
+		.pop-parent
+			margin-left 10px
+			.pop-children
+				width 240px
+				height: auto
+				left: -115px
+				text-align: left
+				top -60px
+			.pop-us-children
+				top -82px
+	.order-asset
+		font-size 14px
+		color $otc-order-font-main
+		margin-bottom 25px
+		.order-asset-value
+			margin 0 20px 0 10px
+			font-size 16px
+		.order-sell-all
+			font-size 14px
+			cursor pointer
+			color $otc-order-active
+	.order-price-input
+		display flex
+		height 36px
+		align-items center
+		&.reverse
+			justify-content flex-end
+			flex-direction row-reverse
+		.order-price-items
+			width 230px
+			span
+				float right
+				margin-top -25px
+				font-size 14px
+				margin-right 14px
+			.order-otc-input
+				width 230px
+				height 36px
+				border 1px solid $otc-order-line
+				border-radius 2px
+				color $otc-order-font-input
+				font-size 14px
+		img
+			width 12px
+			height 12px
+			margin 0 10px
+	.order-otc-error
+		margin-top 10px
+		font-size 12px
+		color $otc-order-price

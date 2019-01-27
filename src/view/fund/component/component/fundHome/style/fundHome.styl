@@ -1,0 +1,360 @@
+@import "./variable.styl"
+
+.fund-home-bottom
+  padding 40px 0
+
+// 顶部
+.fund-top-wrap
+  width 100%
+  background $tlb-banner
+  background-size cover
+  .fund-banner-title
+    padding 50px 0
+    text-align center
+    h1
+      height 50px
+      line-height 50px
+      color $tlb-font-title
+      margin-bottom 10px
+      font-size 36px
+      letter-spacing 2px
+    p
+      height 20px
+      line-height 20px
+      color $tlb-font-title
+      font-size 14px
+  .fund-step
+    //background $tlb-bg-step
+    padding 38px 0 24px
+    ul
+      width 1200px
+      margin 0 auto
+      &.en-ul
+        li
+          margin-right 40px
+          padding-right 40px
+      li
+        position relative
+        float left
+        display flex
+        justify-content center
+        align-items center
+        margin-right 75px
+        padding-right 75px
+        &:last-child
+          margin-right 0
+          padding-right 0
+          &:after
+            background-image none
+        &:after
+          position absolute
+          top 18px
+          right 0
+          content ''
+          width 10px
+          height 18px
+          background-image $tlb_next
+          background-size 100%
+        img
+          margin-right 20px
+        p
+          span
+            display block
+            color $tlb-font-stepTitle
+            font-size 20px
+            margin-bottom 10px
+            font-weight 300
+          b
+            color $tlb-font-stepCon
+            font-size 14px
+            font-weight 200
+
+// 中间内容
+.fund-content-wrap
+  margin-bottom 36px
+  .info-wrap
+    width 1200px
+    margin 0 auto
+    .content-title
+      display flex
+      align-items center
+      margin-bottom 20px
+      span
+        font-size 20px
+        color $tlb-font-conTitle
+        margin-right 10px
+      b
+        font-size 14px
+        color $tlb-font-conRemind
+    .content-wrap
+      position relative
+      width 1200px
+      padding 20px 0 40px
+      margin-bottom 20px
+      background $tlb-bg-content
+      background-image $tlb_bg_btc
+      background-repeat no-repeat
+      background-size 200px 220px
+      border-radius (10px)
+      .content-left
+        position absolute
+        width 160px
+        left 25px
+        top 30px
+        span
+          font-size 24px
+          color $tlb-font-title
+          &.en-span
+            font-size 18px
+            line-height 24px
+        p
+          display -webkit-box
+          height 120px
+          margin-top 15px
+          font-size 14px
+          line-height 24px
+          color $tlb-font-title
+          overflow hidden
+          -webkit-box-orient vertical
+          -webkit-line-clamp 5
+          &.en-p
+            font-size 12px
+      .product-title
+        padding-left 200px
+        ul
+          border-bottom 1px solid $tlb-line-title
+          padding 0 40px 20px
+          .title-li
+            display flex
+            align-items center
+            float left
+            i
+              padding-right 20px
+              color $tlb-table-context
+              font-size 20px
+            em
+              padding 4px 10px
+              font-size 14px
+              color $tlb-font-sub
+              border 1px solid $tlb-border
+              border-radius 4px
+              &:nth-of-type(1)
+                margin-right 10px
+          .num-li
+            float right
+            margin-top 5px
+            span
+              font-size 16px
+              color $tlb-font-ans
+              padding-right 10px
+            b
+              font-size 16px
+              color $tlb-font-num
+      .product-info
+        padding 45px 0 0 240px
+        p
+          float left
+          margin-right 60px
+          text-align center
+          em
+            font-size 20px
+            color $tlb-font-conYields
+          i
+            font-size 48px
+            margin-left 10px
+            color $tlb-font-conYields
+          span
+            display block
+            padding-top 5px
+            font-size 14px
+            color $tlb-font-yields
+        table
+          float left
+          width 800px
+          &.en-table
+            width 700px
+          tr:nth-of-type(1)
+            td
+              padding-bottom 20px
+          td
+            padding-right 40px
+            font-size 14px
+            //&:nth-of-type(1)
+            //  min-width 220px
+            //&:nth-of-type(2)
+            //  min-width 400px
+            &:nth-of-type(3)
+              padding-right 0
+            b
+              font-size 14px
+              color $tlb-font-ans
+            &.percent-td
+              display flex
+              align-items center
+              .progress-wrap
+                .progress-line
+                  width 160px
+                  margin-top 1px
+                span
+                  margin-left 10px
+            button
+              height 36px
+              padding 0 40px
+              background $tlb-bg-btn
+              color $tlb-font-btn
+              border-radius (2px)
+              text-align center
+              font-size 16px
+              cursor pointer
+              &.disable-btn
+                background $tlb-bg-btn-disabled
+                cursor not-allowed
+
+// 常见问题
+.fund-problem-wrap
+  .problem
+    width 1200px
+    margin 0 auto
+    ol
+      display flex
+      align-items center
+      justify-content space-between
+      margin-bottom 20px
+      .problem-title
+        display flex
+        align-items center
+        span
+          font-size 20px
+          color $tlb-font-conTitle
+          margin-right 10px
+        b
+          font-size 14px
+          color $tlb-font-conRemind
+      .kefu
+        position relative
+        &:hover
+          i
+            background $tlb-bg-btn
+            color $tlb-font-btn
+            border 1px solid $tlb-line-active
+            &:before
+              background-image $tlb_kefu_hover
+          div
+            display block
+        i
+          position relative
+          display block
+          width 104px
+          font-size 14px
+          color $tlb-font-con
+          border 1px solid $tlb-line-normal
+          border-radius (2px)
+          padding 8px 14px 8px 30px
+          cursor pointer
+          &:before
+            position absolute
+            top 9px
+            left 9px
+            content ''
+            width 14px
+            height 13px
+            background-image $tlb_kefu
+            background-size 100%
+        div
+          position absolute
+          display none
+          top 45px
+          left -40px
+          width 180px
+          height 180px
+          padding 10px
+          background $tlb-bg-content
+          border-radius (2px)
+          box-shadow 0 0 10px 0 #E0E0E0
+          z-index 2
+          &:before
+            position absolute
+            top -15px
+            left 86px
+            content ''
+            border-width 8px
+            border-style  dashed solid dashed dashed
+            border-color transparent  transparent  #FFF transparent
+            font-size 0
+            line-height 0
+          img
+            width 160px
+            height 160px
+
+    .problem-list
+      padding 24px 24px 20px
+      background $tlb-bg-content
+      .problem-item
+        padding-bottom 20px
+        margin-bottom 20px
+        border-bottom 1px solid $tlb-line-problem
+        &:last-child
+          padding-bottom 0
+          margin-bottom 0
+          border-bottom none
+        .problem-question
+          position relative
+          display block
+          margin-bottom 10px
+          padding-left 36px
+          color $tlb-font-que
+          font-size 14px
+          &:before
+            position absolute
+            top -4px
+            left 0
+            content ''
+            width 20px
+            height 20px
+            background-image $tlb_que
+            background-size 100%
+          &.problem-question-en
+            &:before
+              background-image $tlb_que_en
+        .problem-answer
+          position relative
+          padding-left 36px
+          color $tlb-font-ans
+          font-size 14px
+          line-height 24px
+          &:before
+            position absolute
+            top 2px
+            left 0
+            content ''
+            width 20px
+            height 20px
+            background-image $tlb_ans
+            background-size 100%
+          &.problem-answer-en
+            &:before
+              background-image $tlb_ans_en
+          span
+            color $tlb-font-ans
+            font-size 14px
+        table
+          width 385px
+          height 120px
+          text-align center
+          margin 12px 0 0 36px
+          border: 1px solid $tlb-table-border;
+          border-radius: 2px;
+          tr
+            height 40px
+            td,th
+              vertical-align middle
+              font-size: 14px;
+              color: $tlb-table-context;
+              letter-spacing: 0;
+              text-align: center;
+              line-height: 15px;
+              border 1px solid $tlb-table-border;
+            th
+              color: $tlb-table-title;
+              background $tlb-table-title-bg
+          

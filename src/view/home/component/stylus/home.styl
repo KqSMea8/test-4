@@ -1,0 +1,276 @@
+//@import "../../../common/css/variable.styl"
+
+@keyframes bgscale {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.home-wrap-pro
+  .home-top
+    position relative
+    //.home-notice-wrap-pro
+    //  position absolute
+    //  bottom 0
+  .home-bottom
+    padding-top 20px
+    background $home-bg-main
+  .home-updown
+    position relative
+    font-weight 400
+    &.up-i
+      padding 5px 10px
+      color $home-font-up-pro
+      background $home-bg-recommendUp
+      border-radius 2px
+    &.down-i
+      padding 5px 10px
+      color $home-font-down-pro
+      background $home-bg-recommendDown
+      border-radius 2px
+  .market-updown
+    position relative
+    font-weight 400
+    &.up-after
+      color $home-font-up-pro
+    &.down-after
+      color $home-font-down-pro
+  .hide
+    display none
+
+  //推荐交易对
+  .home-recommend-pro
+    width 1200px
+    margin 0 auto
+    height 90px
+    ul
+      display -webkit-flex
+      display flex
+      justify-content space-between
+      width 100%
+      height 90px
+      li
+        position relative
+        //width 230px
+        width 19.1%
+        margin-right 1%
+        padding 14px 20px
+        background $home-bg-recommend
+        &:last-child
+          margin-right 0
+        .kline-trend
+          position absolute
+          left 0
+          bottom 0
+          width 100%
+          height 50px
+        p
+          display -webkit-flex
+          display flex
+          justify-content space-between
+          align-items center
+          margin-bottom 10px
+          span
+            //position absolute
+            //z-index 1
+            color $home-font-recommendName
+            font-size 14px
+            font-weight 600
+          i
+            font-size 14px
+        b
+          position absolute
+          z-index 1
+          color $home-font-recommendName
+          font-size 20px
+          font-weight 400
+
+
+  //市场
+  .home-market-pro
+    width 1200px
+    padding-top 20px
+    margin 0 auto
+    .market-nav
+      height 44px
+      ul
+        float left
+        border-right 1px solid $home-line-market-nav
+        li
+          position relative
+          float left
+          height 44px
+          padding 0 38px
+          text-align center
+          line-height 44px
+          border 1px solid $home-line-market-nav
+          border-right none
+          font-size 16px
+          font-weight 600
+          color $home-font-marketNav
+          cursor pointer
+          &.option-li
+            padding 0 35px 0 22px
+          .optional-img
+            width 12px
+            height 12px
+            margin-right 8px
+          &.home-market-item-active
+            background $home-bg-marketActive
+            border-top 2px solid $home-line-market-active
+            border-bottom none
+            color $home-font-active
+      .search_wrap
+        float right
+        margin-top 7px
+        .base-input-wrap
+          float left
+          height 30px
+          input
+            width 134px
+            height 30px
+            border-color $home-line-market-input
+            background $home-bg-input
+            vertical-align top
+            color $home-font-input
+            &.input-active
+              border-color $home-line-market-inputActive
+        .search-btn
+          float left
+          width 30px
+          height 30px
+          text-align center
+          line-height 30px
+          margin-left -1px
+          background $home-bg-market-btn
+          &.btn-active
+            background $home-bg-market-btnActive
+          img
+            position relative
+            top -1px
+            width 16px
+            height 16px
+            vertical-align middle
+    .home-market-con
+      //padding-bottom 54px
+      background $home-bg-market
+    table
+      width 100%
+      background $home-bg-market
+      .nothing-market-pair
+        color $home-font-normal
+        text-align center
+        border-bottom none
+        td
+          padding 30px 0 30px
+          font-size 20px
+      tr
+        height 45px
+        line-height 45px
+      .main-tbody
+        tr:last-child
+          border-bottom 1px solid rgba(0, 0, 0, .05)
+      thead
+        tr
+          color $home-title-table
+        .sort-img-li
+          b
+            cursor pointer
+          img
+            width 6px
+            height 13px
+            position relative
+            top 3px
+            left 6px
+        th
+          color $home-font-marketTitle
+          text-align right
+          font-weight 400
+          &.left-th
+            text-align left
+          &:last-child
+            padding-right 30px
+          &:first-child
+            padding-left 42px
+      tbody
+        tr
+          &.zone-name
+            td
+              //padding-left .34rem
+              letter-spacing 0.08px
+              color $home-font-marketTitle
+              p
+                padding-left 34px
+                background $home-bg-marketTitle
+                font-size 18px
+                color $home-font-marketZone
+                font-weight 400
+                border-bottom 1px solid $home-line-market-light
+                &:before
+                  position relative
+                  top 2px
+                  left -14px
+                  display inline-block
+                  content ""
+                  width 4px
+                  height 16px
+                  background $home-line-zone-title
+          &.table-data
+            border-bottom 1px solid $home-line-market-light // $home-line-market
+            cursor pointer
+            td
+              text-align right
+              padding-right 10px
+              &.left-td
+                text-align left
+                padding-right 0
+              &:first-child
+                padding-left 22px
+                min-width 130px
+              &:last-child
+                padding-right 40px
+                min-width 130px
+              &:nth-child(2)
+                min-width 85px
+              &:nth-child(3)
+                min-width 85px
+              &:nth-child(4)
+                min-width 130px
+              &:nth-child(5)
+                min-width 130px
+            &:hover
+              background $home-bg-marketCon
+        td
+          font-weight 400
+          color $home-font-table
+          span
+            font-weight 400
+            color $home-font-table
+          .second-span
+            color $home-font-marketPrice
+            font-size 12px
+          a
+            display inline-block
+            width 100%
+            font-weight 400
+            color $home-font-table
+          .market-up
+            color $home-font-up
+          .market-down
+            color $home-font-down
+        img
+          position relative
+          top 1px
+          width 12px
+          height 12px
+          cursor pointer
+          margin-right 10px
+
+
+

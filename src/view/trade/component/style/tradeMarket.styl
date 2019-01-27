@@ -1,0 +1,147 @@
+//@import "../../../common/css/variable.styl"
+#trade-pro-market
+  position relative
+  z-index 9999
+  width 438px
+  //height 250px
+  padding-bottom 15px
+  background $trade-pro-market-bg-main
+  color $trade-font-title
+  box-shadow 0 1px 10px 0 rgba(6,13,30,0.50)
+  .hide
+    display none
+  .trade-market-list
+    height 34px
+    border-bottom 1px solid $trade-pro-market-bg-title
+    ul
+      float left
+      height 100%
+      padding-left 10px
+      li
+        float left
+        line-height 34px
+        cursor pointer
+        margin-right 16px
+        font-size 14px
+        color $trade-pro-market-font-title
+        .optional-img
+          width 10px
+          height 10px
+          margin-right 8px
+      .trade-market-item-active
+        color $trade-pro-tab-active-font
+
+    .input-div
+      float right
+      height 22px
+      margin-top 5px
+      margin-right 10px
+      background $trade-pro-market-bg-input
+      img
+        width 24px
+        height 22px
+        cursor pointer
+        margin-left -2px
+      input
+        width 88px
+        height 22px
+        vertical-align top
+        font-size 12px
+        cursor pointer
+        padding-left 5px
+        border 1px solid $trade-pro-market-border-input
+        color $trade-pro-market-border-input
+
+  //.scroll-bar
+  //  overflow-y auto
+  //  max-height 215px
+  //  &::-webkit-scrollbar-button
+  //    display none
+  //  &::-webkit-scrollbar
+  //    position relative
+  //    width 3px
+  //    height 100%
+  //  &::-webkit-scrollbar-track
+  //    width 3px
+  //    background $trade-scrollbar-track
+  //  &::-webkit-scrollbar-thumb
+  //    width 3px
+  //    background $trade-scrollbar-thumb
+  .trade-market-thead
+    padding 10px 0 11px 0
+    span
+      position relative
+      display inline-block
+      font-size 12px
+      img
+        position absolute
+      &.sort-img-td
+        b
+          color $trade-font-thead
+        img,
+        b
+          cursor pointer
+      &:nth-child(1)
+        padding-left 28px
+      &:nth-child(3)
+        min-width 70px
+        padding-right 5px
+        text-align right
+      &:nth-child(4)
+        min-width 75px
+        padding-right 10px
+        text-align right
+  .trade-market-table
+    width 100%
+    //thead
+    //  tr
+    //    td:first-children
+    //      padding-left 28px
+    //  .sort-img-td
+    //    cursor pointer
+    //  td
+    //    font-size 12px
+    //    color $trade-font-thead
+    //    padding 6px 0 11px
+    //    img
+    //      position relative
+    //      width 10px
+    tbody
+      tr
+        height 22px
+        margin-bottom 5px
+        line-height 22px
+        color $trade-font-normal
+        &.nothing-market-pair
+          td
+            &:last-child
+              font-size 14px
+              text-align center
+        td
+          font-size 11px
+          .favorite-img
+            width 10px
+            height 10px
+            margin-right 8px
+          &:first-child
+            padding-left 10px
+          &:last-child
+            min-width 75px
+            padding-right 10px
+            text-align right
+          //&:nth-children(2)
+          //  min-width 66px
+          &:nth-child(3)
+            min-width 70px
+            text-align right
+          &.up-td
+            color $trade-change-positive
+          &.down-td
+            color $trade-change-negative
+      .pair-items-active
+        background $trade-pro-market-bg-active
+      .market-up
+        color $trade-change-positive
+      .market-down
+        color $trade-change-negative
+

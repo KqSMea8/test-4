@@ -1,0 +1,77 @@
+.adForm-wrap
+  width 1000px
+  background $publish-bg-none
+.adForm-content
+  .adForm-content-item
+    padding 40px 40px 40px 24px
+    border-bottom 1px solid $publish-border-dark
+    h3
+      float left
+      width 155px
+      height 36px
+      line-height 32px
+      font-size 16px
+    &.adForm-content-required
+      h3
+        position relative
+        padding-left 14px
+        &::before
+          position absolute
+          left 0
+          top 50%
+          transform translateY(-50%)
+          -ms-transform translateY(-50%)
+          -moz-transform translateY(-50%)
+          -webkit-transform translateY(-50%)
+          -o-transform translateY(-50%)
+          content '*'
+          color $publish-font-required
+    .adForm-content-main
+      float left
+      width 765px
+  .adForm-content-adName
+    .base-input-wrap
+      float left
+      margin-right 10px
+    input
+      width 230px
+      height 36px
+    span
+      float left
+      color $publish-font-required
+      font-size 14px
+      line-height 36px
+      letter-spacing 0
+  .adForm-content-matters
+    ul
+      padding-left 15px
+      li
+        line-height 20px
+        font-size 14px
+        color $publish-font-matter
+        letter-spacing 0
+        margin-bottom 10px
+        list-style-type disc
+
+.adForm-submit-wrap
+  padding 20px 40px 20px 0
+  background $publish-bg-none
+  .adForm-submit
+    float right
+    width 200px
+    height 48px
+    font-size 16px
+    border-radius(2px)
+    &.disable
+      opacity 0.6
+  .adForm-cancel
+    float right
+    width 64px
+    height 48px
+    margin-right 20px
+    font-size 16px
+    background $publish-bg-none
+    color $publish-font-normal
+    letter-spacing 0
+    border 1px solid $publish-border-dark
+    border-radius(2px)

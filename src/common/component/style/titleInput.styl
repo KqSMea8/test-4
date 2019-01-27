@@ -1,0 +1,39 @@
+.title-input
+  display flex
+  height 0.36*100px
+  line-height 0.36*100px
+  color $common-font-deep
+  input
+    height 100%
+    padding 0 0.1*100px 0 0.1*100px
+    border 0.01*100px solid $common-border-dark
+  p
+    height 100%
+    padding 0 0.1*100px
+    border 0.01*100px solid $common-border-dark
+    border-left none
+    color $common-font-deep
+    background-color $common-bg-deep
+    border-radius(0 0.02*100px 0.02*100px 0)
+  p:nth-child(1)
+    height 100%
+    padding 0 0.1*100px
+    border 0.01*100px solid $common-border-dark
+    border-right none
+    border-radius(0.02*100px 0 0 0.02*100px)
+  &.focus, &:hover
+    p,input
+      border-color $common-border-main
+  &.left
+    input
+      border-radius(0 0.02*100px 0.02*100px 0)
+  &.right
+    input
+      border-radius(0.02*100px 0 0 0.02*100px)
+  &.dark
+    background-color transparent
+    p,input
+      color $common-font-minor
+      border-color $common-border-dark-op
+    p
+      background-color $common-bg-deep-op

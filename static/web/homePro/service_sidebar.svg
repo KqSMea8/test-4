@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>top_sidebar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-869.000000, -312.000000)">
+            <g id="首页" transform="translate(31.000000, 65.000000)">
+                <g id="service_sidebar" transform="translate(839.000000, 249.000000)">
+                    <path d="M4,5 L4,17.6187096 L17.4753202,17.6187096 L23.3122748,21.7812776 L23.3122748,5 L4,5 Z" id="Rectangle-26" stroke="#FF9E2F" stroke-width="2" transform="translate(13.656137, 13.861328) scale(-1, 1) translate(-13.656137, -13.861328) "></path>
+                    <circle id="Oval-6" fill="#FF9E2F" cx="8.5" cy="11.5" r="1.5"></circle>
+                    <circle id="Oval-6" fill="#FF9E2F" cx="18.5" cy="11.5" r="1.5"></circle>
+                    <circle id="Oval-6" fill="#FF9E2F" cx="13.5" cy="11.5" r="1.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

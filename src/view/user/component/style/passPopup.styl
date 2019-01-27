@@ -1,0 +1,117 @@
+//@import "../../../common/css/variable.styl"
+
+.pass-wrap
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background rgba(0, 0, 0, .7)
+  z-index 800
+  //em
+  //  position absolute
+  //  top .68rem
+  //  font-size .12rem
+  //  color $user-font-warn
+  //  transform scale(.9)
+  .hide
+    display none
+  .pass-info
+    position absolute
+    left 50%
+    top 50%
+    width 560px
+    padding 40px
+    background $user-bg-popup
+    border-radius (6px)
+    transform translateX(-50%) translateY(-50%)
+    .title-wrap
+      margin-bottom 40px
+      .close-popup
+        float right
+        width 16px
+        height 16px
+        margin-top 6px
+        cursor pointer
+      .pop-title
+        float left
+        font-size 20px
+        height 28px
+        line-height 28px
+        background $user-bg-popup
+        color $user-font-safe
+        padding-left 0
+    .err-input
+      border-color $user-line-err
+    ul
+      li
+        position relative
+        margin-bottom 20px
+        p
+          font-size 14px
+          color $user-font-safe
+          margin-bottom 10px
+        input
+          width 360px
+          height 48px
+          padding-left 10px
+          border-radius (2px)
+          vertical-align bottom
+        .picture-btn
+          width 120px
+          height 48px
+          background $user-bg-img
+          border-radius (0 2px 2px 0)
+          border none
+          cursor pointer
+        .verify-div
+          position relative
+          .verify-btn
+            position absolute
+            right 14px
+            top 14px
+            border none
+            font-size 14px
+            color $user-font-verify
+            &:hover
+              background none
+          .disabled-btn
+            cursor not-allowed
+            color $user-font-verify-disable
+        &.set-btn-li
+          text-align right
+          margin 50px 0 0
+          .set-btn
+            width 200px
+            height 48px
+            background $user-bg-btn
+            color $user-font-btn
+            border none
+            opacity .5
+          .can-click
+            opacity 1
+        .pass-btn-group
+          .base-input-wrap
+            float left
+            input
+              border-right none
+          .btn
+            float left
+      .long-li
+        input
+          width 480px
+      .remind-pass-li
+        font-size 12px
+        p
+         color $user-font-warn
+      .pwd-strength-li
+        height auto
+        margin -10px 0 10px
+      .pass-li
+        position relative
+        .pwd-rule-wrap
+          top 24px
+          li
+            margin-bottom 6px
+
+

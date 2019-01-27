@@ -1,0 +1,45 @@
+@import "./variable.styl"
+//.order-manage
+//	width 100%
+//	margin 0 auto
+//	padding-bottom 20px
+.order-pro-manage
+  .order-nav
+    width 190px
+    height 760px
+    background $order-bg-main
+    float left
+    li
+      height 52px
+      line-height 52px
+      border-bottom 1px solid $order-line
+      a
+        display block
+        width 100%
+        height 100%
+        text-align center
+        border-left 4px solid $order-bg-main
+        color $order-font-content
+        font-size 14px
+        &.active
+          border-left 4px solid $order-line-active
+          background $order-bg-active
+          color $order-font-active
+          font-weight 500
+        &:hover
+          border-left 4px solid $order-line-active
+          background $order-bg-active
+          color $order-font-active
+
+.order-content
+  width 1000px
+  min-height 760px
+  background $order-bg-main
+  .order-filter
+    .data-filter
+      .calendar
+        top 100%
+
+.order-manage-wrap
+  width 1200px
+  margin 20px auto

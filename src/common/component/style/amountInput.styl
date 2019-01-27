@@ -1,0 +1,61 @@
+.taolibao-common-input
+  overflow hidden
+  background $common-bg-none
+  span
+    position relative
+    float left
+    width 48px
+    height 48px
+    &::before
+      position absolute
+      content ''
+      width 20px
+      height 2px
+      background $common-bg-pwd-normal
+      left 50%
+      top 50%
+      transform translateX(-50%) translateY(-50%)
+      -ms-transform translateX(-50%) translateY(-50%)
+      -moz-transform translateX(-50%) translateY(-50%)
+      -webkit-transform translateX(-50%) translateY(-50%)
+      -o-transform translateX(-50%) translateY(-50%)
+    &:hover
+      &::before, &::after
+        background $common-bg-legal
+  span:nth-child(1)
+    border 1px solid  $common-border-dark
+    border-right 0
+    cursor pointer
+    &:hover
+      &::before, &::after
+        background common-bg-legal
+  span:nth-child(3)
+    border 1px solid $common-border-dark
+    border-left 0
+    cursor pointer
+    &::after
+      position absolute
+      content ''
+      left 50%
+      top 50%
+      transform translateX(-50%) translateY(-50%)
+      -ms-transform translateX(-50%) translateY(-50%)
+      -moz-transform translateX(-50%) translateY(-50%)
+      -webkit-transform translateX(-50%) translateY(-50%)
+      -o-transform translateX(-50%) translateY(-50%)
+      width 2px
+      height 20px
+      background $common-bg-pwd-normal
+    &:hover
+      &::before, &::after
+        background $common-bg-legal
+  .base-input-wrap
+    float left
+    input
+      width 236px
+      height 48px
+      font-size 16px
+      font-weight bold
+      color $common-font-normal
+      letter-spacing 0
+      text-align center

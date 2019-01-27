@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>star_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.5">
+        <g id="icon" transform="translate(-327.000000, -500.000000)" stroke="#FFFFFF">
+            <g id="10*10" transform="translate(60.000000, 490.000000)">
+                <g id="收藏" transform="translate(267.000000, 10.000000)">
+                    <path d="M7.57010618,8.66287247 L7.4951778,5.97737973 L9.15170489,3.85511517 L6.54461268,3.09754612 L5,0.875895374 L3.45538732,3.09754612 L0.848295114,3.85511517 L2.5048222,5.97737973 L2.42989382,8.66287247 L5,7.76196761 L7.57010618,8.66287247 Z" id="star_icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

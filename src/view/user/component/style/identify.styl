@@ -1,0 +1,203 @@
+//@import "../../../common/css/variable.styl"
+
+@keyframes loading
+  0%
+    transform rotate(0deg)
+    -ms-transform rotate(0deg)
+    -moz-transform rotate(0deg)
+    -webkit-transform rotate(0deg)
+    -o-transform rotate(0deg)
+  100%
+    transform rotate(360deg)
+    -ms-transform rotate(360deg)
+    -moz-transform rotate(360deg)
+    -webkit-transform rotate(360deg)
+    -o-transform rotate(360deg)
+
+.identify-wrap
+  .hide
+    display none
+  .auth-res
+    font-size 14px
+    color $user-font-normal
+  span
+    color $user-font-normal
+  .number-err
+    top -40px
+    left 30%
+  input
+    width 2.06rem
+    height .4rem
+    padding-left .1rem
+    border-radius (.02rem)
+    vertical-align bottom
+  .identify-result
+    display flex
+    align-items center
+    padding 40px 0 40px 154px
+    border-bottom 1px solid $user-line-main
+    span
+      font-size 18px
+    img
+      width .44rem
+      height .44rem
+      margin-right .1rem
+      vertical-align middle
+  .name-identify
+    padding 40px 0 40px 24px
+    border-bottom 1px solid $user-line-main
+    span
+      display block
+      width 800px
+      margin-bottom 16px
+      font-size 12px
+      color $user-font-warn
+      line-height 20px
+    ul
+      float left
+      margin 0 20px 40px 0
+      color $user-font-normal
+      li:first-child
+        font-size 14px
+        margin-bottom 12px
+    dl
+      color $user-font-normal
+      dt
+        font-size 14px
+        margin-bottom 16px
+      dd
+        float left
+        margin-bottom 10px
+        margin-right 44px
+        cursor pointer
+        &:last-of-type
+          margin-right 0
+        img
+          width 14px
+          height 14px
+          margin-right 10px
+          vertical-align top
+        i
+          font-size 14px
+
+    .id-input
+      width 480px
+      height 40px
+
+  .photo-identify
+    min-height 266px
+    padding 40px 0 40px 24px
+    .user-req4
+      font-size 14px
+      color $user-font-warn
+      font-weight bolder
+    div
+      width 800px
+    .identify-btn
+      width 84px
+      height 36px
+      background $user-bg-btn
+      color $user-font-btn
+      border-radius (2px)
+      border none
+      opacity .5
+      &.identify-btn-active
+        opacity 1
+    h3
+      margin-bottom 20px
+      font-size 12px
+      color $user-font-remind
+      p
+        display inline-block
+        position relative
+        top .02rem
+        margin-right .1rem
+        cursor pointer
+        img
+          width 13px
+          height 13px
+    dl
+      color $user-font-normal
+      margin-bottom 40px
+      dt
+        margin-bottom 16px
+        font-size 14px
+      &.user-photoVerify-req
+        dd
+          font-size 14px
+          margin-bottom .18rem
+
+      &.user-photoVerify-type
+        dd
+          float left
+          //width 1.05rem
+          //margin-bottom .18rem
+          font-size 14px
+          //cursor pointer
+          //img
+          //  width 0.14rem
+          //  height 0.14rem
+          //  margin-right .1rem
+          //  vertical-align top
+
+      &.user-photoVerify-upload
+        dd
+          float left
+          position relative
+          width 190px
+          height 130px
+          text-align center
+          cursor pointer
+          border 1px solid $user-line-photo
+          &:nth-of-type(2)
+            margin 0 20px
+          img
+            width 190px
+            height 130px
+            vertical-align middle
+          .add-img
+            position absolute
+            top 50%
+            left 50%
+            transform translateX(-50%) translateY(-50%)
+            width 44px
+            height 44px
+            z-index 2
+          .up-img
+            position absolute
+            top 0
+            left 0
+            z-index 1
+          p
+            position absolute
+            top 145px
+            left 0
+            width 100%
+            //margin-top 10px
+            text-align center
+            font-size 14px
+            color $user-font-normal
+          .loading-wrap
+            position absolute
+            width 190px
+            height 130px
+            left 50%
+            top 50%
+            transform translateX(-50%) translateY(-50%)
+            z-index 99
+            background rgba(0, 0, 0, .5)
+            img
+              position absolute
+              left 50%
+              top 50%
+              transform translateX(-50%) translateY(-50%)
+              width 32px
+              height 32px
+              margin-top -16px
+              margin-left -16px
+              animation loading 1.5s linear infinite;
+              -webkit-animation loading 1.5s linear infinite;
+
+
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_footer_telegram</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-898.000000, -151.000000)" fill="#9A9AA2" fill-rule="nonzero">
+            <g id="首页" transform="translate(31.000000, 65.000000)">
+                <path d="M874.538409,101.70106 L874.808413,97.6222871 L882.214238,90.9496851 C882.5421,90.6507679 882.146737,90.5061306 881.712802,90.7664778 L872.571237,96.5423284 L868.617606,95.2888049 C867.769022,95.0477427 867.759379,94.4595509 868.810466,94.0352814 L884.21034,88.0955085 C884.914279,87.7773064 885.589289,88.2690733 885.319285,89.349032 L882.696388,101.70106 C882.513171,102.578526 881.982806,102.790661 881.249938,102.385676 L877.257736,99.4350749 L875.338778,101.296075 C875.116989,101.517852 874.933772,101.70106 874.538409,101.70106 Z" id="icon_footer_telegram"></path>
+            </g>
+        </g>
+    </g>
+</svg>

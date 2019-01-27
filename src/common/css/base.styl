@@ -1,0 +1,272 @@
+//$baseFontSize = 16px
+//
+//px2rem(name, px){
+//  {name}: px / $baseFontSize * 1rem;
+//}
+//
+//html
+//  font-size $baseFontSize
+@import "./variableWill.styl"
+body
+  //min-width 1200px
+  color: $col3335
+  background $colE8EA
+  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif !important
+
+.fl
+  float left
+.fr
+  float right
+.clearfix
+  zoom 1
+  &:after
+    display block
+    height 0
+    clear both
+    content ""
+
+// vendor(prop, args)
+//   -webkit-{prop} args
+//   -moz-{prop} args
+//   {prop} args
+
+// border-radius()
+//   vendor('border-radius', arguments)
+
+// box-shadow()
+//   vendor('box-shadow', arguments)
+
+// align-item()
+//   vendor('align-item', arguments)
+// //需要兼容按上述方法先声明,即可直接写属性
+
+// fz11()
+//   font-size .11rem
+//   -webkit-transform scale(0.916666666)
+//   -webkit-transform-origin 0 0
+// fz10()
+//   font-size .10rem
+//   -webkit-transform scale(0.8333333333)
+//   -webkit-transform-origin 0 0
+
+// // 旋转方法rotate兼容
+// _rotate(deg)
+//   transform rotate(deg)
+//   -ms-transform rotate(deg); 	/* IE 9 */
+//   -moz-transform rotate(deg); 	/* Firefox */
+//   -webkit-transform rotate(deg); /* Safari 和 Chrome */
+//   -o-transform rotate(deg); 	/* Opera */
+
+// placeholder(col, fz)
+//   &::-webkit-input-placeholder
+//     color col
+//     font-size fz
+//   &::-moz-placeholder
+//     color col
+//     font-size fz
+//   &:-moz-placeholder
+//     color col
+//     font-size fz
+//   &:-ms-input-placeholder
+//     color col
+//     font-size fz
+
+// 中心内容
+.inner // 中心内容
+  width 100%
+  padding  0 1.2rem .68rem
+
+.web-wrap
+ min-width 1200px
+.web-wrap-trade
+  min-width 1280px
+  //min-height 680px
+
+ // 划入控件展示  父亲加.pop-parent  普通页面控件加.pop-children 和 方位词  交易页面控件加.pop-trade-children 和 方位词
+.pop-parent
+  position relative
+
+.pop-children
+  position absolute
+  display none
+  padding 0 10px
+  color #FFF
+  height 25px
+  line-height 25px
+  font-size 12px
+  text-align center
+  background-color rgba(25,31,46,0.60)
+  border-radius 2px
+
+.pop-parent:hover .pop-children
+  display block
+
+.uppop-children
+  top -30px
+  &:before
+    content ""
+    width 0
+    height 0
+    border 5px solid rgba(25,31,46,0.60)
+    border-left 5px solid transparent
+    border-right 5px solid transparent
+    border-bottom 5px solid transparent
+    position absolute
+    left 50%
+    transform translateX(-50%)
+    bottom -10px
+
+
+.downpop-children
+  bottom -.3rem
+  &:before
+    content ""
+    width 0
+    height 0
+    border .05rem solid rgba(25,31,46,0.60)
+    border-left .05rem solid transparent
+    border-right .05rem solid transparent
+    border-top .05rem solid transparent
+    position absolute
+    right 50%
+    transform translateX(-50%)
+    top -.1rem
+
+.leftpop-children
+  left -1.78rem
+  &:before
+    content ""
+    width 0
+    height 0
+    border .05rem solid rgba(25,31,46,0.60)
+    border-bottom .05rem solid transparent
+    border-right .05rem solid transparent
+    border-top .05rem solid transparent
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    right  -.1rem
+
+.rightpop-children
+  left .65rem
+  &:before
+    content ""
+    width 0
+    height 0
+    border .05rem solid rgba(25,31,46,0.60)
+    border-bottom .05rem solid transparent
+    border-left .05rem solid transparent
+    border-top .05rem solid transparent
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    left  -.1rem
+
+//  交易页面配色
+.pop-trade-children
+  position absolute
+  display none
+  width 240px
+  padding 8px 12px
+  color #333
+  font-size 11px
+  text-align left
+  background-color rgba(255,255,255,0.80)
+  border-radius 2px
+  line-height 20px
+  z-index 9999
+
+.pop-parent:hover .pop-trade-children
+  display block
+
+.uppop-trade-children
+  top -30px
+  &:before
+    content ""
+    width 0
+    height 0
+    border 8px solid rgba(255,255,255,0.80)
+    border-left 8px solid transparent
+    border-right 8px solid transparent
+    border-bottom 8px solid transparent
+    position absolute
+    left 50%
+    transform translateX(-50%)
+    bottom -16px
+
+.downpop-trade-children
+  bottom -30px
+  &:before
+    content ""
+    width 0
+    height 0
+    border 8px solid rgba(255,255,255,0.80)
+    border-left 8px solid transparent
+    border-right 8px solid transparent
+    border-top 8px solid transparent
+    position absolute
+    right 50%
+    transform translateX(-50%)
+    top -16px
+
+.leftpop-trade-children
+  left -178px
+  &:before
+    content ""
+    width 0
+    height 0
+    border 8px solid rgba(255,255,255,0.80)
+    border-bottom 8px solid transparent
+    border-right 8px solid transparent
+    border-top 8px solid transparent
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    right -16px
+
+.rightpop-trade-children
+  left 65px
+  &:before
+    content ""
+    width 0
+    height 0
+    border 8px solid rgba(255,255,255,0.80)
+    border-bottom 8px solid transparent
+    border-left 8px solid transparent
+    border-top 8px solid transparent
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    left -16px
+
+  // 错误提示类名  父亲加.err-parent  控件加.err-children
+.err-parent
+  position relative
+
+.err-children
+  position absolute
+  left 50%
+  white-space nowrap
+  transform translateX(-50%)
+  padding 10px 20px
+  color #FFF
+  height 32px
+  font-size 12px
+  text-align center
+  background-color #F25C48
+  border-radius 2px
+  top -15px
+  box-shadow 0 0 10px 0 rgba(242,92,72,0.20)
+  &:before
+    content ""
+    width 0
+    height 0
+    border 8px solid #F25C48
+    border-left 8px solid transparent
+    border-right 8px solid transparent
+    border-bottom 8px solid transparent
+    position absolute
+    left 50%
+    transform translateX(-50%)
+    //box-shadow 0 0 10px 0 rgba(242,92,72,0.20)
+    bottom -15px

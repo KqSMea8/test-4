@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>hide_show_hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" transform="translate(-533.000000, -556.000000)" stroke="#FFFFFF">
+            <g id="hide_show_hover" transform="translate(533.000000, 556.000000)">
+                <path d="M9.1,5.25 C9.1,6.4099 8.1599,7.35 7,7.35 C5.8401,7.35 4.9,6.4099 4.9,5.25 C4.9,4.0901 5.8401,3.15 7,3.15 C8.1599,3.15 9.1,4.0901 9.1,5.25 Z" id="Stroke-1"></path>
+                <path d="M7,0.525 C2.6831,0.525 0.525,5.25 0.525,5.25 C0.525,5.25 2.6831,9.975 7,9.975 C11.3169,9.975 13.475,5.25 13.475,5.25 C13.475,5.25 11.3169,0.525 7,0.525 Z" id="Stroke-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

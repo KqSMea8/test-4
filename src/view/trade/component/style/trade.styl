@@ -1,0 +1,67 @@
+//@import "../../../common/css/variable.styl"
+@import "./variable.styl"
+@import "./tradeMarket.styl"
+@import "./tradePairDeal.styl"
+@import "./tradeRecent.styl"
+@import "./tradeLive.styl"
+@import "./tradePlan.styl"
+@import "tradeDealExchangePro.styl"
+@import "./tradeOrder.styl"
+@import "./tradeNotice.styl"
+#trade_pro
+	width 100%
+	background $trade-main-bg
+	//border-top .04rem solid $trade-main-bg
+	color $trade-font-thead
+	display flex
+	flex-flow row nowrap
+	.trade-left
+		flex 1 1 auto
+		background #2bb789
+		display flex
+		flex-flow column nowrap
+		min-width 640px
+		.trade-left-top
+			flex 1 1 auto
+			background red
+		.trade-left-bottom
+			flex 0 0 265px
+			background yellow
+	.trade-right
+		flex 0 1 500px
+		background aliceblue
+		display flex
+// k线图部分样式
+.trade-chart{
+	position: relative;
+	overflow: hidden;
+}
+.trade-chart .k-menu{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	z-index: 500;
+	height: 28px;
+}
+.trade-chart .k-menu button{
+	border: 1px solid #aaa;
+	color: #aaa;
+	cursor: pointer;
+	height: 24px;
+	margin: 2px 0;
+	width 66px;
+	border-radius: 2px;
+	box-sizing: border-box;
+}
+.trade-chart .k-menu button:first-of-type{
+	margin-right:8px;
+}
+.trade-chart .k-menu button:hover{
+	border-color: #fff;
+	color: #fff;
+}
+.trade-chart .k-menu button.active{
+	background-color: #2bb789;
+	border: none;
+	color: #fff;
+}

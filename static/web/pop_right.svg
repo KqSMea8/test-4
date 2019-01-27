@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>pop_right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-86.000000, -141.000000)">
+            <g id="pop_right" transform="translate(86.000000, 141.000000)">
+                <circle id="Oval-9" fill="#24B36A" cx="15" cy="15" r="15"></circle>
+                <path d="M13.2426407,16.6568542 L10.4142136,13.8284271 C9.63316498,13.0473785 8.36683502,13.0473785 7.58578644,13.8284271 C6.80473785,14.6094757 6.80473785,15.8758057 7.58578644,16.6568542 L11.8284271,20.8994949 C12.2189514,21.2900192 12.7307961,21.4852814 13.2426407,21.4852814 C13.7544853,21.4852814 14.26633,21.2900192 14.6568542,20.8994949 L22.1421356,13.4142136 C22.9231842,12.633165 22.9231842,11.366835 22.1421356,10.5857864 C21.361087,9.80473785 20.0947571,9.80473785 19.3137085,10.5857864 L13.2426407,16.6568542 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

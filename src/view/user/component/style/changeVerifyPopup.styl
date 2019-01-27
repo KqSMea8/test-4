@@ -1,0 +1,68 @@
+//@import "../../../common/css/variable.styl"
+
+.change-popup-wrap
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background rgba(0, 0, 0, .7)
+  z-index 5
+  .hide
+    display none
+  .change-info
+    position absolute
+    left 50%
+    top 50%
+    width 560px
+    padding 40px
+    background $user-bg-popup
+    border-radius (6px)
+    transform translateX(-50%) translateY(-50%)
+    .title-wrap
+      margin-bottom 40px
+      .close-popup
+        float right
+        width 16px
+        height 16px
+        margin-top 6px
+        cursor pointer
+      .pop-title
+        float left
+        font-size 20px
+        height 28px
+        line-height 28px
+        background $user-bg-popup
+        color $user-font-safe
+        padding-left 0
+    p
+      font-size 14px
+      color $user-font-safe
+      margin-bottom 10px
+    input
+      width 480px
+      height 48px
+      margin-bottom 50px
+    .verify-div
+      position relative
+      .verify-btn
+        position absolute
+        right 14px
+        top 14px
+        border none
+        font-size 14px
+        color $user-font-verify
+        background none
+      .disabled-btn
+        color $user-font-verify-disable
+    .set-btn
+      width 200px
+      height 48px
+      background $user-bg-btn
+      margin-left 280px
+      border none
+      color $user-font-btn
+      opacity .5
+    .can-click
+      opacity 1
+

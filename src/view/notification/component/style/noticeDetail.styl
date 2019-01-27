@@ -1,0 +1,116 @@
+@import "./variable.styl"
+
+.notice-detail-wrap
+  width 1200px
+  margin 20px auto 40px
+  h1
+    padding-bottom 20px
+    color $notice-font-second-link
+    border-bottom 1px solid $notice-line-title
+    margin-bottom 10px
+    a
+      font-size 16px
+      color $notice-font-first-link
+    b
+      font-size 16px
+      color $notice-font-second-link
+      position relative
+      padding-left 30px
+      &:before
+        position absolute
+        top 2px
+        left 12px
+        content '>'
+        color $notice-font-second-link
+  .notice-detail-con
+    .notice-nav
+      width 190px
+      height 708px
+      margin-right 10px
+      background $notice-bg-main
+      li
+        height 52px
+        line-height 52px
+        padding 0 24px
+        text-align left
+        border-bottom 1px solid $notice-slide-line
+        overflow hidden
+        white-space nowrap
+        text-overflow ellipsis
+        font-size 14px
+        color $notice-slide-font-main
+        cursor pointer
+        border-left 4px solid $notice-bg-main
+        &.active
+          font-weight bold
+          border-left 4px solid  $notice-slide-line-active
+          background $notice-slide-bg-active
+        &:hover
+          font-weight bold
+          border-left 4px solid  $notice-slide-line-active
+          background $notice-slide-bg-active
+        &:first-child
+          font-size 18px
+          background $notice-bg-title
+          color $notice-font-nav
+          border-bottom none
+          cursor default
+          border-left 4px solid $notice-bg-title
+    .notice-detail-con-right
+      width 1000px
+      background $notice-bg-main
+      .con-detail
+        padding 20px 25px
+        height 648px
+        overflow auto
+  h2
+    height 60px
+    line-height 60px
+    padding-left 24px
+    color $notice-font-title
+    font-size 18px
+    background $notice-bg-title
+  h3
+    padding 20px 24px
+    background $notice-bg-brief
+    margin-bottom 20px
+    color $notice-font-brief
+    font-size 14px
+    line-height 24px
+  h4
+    text-align right
+  .content
+    position relative
+    margin-bottom .5rem
+    color $notice-font-detail
+    line-height 0.28rem
+    text-indent 2em
+    strong
+      font-weight bold
+    em
+      font-style italic
+    img
+      display block
+      max-width 650px
+      margin 0 auto 20px auto
+    p
+      font-size 14px
+      color $notice-font-para
+      text-align justify
+
+  h5
+    margin-bottom .22rem
+    span
+      font-size 14px
+      color $notice-font-detail
+    a
+      font-size 14px
+      color $notice-font-active
+  h6
+    span
+      font-size 14px
+      color $notice-font-detail
+    a
+      font-size 14px
+      color $notice-font-active
+      margin-right 0.1rem

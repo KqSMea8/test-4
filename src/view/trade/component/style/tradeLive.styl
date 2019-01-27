@@ -1,0 +1,261 @@
+.live-trade-pro
+  width 299px
+  height 100%
+  background $trade-pro-model-bg
+  flex-flow column nowrap
+  display flex
+  .trade-live-title
+    display flex
+    flex 0 0 30px
+    align-items center
+    background $trade-bg-title
+    justify-content space-between
+    padding-right 9px
+    //justify-content space-around
+    width 100%
+    .trade-live-title-items
+      height 100%
+      display flex
+      align-items center
+      .trade-pro-items
+        width 32px
+        height 30px
+        line-height 30px
+        text-align center
+        border-top 1px solid $trade-pro-bg-title
+        cursor pointer
+      .trade-pro-items-active
+        border-top 1px solid $trade-pro-active
+        background $trade-pro-model-bg
+      img
+        width 16px
+        height 14px
+    .trade-depth
+      display flex
+      align-items center
+      width 130px
+      justify-content space-between
+      span
+        white-space nowrap
+      .select-button
+        .tradePro
+          min-width 80px
+  .trade-pro-table
+    width 299px
+    display flex
+    flex-flow column nowrap
+    background $trade-pro-model-bg
+    flex 1 1 auto
+    .trade-pro-thead
+      flex 0 0 27px
+      display flex
+      align-items center
+      padding 0 10px
+      width 100%
+      //justify-content space-around
+      span
+        font-size 11px
+        white-space nowrap
+      span:nth-of-type(1)
+        width 30%
+      span:nth-of-type(2)
+        width 30%
+        text-align center
+      span:nth-of-type(3)
+        width 40%
+        text-align right
+    .live-pro-none
+      display none
+    .trade-pro-sell
+      flex 1 1 auto
+      overflow hidden
+      position relative
+      .trade-pro-sell-show, .trade-pro-buy-show
+        position absolute
+        left 0
+        bottom 0
+        width 100%
+        .trade-pro-tbody-items
+          display flex
+          padding 0 8px
+          width 100%
+          height 22px
+          align-items center
+          justify-content space-between
+          color $trade-font-normal
+          position relative
+          ul
+            width 100%
+            li
+              float left
+              span
+                display inline-block
+                width 100%
+                overflow hidden
+                white-space nowrap
+                text-overflow ellipsis
+              .pop-trade-children
+                width auto
+                //top -30px
+                top -5px
+                left 100%
+                line-height 5px
+                white-space nowrap
+                //&.uppop-trade-children
+                //  &:before
+                //    left 30%
+                //&.pop-trade-buy
+                //  top 20px
+                //  bottom -28px
+              &:nth-of-type(1)
+                width 30%
+              &:nth-of-type(2)
+                width 30%
+                text-align center
+              &:nth-of-type(3)
+                width 40%
+                text-align right
+          //span
+          //  overflow hidden
+          //  white-space nowrap
+          //  text-overflow ellipsis
+          //  &:nth-of-type(1)
+          //    width 30%
+          //  &:nth-of-type(2)
+          //    width 30%
+          //    text-align center
+          //  &:nth-of-type(3)
+          //    width 40%
+          //    text-align right
+          .trade-pro-live-bg-sell
+            position absolute
+            height 22px
+            line-height 22px
+            left 0
+            background $trade-pro-live-sell-bg
+            .user-arrow-sell
+              width 2px
+              height 10px
+              background $trade-pro-sell-bg
+              margin-top 6px
+          span
+            font-size 11px
+          .trade-pro-live-bg-buy
+            position absolute
+            height 22px
+            line-height 22px
+            left 0
+            background $trade-pro-live-buy-bg
+            .user-arrow-buy
+              width 2px
+              height 10px
+              background $trade-pro-buy-bg
+              margin-top 6px
+          .trade-pro-sell-price
+            color $trade-pro-sell-bg
+          .trade-pro-buy-price
+            color $trade-pro-buy-bg
+      .trade-pro-buy-show
+        top 0
+    .live-pro-posi-none
+      flex 0 0 auto
+      .trade-pro-sell-show
+        position relative
+    .trade-pro-live-deal
+      flex 0 0 34px
+      text-align center
+      line-height 34px
+      background $trade-pro-main-bg
+      font-size 18px
+      color $trade-font-title
+      span
+        font-size 18px
+        color $trade-pro-active
+        letter-spacing 0
+        line-height 18px
+    .market-pro-up
+      color $trade-pro-change-positive
+    .market-pro-down
+      color $trade-pro-change-negative
+
+//.trade-live-table
+//	width 3.18rem
+//	thead
+//		td
+//			padding  0
+//	tbody
+//		color $trade-font-normal
+//		.no-content-none
+//			display none
+//		tr
+//			height .21rem
+//			line-height .21rem
+//			position relative
+//			z-index 650
+//			td:nth-children(1)
+//				padding-left .16rem
+//		//.distance
+//	//	td
+//	//		padding-bottom .1rem
+//	//.distance-b
+//	//	td
+//	//		padding-top .1rem
+//	.live-deal
+//		tr
+//			height .52rem
+//			line-height .52rem
+//			text-align center
+//			background $trade-live-deal-bg
+//		.market-up
+//			color $trade-change-positive
+//		.market-down
+//			color $trade-change-negative
+//	.trade-live-sell
+//		tr
+//			td
+//				height .21rem
+//				position relative
+//				z-index 650
+//				span
+//					position relative
+//					z-index 650
+//					font-size .11rem
+//				div
+//					position absolute
+//					height 100%
+//					left 0
+//					background rgba(242,86,86,.06)
+//					top 0
+//					z-index 649
+//				.user-arrow:before
+//					content ''
+//					width .06rem
+//					height .1rem
+//					background  $trade-sell-arrow no-repeat center center / cover
+//					position absolute
+//					top .04rem
+//	.trade-live-buy
+//		tr
+//			td
+//				height .21rem
+//				//overflow hidden
+//				position relative
+//				z-index 650
+//				span
+//					position relative
+//					z-index 650
+//					font-size .11rem
+//				div
+//					position absolute
+//					height 100%
+//					left 0
+//					background rgba(43,183,137,.06)
+//					bottom 0
+//					z-index 649
+//				.user-arrow:before
+//					content ''
+//					width .06rem
+//					height .1rem
+//					background  $trade-buy-arrow no-repeat center center / cover
+//					position absolute
+//					top .04rem

@@ -1,0 +1,456 @@
+.asset
+  .extract
+    .title
+      float left
+      width 146px
+      font-size 16px
+      color $asset-font-normal
+      letter-spacing 0
+    .content
+      float left
+      position relative
+      width 4.56*100px
+    a
+      color $asset-font-main
+      cursor pointer
+      // &:hover
+      //   color $asset-font-main-hover
+      // &:active
+      //   color $asset-font-main-active
+    h3
+      width 100%
+      height 60px
+      padding-left 24px
+      line-height 60px
+      font-size 18px
+      color $asset-font-main
+      background $asset-bg-title
+      font-weight bold
+      button
+        float right
+        width 60px
+        height 36px
+        margin 12px 24px 0 0
+    .extract-content
+      padding 40px 0 0 0
+      .select
+        margin-bottom 0.4*100px
+        .title
+          float left
+          width 146px
+          font-size 16px
+          color $asset-font-normal
+        .search
+          padding-left 24px
+          .currency-asset
+            float left
+            width 300px
+            .input
+              width 300px
+              height 36px
+              .search-list
+                position relative
+                width 100%
+                margin-top 4px
+                background-color $asset-bg-none
+                box-shadow 0 0 10px 0 $asset-bg-shadow;
+                z-index 99
+                border-radius(2px)
+                &.hide
+                  display none
+                li
+                  font-size 14px
+                  height 36px
+                  line-height 36px
+                  padding-left 0.15*100px
+                  cursor pointer
+                  &:hover
+                    background-color $asset-bg-active
+              ul
+                width 100%
+                margin-top 16px
+                li
+                  width 100%
+                  height 30px
+                  line-height 30px
+                  color $asset-font-normal
+                  letter-spacing 0
+                  span
+                    float left
+                    font-size 14px
+                  i
+                    float right
+                    font-size 14px
+      .address
+        position relative
+        padding-left 10px
+        width 980px
+        height 450px
+        padding 24px 0 0 14px
+        margin-bottom 40px
+        margin-left 10px
+        background-color $asset-bg-title
+        .tips
+          margin-bottom 0.2*100px
+          color $asset-font-negative
+          line-height 0.28*100px
+          padding-left 0.4*100px
+          text-indent -0.4*100px
+          letter-spacing 0
+        .currency-address
+          margin-bottom 40px
+          .content
+            width 7*100px
+            .select-address
+              float left
+              width 4.56*100px
+              height 36px
+              line-height 36px
+              margin-right 0.2*100px
+              border-radius(0.02*100px)
+              background $asset-bg-none
+              border-radius 0.02*100px
+              span
+                font-size 14px
+              .search-list
+                position absolute
+                left 0
+                top 36px
+                width 100%
+                background $asset-bg-none
+                box-shadow: 6px 0 6px 0 rgba(0,0,0,0.06), 0 6px 6px 0 rgba(0,0,0,0.06);
+                z-index 99
+                li
+                  overflow hidden
+                  padding 0 0.1*100px
+                  cursor pointer
+                  &:hover
+                    background-color $asset-bg-active
+                  span
+                    overflow hidden
+                    float left
+                    white-space nowrap
+                    text-overflow ellipsis
+                  span:nth-child(1)
+                    width 0.7*100px
+                  span:nth-child(2)
+                    width 3.2*100px
+              .select-input
+                position relative
+                width 100%
+                height 36px
+                line-height 36px
+                padding 0 10% 0 0.1*100px
+                border-radius(0.02*100px)
+                border 0.01*100px solid $asset-border-minor
+                background $asset-bg-none
+                &::after
+                  position absolute
+                  top 0
+                  right 0
+                  content ''
+                  width 10.9%
+                  height 100%
+                  background $select-pro-normal no-repeat center center
+                  background-size: auto 20%;
+                &:hover
+                  border-color $asset-border-main
+                p
+                  width 100%
+                  height 100%
+                  overflow hidden
+                  span
+                    overflow hidden
+                    float left
+                    white-space nowrap
+                    text-overflow ellipsis
+                  span:nth-child(1)
+                    width 0.7*100px
+                  span:nth-child(2)
+                    width 3.2*100px
+            a
+              float left
+              height 0.4*100px
+              font-size 14px
+              line-height 0.6*100px
+              &:hover
+                text-decoration underline
+        .extract-amount
+          margin-bottom 32px
+          .content
+            .limit
+              width 100%
+              margin-bottom .14*100px
+              font-size 0.13*100px
+              color $asset-font-minor
+              letter-spacing 0
+              span
+                margin-right 0.1*100px
+                color $asset-font-negative
+                &.asset-24hQuota
+                  float left
+                  font-size 12px
+                  margin-bottom 0.05*100px
+                  color $asset-font-legal
+                  margin-bottom 0.05*100px
+                &.apply
+                  float right
+                  color $asset-font-legal
+                  margin-right 0
+                &.min
+                  display inline-block
+                  overflow: hidden;
+                  white-space: nowrap;
+              a
+                float right
+            .input
+              position relative
+              margin-bottom 0.14*100px
+              input
+                width 100%
+                height 36px
+                line-height 36px
+                padding 0 2*100px 0 0.1*100px
+                font-size 0.14*100px
+                background-color $asset-bg-none
+                &.error
+                  border-color $asset-border-negative
+                  box-shadow none
+              a
+                position absolute
+                top 0.14*100px
+                right 0.2*100px
+                font-size 0.13*100px
+                text-decoration underline
+              span
+                position absolute
+                right -0.54*100px
+                top 14px
+                font-size 0.16*100px
+                color $asset-font-normal
+                letter-spacing 0
+              .err-children
+                top -39px
+            .fee
+              p
+                font-size 12px
+                color $asset-font-normal
+                letter-spacing 0
+                margin-bottom 0.14*100px
+                span
+                  float right
+                  color $asset-font-normal
+                  font-size 0.13*100px
+                  letter-spacing 0
+                &.explain
+                  margin-bottom 0
+                  font-size 0.12*100px
+                  color $asset-font-minor
+                  letter-spacing 0
+        .password
+          margin-bottom 20px
+          .content
+            input
+              width 100%
+              height 36px
+              padding 0 0.1*100px 0 0.1*100px
+              font-size 0.14*100px
+              letter-spacing 0
+              background-color $asset-bg-none
+            .set
+              position absolute
+              width 1.84*100px
+              bottom 0
+              right -2*100px
+              a
+                font-size 0.14*100px
+
+        .handel
+          position relative
+          margin-left 146px
+          button
+            height 36px
+            padding 0 14px
+            line-height 36px
+            margin-right 0.44*100px
+          .qrcode
+            display none
+            position absolute
+            top -0.55*100px
+            left 0
+            width 1.5*100px
+            height 1.5*100px
+            border 0.01*100px solid $asset-line-minor;
+            &.show
+              display block
+      .tip
+        width 100%
+        padding-left 24px
+        padding-bottom 0.24*100px
+        border-bottom 0.01*100px solid $asset-line-minor
+        .title
+          width 163px
+        ol
+          float left
+          width 6*100px
+          li
+            list-style-type disc
+            font-size 0.14*100px
+            line-height 0.14*100px
+            margin-bottom 0.14*100px
+            color $asset-font-normal
+            letter-spacing 0
+            a
+              font-size 0.14*100px
+      .to-trade
+        width 100%
+        min-height 80px
+        padding 0.24*100px 0 0 24px
+        border-bottom 0.01*100px solid $asset-line-minor
+        .title
+          width 146px
+        .bts
+          overflow hidden
+        a
+          float left
+          margin-bottom 0.2*100px
+        button
+          width 1*100px
+          height 0.34*100px
+          margin-right 0.2*100px
+          color $asset-font-normal
+          background-color $asset-bg-none
+          border 1px solid $asset-border-minor
+          &:hover
+            color $asset-font-main
+            border-color $asset-border-main
+      .history
+        // display flex
+        // justify-content flex-start
+        overflow hidden
+        width 100%
+        padding 44px 20px 0 24px
+        .title
+          width 146px
+          font-size 16px
+        .kong
+          float left
+          width 7.5*100px
+          height 1*100px
+          line-height 1*100px
+          text-align center
+          font-size 0.16*100px
+          color $asset-font-minor
+          letter-spacing 0
+        table
+          float left
+          margin-bottom 0.2*100px
+          text-align left
+          th,td
+            height 0.3*100px
+            font-size 0.14*100px
+            color $asset-font-legal
+            letter-spacing 0
+            &.time
+              width 1.63*100px
+            &.currency
+              width 0.73*100px
+            &.amount
+              width 0.89*100px
+            &.send
+              width 86px
+            &.receive
+              width 225px
+            &.state, &.remark
+              width 0.87*100px
+          td
+            height 0.32*100px
+            line-height 0.32*100px
+            font-size 0.14*100px
+            color $asset-font-normal
+            letter-spacing 0
+            i
+              display block
+              width 100%
+              line-height 0.32*100px
+              overflow hidden
+              white-space nowrap
+              text-overflow ellipsis
+            &.receive
+              i
+                width 225px
+                font-size 14px
+            &.amount
+              i
+                width 0.89*100px
+                font-size 14px
+            a
+              text-decoration underline
+              font-size 14px
+            span
+              color $asset-font-main
+              font-size 14px
+        .pagina
+          float left
+          width 100%
+          display flex
+          justify-content flex-end
+          padding 0 25px 25px 0
+        .more
+          text-align left
+          float right
+          width 80px
+          a
+            position relative
+            display block
+            font-size 14px
+            &::after
+              position absolute
+              content ''
+              right 0
+              top 0
+              width 20px
+              height 100%
+              background $asset-more no-repeat center center
+              background-size 100% 100%
+
+      // .recoGoogle
+      //   position fixed
+      //   left 0
+      //   top 0
+      //   width 100%
+      //   height 100%
+      //   .recoGoogle-popup
+      //     position absolute
+      //     left 50%
+      //     top 50%
+      //     width 320px
+      //     min-height 160px
+      //     padding 24px
+      //     background $asset-bg-none
+      //     box-shadow 0 2px 20px 0 $asset-bg-popup-shadow
+      //     border-radius: 6px;
+      //     margin-left -160px
+      //     margin-top -80px
+      //     border-radius(0.06*100px)
+      //     h3
+      //       font-size: 16px;
+      //       color: #333333;
+      //       letter-spacing: 0;
+      //       line-height: 26px;
+      //       font-size 0.2*100px
+      //       color $common-font-normal
+      //     .button
+      //       display flex
+      //       justify-content center
+      //       .cancel, .tosafe
+      //         width 1*100px
+      //         height 0.4*100px
+      //         line-height 0.4*100px
+      //       .tosafe
+      //         width 1.84*100px
+      //         margin-right 0.44*100px
+      //         background $asset-bg-main
+      //         color $asset-font-none
+      //         &:active
+      //           background $asset-bg-main-active

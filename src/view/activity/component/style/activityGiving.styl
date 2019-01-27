@@ -1,0 +1,226 @@
+@import "./variable.styl"
+
+.active-giving
+  width 100%
+  padding 40px 0 100px
+  background-image: $activity-giving-bgImage;
+  .activity-giving-container
+    width 1000px
+    margin 0 auto
+    text-align center
+    display block
+    .activity-giving-banner
+      background-image $activity-giving-bannerImg
+      background-size 1000px 416px
+      width 100%
+      height 416px
+      padding-top 20px
+      p
+        color: $activity-giving-normal;
+        letter-spacing: 2px;
+        text-align center
+      p:nth-of-type(1)
+        font-size: 32px;
+        height 40px
+        line-height 40px
+      p:nth-of-type(2)
+        font-size: 40px;
+        height 60px;
+        line-height 60px
+      p:nth-of-type(3)
+        font-size: 48px;
+        height 60px;
+        line-height 60px
+      p:nth-of-type(4)
+        font-size: 34px;
+        line-height 50px
+        height 50px;
+    .activity-giving-button
+      text-align center
+      margin 14px 0 0 0
+      button
+        width 200px
+        height 50px
+        background-image: $activity-giving-bottonImage;
+        border-radius: 30px;
+        box-shadow $activity-giving-bottonshadow
+        border none
+        font-size: 18px;
+        color: #FDF8EF;
+        &:hover
+          background-image: $activity-giving-bottonImage-hover;
+    .activity-giving-bg
+      width 740px
+    .activity-giving-award
+      opacity: 0.94;
+      background: $activity-giving-table-bg;
+      box-shadow: $activity-giving-table-shadow;
+      border-radius: 10px;
+      width 100%
+      height 210px
+      position relative
+      padding-top 60px
+      h2
+        position absolute
+        height 60px
+        padding 0 40px
+        line-height 60px
+        left 50%
+        transform translateX(-50%)
+        top -30px
+        background: $activity-giving-award-title-bg;
+        box-shadow: $activity-giving-award-title-shadow;
+        border-radius: 35.5px;
+        font-size: 30px;
+        color: $activity-giving-award-title-color;
+      div
+        width 920px
+        margin 0 auto
+        height 121px
+        p
+          span
+            min-height 60px
+            text-align center
+            width 154px
+            border 1px solid $activity-giving-table-border
+            border-right none
+            font-size 14px
+            display flex
+            align-items center
+            justify-content center
+            float left
+            &:first-of-type
+              width 150px
+              background $activity-giving-table-title-bg
+              color $activity-giving-table-title-color
+            &:last-of-type
+              border-right 1px solid $activity-giving-table-border
+          &:nth-of-type(1)
+            span
+              &:first-of-type
+                border-radius 4px 0 0 0
+              &:last-of-type
+                border-radius 0 4px 0 0
+          &:nth-of-type(2)
+            span
+              border-top none
+              &:first-of-type
+                border-radius 0 0 0 4px
+              &:last-of-type
+                border-radius 0 0 4px 0
+    .activity-giving-invite, .activity-giving-gift
+      opacity: 0.94;
+      background $h5_reg_activity_awardbg_web no-repeat 560px bottom $activity-giving-table-bg
+      background-size auto 100%
+      box-shadow: $activity-giving-table-shadow;
+      border-radius: 10px;
+      width 100%
+      min-height 210px
+      position relative
+      padding 60px 0 32px 160px
+      margin-top 70px
+      text-align left
+      h2
+        position absolute
+        height 60px
+        padding 0 40px
+        line-height 60px
+        left 50%
+        transform translateX(-50%)
+        top -30px
+        background: $activity-giving-award-title-bg;
+        box-shadow: $activity-giving-award-title-shadow;
+        border-radius: 35.5px;
+        font-size: 30px;
+        color: $activity-giving-award-title-color
+        white-space: nowrap
+      p
+        width 60%
+        margin-bottom 24px
+        line-height 34px
+        span
+          font-size 18px
+          color $activity-font-reg-mount
+          i
+            font-size 36px
+            color $activity-font-reg-award
+      button
+        width 200px
+        height 50px
+        line-height 50px
+        background-image linear-gradient(0deg, #FF6400 0%, #FFAC27 100%)
+        border-radius 30px
+        font-size 18px
+        color $activity-font-button
+        cursor pointer
+        &:hover
+          background-image: linear-gradient(0deg, #F05E00 0%, #F0A023 100%);
+    .activity-giving-gift
+      background $dou_activity_gift no-repeat 662px bottom $activity-giving-table-bg
+      background-size 178px auto
+    .activity-giving-rule
+      width 100%
+      //height 390px
+      margin-top 60px
+      padding-top 34px
+      background-image: $activity-giving-rule-bgImage;
+      border-radius: 10px;
+      h2
+        height 42px
+        text-align center
+        background $activity-giving-rule-title-left no-repeat left center / 400px 1px, $activity-giving-rule-title-right no-repeat right center / 400px 1px
+        font-size: 30px;
+        color: $activity-giving-rule-title-color;
+        margin-bottom 24px
+      .activity-giving-rule-content
+        width 960px
+        margin 0 auto
+        //height 250px
+        padding 20px 0 30px
+        background $activity-giving-rule-bg no-repeat top center / 960px 40px
+        .activity-giving-rule-content-container
+          width 875px
+          min-height 230px
+          margin 0 auto
+          background $activity-giving-rule-content-bg
+          border-radius 0 0 10px 10px
+          padding 30px 40px 20px
+          .activity-giving-rule-content-rule
+            float left
+            p
+              max-width: 540px;
+              margin-bottom 10px
+              text-align left
+              line-height 20px
+              font-size: 14px;
+              color: $activity-giving-rule-content-color;
+          .activity-giving-rule-content-weChart
+            float right
+            text-align right
+            img
+              width 150px
+              height 150px
+            p
+              font-size: 16px;
+              height 22px
+              line-height 22px
+              color: $activity-giving-rule-content-color;
+              text-align center
+          .activity-giving-rule-content-telegram
+            float right
+            text-align right
+            img
+              width 150px
+              height 150px
+            p
+              font-size: 16px;
+              height 22px
+              line-height 22px
+              color: $activity-giving-rule-content-color;
+              text-align right
+
+
+
+
+
+

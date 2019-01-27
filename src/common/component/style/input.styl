@@ -1,0 +1,111 @@
+.base-input-wrap
+  position relative
+  height 100%
+  &.default
+    border none
+  &.select
+    // &::after
+    //   position absolute
+    //   top 0
+    //   right 0
+    //   content ''
+    //   width 10.9%
+    //   height 100%
+    //   background $icon-xiala no-repeat center center
+    //   background-size auto 12%
+    .search-list
+      position relative
+      width 100%
+      box-shadow 6px 0 6px 0 rgba(0,0,0,0.06), 0 6px 6px 0 rgba(0,0,0,0.06)
+      z-index 99
+      li
+        width 100%
+        height 0.43*100px
+        padding 0 0.1*100px
+        color
+        background-color $common-bg-none
+        &:hover
+          background-color $common-bg-main
+  &.search2
+    &::after
+      position absolute
+      top 0
+      right 0
+      content ''
+      width 13%
+      height 100%
+      background $search-default no-repeat center center
+      background-size auto 44%
+    &.focus::after
+      background-image $search-click
+      background-size auto 44%
+    &:hover
+      input
+        border-color $common-border-main
+    input
+      width 300px
+      height 36px
+      line-height 36px
+      padding-right 13%
+      border 0.01*100px solid $common-border-dark
+      color $common-font-normal
+      border-radius(0.02*100px)
+      &:focus
+        border-color $common-border-main
+  &.h5
+    input
+      line-height 36px
+      color $common-font-none
+      font-size 0.14rem
+      border 1px solid transparent
+      background-color $common-bg-input-h5
+      border-radius(0.02*100px)
+      &:focus
+        border-color $common-border-main-h5
+        box-shadow none
+      &:hover
+        border-color $common-border-main-h5
+      &.disabled
+        border none
+        background transparent
+  input, textarea
+    padding-left 14px
+    padding-right 14px
+    font-size 0.14*100px
+    color $common-font-normal
+    border 0.01*100px solid $common-border-dark
+    letter-spacing 0
+    border-radius(0.02*100px)
+    placeholder($common-font-minor, 0.14*100px)
+    &:hover
+      border-color $common-border-main
+    &:focus
+      border-color $common-border-main
+      box-shadow: 0 0 6px 0 $common-border-focus;
+    &.disabled
+      border 0.01*100px solid $common-border-dark
+      background: $common-bg-disable
+      border-radius(0.02*100px)
+      placeholder($common-font-minor, 0.14*100px)
+    // &.dark, &.dark:hover, &.dark:focus
+    //   color $common-font-light
+    //   background transparent
+    //   border 0.01*100px solid $common-bg-deep-op
+  textarea
+    padding-top 0.1*100px
+    padding-bottom 0.1*100px
+    resize none
+  // button
+  //   position absolute
+  //   right 0
+  //   top 0
+  //   width 15.79%
+  //   height 100%
+  //   cursor pointer
+  //   border-radius(0 0.02*100px 0.02*100px 0)
+  //   background $search-bai no-repeat center center $common-bg-main
+  //   background-size 0.2*100px 0.2*100px
+    // &:hover
+    //   background-color $common-bg-main-hover
+    // &:active
+    //   background-color $common-bg-main-active

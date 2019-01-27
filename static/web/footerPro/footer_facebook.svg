@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_footer_facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-757.000000, -151.000000)" fill="#9A9AA2">
+            <g id="首页" transform="translate(31.000000, 65.000000)">
+                <path d="M736.312975,87 C735.76017,87 735.23809,87.0618682 734.623852,87.3092182 C733.364691,87.8348113 732.750494,89.0097749 732.750494,90.8957927 L732.750494,92.7200039 L731,92.7200039 L731,95.7500307 L732.750494,95.7500307 L732.750494,104.5 L736.312955,104.5 L736.312955,95.7500307 L738.739119,95.7500307 L739.076923,92.7200039 L736.312914,92.7200039 L736.312914,91.3595791 C736.312914,90.9267269 736.34362,90.6175497 736.466443,90.4628996 C736.619972,90.1846565 736.927111,90.060961 737.418465,90.060961 L739.046136,90.060961 L739.046136,87.0309341 L736.312853,87.0309341 L736.312975,87 Z" id="icon_footer_facebook"></path>
+            </g>
+        </g>
+    </g>
+</svg>

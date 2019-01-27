@@ -1,0 +1,133 @@
+//@import "../../../common/css/variable.styl"
+
+.google-wrap
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background rgba(0, 0, 0, .7)
+  z-index 800
+  .google-info
+    position absolute
+    left 50%
+    top 50%
+    width 1200px
+    height 448
+    padding 40px
+    background $user-bg-popup
+    border-radius (6px)
+    transform translateX(-50%) translateY(-50%)
+    box-shadow 0 2px 20px 10px rgba(25,31,46,0.20)
+    .title-wrap
+      margin-bottom 40px
+      .close-popup
+        float right
+        width 16px
+        height 16px
+        margin-top 6px
+        cursor pointer
+      .pop-title
+        float left
+        font-size 20px
+        height 28px
+        line-height 28px
+        background $user-bg-popup
+        color $user-font-safe
+        padding-left 0
+    div
+      ul
+        float left
+        color $user-font-normal
+        em
+          color $user-font-warn
+        li
+          font-size 14px
+          color $user-font-safe
+          &:first-child
+            width 40px
+            height 40px
+            border-radius (50%)
+            text-align center
+            line-height 40px
+            color $user-font-geogleStep
+            margin-bottom 20px
+            border 1px solid $user-line-geogleStep
+      ul:nth-child(1)
+        width 378px
+        .google-btn
+          width 106px
+          height 36px
+          line-height 36px
+          background $user-bg-btn
+          color $user-font-btn
+          border none
+        li:nth-child(2)
+          margin-bottom 20px
+        li:nth-child(3)
+          margin-bottom 10px
+        li:nth-child(4)
+          margin-bottom 20px
+        li:last-child
+          a
+            color $user-font-geogleDownload
+
+      ul:nth-child(2)
+        width 391px
+        li:nth-child(2)
+          width 336px
+          margin-bottom 20px
+          line-height 22px
+          margin-top -5px
+        li:nth-child(3)
+          width 100px
+          height 100px
+          margin-bottom 25px
+          canvas
+            //border 0.05rem solid $user-font-normal
+            width 100px !important
+            height 100px !important
+        li:nth-child(4)
+          width 336px
+          line-height 22px
+          margin-top -5px
+
+      ul:nth-child(3)
+        width 351px
+        li:nth-child(2)
+          margin-bottom 15px
+          color $user-font-warn
+        li:nth-child(3)
+          margin-bottom 15px
+          i, em
+            font-size 14px
+        li:nth-child(4)
+          margin-bottom 40px
+          font-size 12px
+          color $user-font-remind
+        li:nth-child(5)
+          margin-bottom 14px
+        li:nth-child(6)
+          height 36px
+          .base-input-wrap
+            float left
+            input
+              width 216px
+              height 36px
+              padding-left 10px
+              //background $col2F30
+              //border 1px solid $cola2225
+              border-right none
+              border-radius (2px 0 0 2px)
+          .name-btn
+            float left
+            width 84px
+            height 36px
+            background $user-bg-btn
+            color $user-font-btn
+            border-radius (0 2px 2px 0)
+            border none
+            &.no-click
+              opacity .5
+            &.can-click
+              opacity 1

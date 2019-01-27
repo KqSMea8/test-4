@@ -1,0 +1,17 @@
+export default {
+  "notice-about": "关于我们",
+  "activity-regist": "立即注册",
+  "notice-contact": "联系我们",
+  "notice-detail": "公告详情",
+  "info-detail": "资讯详情",
+  "notice-link": "链接",
+  "notice-recommend": "推荐",
+  "notice-title": "标题",
+  "notice-type": "类型",
+  "notice-addr": "地址",
+  "notice-web": "网址",
+  "notice-userDetail": "详情",
+  "notice-newNotice": "最新公告",
+  "notice-info": "行业资讯",
+  "notice-none": "暂无",
+}

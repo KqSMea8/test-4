@@ -1,0 +1,44 @@
+.home-activity-banner-wrap-pro
+  height 420px
+  .home-banner-ct
+    position relative
+    width 100%
+    height 100%
+    overflow hidden
+    .images
+      position absolute
+      height 100%
+      .banner-img
+        position relative
+        float left
+        height 100%
+        .img-a
+          display block
+          width 100%
+          height 100%
+          cursor default
+          &.click-a
+            cursor pointer
+        img
+          position absolute
+          //width 48.8%
+          width 308px
+          left 50%
+          top 50%
+          transform translateX(-60%) translateY(-50%)
+  .point
+    position absolute
+    left 50%
+    transform translateX(-50%)
+    bottom 40px
+    li
+      float left
+      width 30px
+      height 3px
+      background $home-bg-point
+      margin-right 10px
+      cursor pointer
+      &:last-child
+        margin-right 0
+      &.active
+        background $home-bg-pointActive

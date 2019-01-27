@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>weiyanzheng_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="23" height="23"></rect>
+    </defs>
+    <g id="5.个人中心" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人中心-2身份认证" transform="translate(-474.000000, -184.000000)">
+            <g id="weiyanzheng_icon" transform="translate(474.000000, 184.000000)">
+                <circle id="Oval-3" fill="#FF9E2F" cx="22" cy="22" r="22"></circle>
+                <g id="Group-14" transform="translate(10.000000, 10.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill-opacity="0" fill="#D8D8D8" xlink:href="#path-1"></use>
+                    <g id="Group-25" mask="url(#mask-2)" fill="#FFFFFF">
+                        <g transform="translate(-3.000000, 10.000000)" id="Rectangle-22">
+                            <rect x="0" y="0" width="29.3333333" height="2.93333333" rx="1.46666667"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

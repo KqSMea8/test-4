@@ -1,0 +1,403 @@
+@import "./variable.styl"
+.homeNav
+  width 100%
+  height 60px
+  background $header-bg-main-pro
+  line-height 60px
+  position fixed
+  top 0
+  z-index 666
+  //box-shadow 0 1px 10px 0 rgba(0,0,0,0.30)
+  border-bottom 1px solid $header-line-main
+  .hide
+    display none
+  .login-out
+    cursor pointer
+  .home-header-con
+    //display flex
+    //justify-content space-between
+    width 1200px
+    margin 0 auto
+    >ul, >ol
+      li
+        &.select-list
+          position relative
+          &:hover
+            .select-router
+              display block
+            &:after
+              position absolute
+              top: 50%
+              right -10px
+              content: ''
+              width 8px
+              height 5px
+              background-image $header-icon-select-active
+              background-size cover
+
+          &:after
+            position absolute
+            top: 50%
+            right -10px
+            content: ''
+            width 8px
+            height 5px
+            background-image $header-icon-select
+            background-size cover
+            transform translateY(-50%)
+
+          .select-router
+            position absolute
+            display none
+            left -35px
+            width 100px
+            background $header-bg-user-content
+            box-shadow 0 1px 5px 0 rgba(0,0,0,0.50)
+            &.otc-child
+              left -15px
+              &.en-ul
+                left -15px
+            &.en-ul
+              width 185px
+              left -55px
+              li
+                padding-left 15px
+                text-align left
+            li
+              width 100%
+              height 40px
+              line-height 40px
+              text-align center
+              margin-right 0
+              border-bottom 1px solid $header-line-exchange
+              &:hover
+                background $header-bg-user-contentActive
+                color $header-font-user-contentActive
+                a
+                  color $header-font-user-contentActive
+              a
+                display block
+                width 100%
+                height 100%
+                padding 0
+                font-size 14px
+                font-weight 400
+                color $header-font-li
+                cursor pointer
+
+    >ul
+      float left
+      >li
+        float left
+      li
+        height 60px
+        margin-right 30px
+        a
+          color $header-font-nav
+          font-size 14px
+          font-weight 400
+          &:hover
+            color $header-font-activePro
+        &.header-nav-active
+          >a
+            color $header-font-activePro
+        &:last-child
+          margin-right 0
+        &.nav-logo
+          margin-right 30px
+          a
+            display block
+            width 101px
+            height 60px
+            background $logo-index-pro no-repeat 0 20px / 101px 20px
+
+
+    >ol
+      float right
+      .active
+        color red
+      >li
+        float left
+        color $header-font-nav
+        &.language-li // 语言
+          width 100px
+          &:hover
+            .language-ul
+              display block
+            p
+              color $header-font-activePro
+              &:after
+                position absolute
+                top 50%
+                right 10px
+                content ''
+                width 8px
+                height 5px
+                background-image $header-icon-select-active
+                background-size cover
+          p
+            padding-right 10px
+            position relative
+            cursor pointer
+            text-align center
+            &:after
+              position absolute
+              top 50%
+              right 10px
+              content ''
+              width 8px
+              height 5px
+              background-image $header-icon-select
+              background-size cover
+              transform translateY(-50%)
+            span
+              font-size 14px
+              font-weight 400
+          ul
+            position relative
+            display none
+            background $header-bg-exchange
+            box-shadow  0 0 .10rem 0 rgba(0,0,0,0.5)
+            li
+              height 40px
+              padding 0 5px
+              line-height 40px
+              text-align center
+              cursor pointer
+              color $header-font-nav
+              &:hover
+                color $header-font-activePro
+              span
+                font-size 14px
+                font-weight 400
+          img
+            position relative
+            top -2px
+            display inline-block
+            width 20px
+            height 15px
+            margin-right 10px
+            vertical-align middle
+        &.new-li // 消息
+          position relative
+          .new-li-img
+            position relative
+            width 14px
+            height 16px
+            margin 22px 0
+            text-align center
+            cursor pointer
+            background $header-news no-repeat center / 14px 16px
+            opacity .8
+            &:hover
+              background $header-news-active no-repeat center / 14px 16px
+            &.new-active-div
+              background $header-news-active no-repeat center / 14px 16px
+            //img
+            //  position relative
+            //  top -1px
+            //  width 16px
+            //  height 16px
+            //  vertical-align middle
+            //  opacity .8
+            //  &:hover
+            //    opacity 1
+            i
+              position absolute
+              right -8px
+              top 8px
+              display inline-block
+              min-width 15px
+              height 15px
+              padding 2px
+              background $header-bg-new
+              color $header-font-hover
+              border-radius 50%
+              line-height 12px
+              font-size 12px
+              &.hide
+                display none
+          .new-li-content
+            position absolute
+            left 50%
+            transform translateX(-50%)
+            width 330px
+            border-radius (2px)
+            background $header-bg-new-content
+            border 1px solid $header-font-normal
+            box-shadow  0 0 10px 0 rgba(0,0,0,0.3)
+            p
+              height 40px
+              line-height 40px
+              padding 0 10px
+              color $header-font-light
+              border-bottom 1px solid $header-line-new
+              span
+                float left
+                font-size 14px
+              em
+                float right
+                font-size 12px
+                color $header-font-new-all
+                &:hover
+                  cursor pointer
+                  color $header-font-activePro
+            ul
+              //max-height 150px
+              padding 10px
+              //overflow-y auto
+              //&::-webkit-scrollbar-button
+              //  display none
+              //&::-webkit-scrollbar
+              //  position relative
+              //  width 3px
+              //  height 100%
+              //&::-webkit-scrollbar-track
+              //  width 3px
+              //  background #222730
+              //&::-webkit-scrollbar-thumb
+              //  width 3px
+              //  background #8C8F93
+              li
+                height 30px
+                line-height 30px
+                cursor pointer
+                span
+                  display inline-block
+                  float left
+                  width 120px
+                  max-width 120px
+                  overflow hidden
+                  white-space nowrap
+                  text-overflow ellipsis
+                  font-size 12px
+                  color $header-font-new-con
+                b
+                  float right
+                  color $header-font-new-time
+                  f11()
+
+            .nothing-div
+              padding 30px 0
+              text-align center
+              color $header-font-light
+            .check-all
+              display block
+              height 36px
+              line-height 36px
+              text-align center
+              color $header-font-new-all
+              font-size 14px
+              &:hover
+                color $header-font-activePro
+
+        &.login-li, &.order-li, &.asset-li, &.invite-li // 登录
+          margin 0 30px 0 35px
+          a, span
+            font-size 14px
+            font-weight 400
+            color $header-font-nav
+            cursor pointer
+            &:hover, &.active
+              color $header-font-activePro
+        &.order-li, &.asset-li
+          margin-right 0
+        &.user-li // 用户
+          position relative
+          margin 0 30px 0 20px
+          &:hover
+            .login-ul
+              display block
+            p
+              color $header-font-activePro
+              &:after
+                position absolute
+                top 50%
+                right 0
+                content ''
+                width 8px
+                height 5px
+                background-image $header-icon-select-active
+                background-size cover
+          p
+            position relative
+            max-width 100px
+            overflow hidden
+            white-space nowrap
+            text-overflow ellipsis
+            cursor pointer
+            text-align center
+            font-size 14px
+            font-weight 400
+            padding-right 10px
+            &.active-p
+              color $header-font-activePro
+            &:after
+              position absolute
+              top 50%
+              right 0
+              content ''
+              width 8px
+              height 5px
+              background-image $header-icon-select
+              background-size cover
+              transform translateY(-50%)
+          ul
+            position absolute
+            left 50%
+            top 61px
+            transform translateX(-50%)
+            display none
+            width 100px
+            background $header-bg-user-content
+            box-shadow 0 1px 5px 0 rgba(0,0,0,0.50)
+            &.en-ul
+              width 170px
+              li
+                &.login-out
+                  padding 0 10px
+                a
+                  padding 0 10px
+            li
+              height 40px
+              line-height 40px
+              text-align left
+              color $header-font-li
+              border-bottom 1px solid $header-line-exchange
+              font-size 14px
+              font-weight 400
+              &.login-out
+                padding 0 22px
+              &:hover
+                background $header-bg-user-contentActive
+                color $header-font-user-contentActive
+                a
+                  color $header-font-user-contentActive
+              a
+                display block
+                width 100%
+                font-size 14px
+                padding 0 22px
+                color $header-font-li
+                font-weight 400
+
+
+
+// 其他地方登录弹窗
+.other-login
+  position absolute
+  top 100%
+  left 50%
+  transform translateX(-50%)
+  width 6rem
+  height 2rem
+  line-height 2rem
+  background $header-font-normal
+  z-index 999
+  border 1px solid $header-line
+  border-radius .1rem
+  text-align center
+  color $header-font-light
+  p
+    font-size .2rem
+

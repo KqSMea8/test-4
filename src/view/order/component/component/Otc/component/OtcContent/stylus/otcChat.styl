@@ -1,0 +1,222 @@
+.otc-chat
+	height 455px
+	width 100%
+	background $colFFFF
+	.otc-chat-tip
+		height 44px
+		line-height 44px
+		background $otc-order-error-bg
+		padding-left 24px
+		color $otc-order-price
+		font-size 14px
+	.otc-chat-window
+		width 100%
+		padding 20px 24px
+		.otc-chat-load
+			font-size 14px
+			text-align center
+			cursor pointer
+		.chat-items-self
+			flex-direction row-reverse
+			p
+				position relative
+				margin-left 10px
+				max-width  534px
+				padding 12px 17px
+				background rgba(255,158,47,0.10)
+				border-radius 2px
+				margin-right 20px
+				line-height 20px
+				&:after
+					position absolute
+					content ''
+					width 0
+					height 0
+					border-top 10px solid transparent
+					border-bottom 10px solid transparent
+					border-left 10px solid rgba(255,158,47,0.10)
+					top 50%
+					transform translateY(-50%)
+					bottom 0
+					right -10px
+		.chat-items-other
+			p
+				position relative
+				margin-right 10px
+				max-width  534px
+				padding 12px 17px
+				background #F3F3F3
+				border-radius 2px
+				margin-left 20px
+				line-height 20px
+				&:after
+					position absolute
+					content ''
+					width 0
+					height 0
+					border-top 10px solid transparent
+					border-bottom 10px solid transparent
+					border-right 10px solid #F3F3F3
+					top 50%
+					transform translateY(-50%)
+					bottom 0
+					left -10px
+		.chat-items
+			margin 10px 0
+			width 100%
+			display flex
+			align-items center
+			p
+				font-size 14px
+				color $otc-order-font-main
+			em
+				display inline-block
+				width 30px
+				height 30px
+				border-radius 50%
+				background $otc-order-font-input
+				font-size 14px
+				color $colFFFF
+				line-height 30px
+				text-align center
+			span
+				font-size 14px
+				color $otc-order-font-input
+	.otc-chat-option
+		width 100%
+		height 56px
+		padding 20px 24px 0
+		border-top 1px solid $otc-order-line
+		display flex
+		justify-content space-between
+		position relative
+		.otc-chat-input
+			display flex
+			position relative
+			ul
+				position absolute
+				min-width 480px
+				top 40px
+				background: #FFFFFF;
+				box-shadow: 0 0 10px 0 #E0E0E0;
+				border-radius: 2px;
+				li
+					height 36px
+					cursor pointer
+					font-size 14px
+					padding-left 14px
+					line-height 36px
+					color $otc-order-font-main
+					&:hover
+						background rgba(255,158,47,0.10)
+			.otc-input-enable
+				width 480px
+				height 36px
+				margin-right 10px
+			.otc-input-disabled
+				width 480px
+				height 36px
+				margin-right 10px
+				background $otc-order-title-bg
+			.otc-button-enable
+				height 36px
+				padding 0 14px
+				color $colFFFF
+				background $otc-order-active
+			.otc-button-disabled
+				height 36px
+				padding 0 14px
+				color $colFFFF
+				background $otc-order-font-input
+				border none
+		.otc-state-option
+			.otc-option-normal
+				height 36px
+				padding 0 14px
+				color $otc-order-font-main
+				border 1px solid $colE0E0
+				margin-left 10px
+				cursor default
+				&:hover
+					background none
+			.otc-option-disable
+				height 36px
+				padding 0 14px
+				color $colFFFF
+				background $otc-order-font-input
+				border none
+				margin-left 10px
+				cursor default
+			.otc-option-button
+				padding 0 14px
+				height 36px
+				margin-left 10px
+				font-size 14px
+				color $otc-order-font-main
+				border 1px solid $otc-order-line
+				&:hover
+					color $colFFFF
+			.otc-option-active
+				padding 0 14px
+				height 36px
+				margin-left 10px
+				font-size 14px
+				color $otc-order-active
+				border 1px solid $otc-order-active
+				&:hover
+					color $colFFFF
+		.otc-evaluate
+			position absolute
+			right -26px
+			width 180px
+			height 90px
+			display flex
+			background $colFFFF
+			box-shadow: 0 0 10px 0 #E0E0E0
+			border-radius: 2px
+			top 70px
+			justify-content space-between
+			align-items center
+			&:before
+				position absolute
+				content ''
+				width 0
+				height 0
+				border-left 10px solid transparent
+				border-right 10px solid transparent
+				border-bottom  10px solid #FFF
+				top -10px
+				left 80px
+			.otc-evaluate-item
+				width 90px
+				height 100%
+				display flex
+				align-items center
+				justify-content center
+				padding 20px 0
+				cursor pointer
+				&:nth-of-type(1)
+					div
+						border-right 1px solid $order-border-main
+				&:hover
+					background: rgba(255,158,47,0.10)
+				div
+					width 90px
+					text-align center
+					height 50px
+				p
+					font-size 14px
+					margin-top 5px
+			.otc-evaluate-active
+				background: rgba(255,158,47,0.10)
+	.order-state-msg
+		margin-top 10px
+		text-align right
+		padding-right 24px
+		p
+			font-size 14px
+			color $otc-order-font-title
+			margin-bottom 10px
+		span,.msg-red
+			font-size 14px
+			color $otc-order-price

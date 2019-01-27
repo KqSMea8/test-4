@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="106px" viewBox="0 0 150 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>empty_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-9.1%" y="-13.8%" width="127.3%" height="141.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="6" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0235294118   0 0 0 0 0.0509803922   0 0 0 0 0.117647059  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="90.743699%" y1="76.18254%" x2="3.74721885%" y2="17.8386056%" id="linearGradient-2">
+            <stop stop-color="#303543" offset="0%"></stop>
+            <stop stop-color="#060D1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="108.219102%" y1="61.9800152%" x2="13.6594516%" y2="19.6020761%" id="linearGradient-3">
+            <stop stop-color="#303543" offset="0%"></stop>
+            <stop stop-color="#060D1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="24.6663336%" x2="10.2066795%" y2="83.6303079%" id="linearGradient-4">
+            <stop stop-color="#303543" offset="0%"></stop>
+            <stop stop-color="#060D1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="3.74721877%" y1="82.3789885%" x2="100%" y2="13.6378601%" id="linearGradient-5">
+            <stop stop-color="#303543" offset="0%"></stop>
+            <stop stop-color="#060D1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="8.0006208%" y1="28.7256062%" x2="100%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#303543" offset="0%"></stop>
+            <stop stop-color="#060D1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="63.571544%" x2="113.982908%" y2="253.204088%" id="linearGradient-7">
+            <stop stop-color="#303543" offset="0%"></stop>
+            <stop stop-color="#060D1E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-706.000000, -339.000000)">
+            <g id="empty_black" filter="url(#filter-1)" transform="translate(709.000000, 342.000000)">
+                <polygon id="Fill-1-Copy" fill="url(#linearGradient-2)" points="62.7692308 0.888888889 118.153846 7.98223058 118.153846 70.9995459 62.7692308 72.1851852"></polygon>
+                <polygon id="Fill-1-Copy-2" fill="url(#linearGradient-3)" points="12 12.5681197 63.6923077 0.888888889 63.6923077 77.7407407 12.5447231 73.4100184"></polygon>
+                <polygon id="Clip-9-Copy" points="67.3846154 7.37037037 132 7.37037037 132 45.3333333 67.3846154 45.3333333"></polygon>
+                <polygon id="Fill-2-Copy" fill="url(#linearGradient-4)" points="67.3846154 18.0062693 67.3846154 87 118.153846 70.3633219 118.153846 7.37037037"></polygon>
+                <polygon id="Fill-5-Copy" fill="url(#linearGradient-5)" points="68.3076923 17.9996615 68.3076923 87 12.5435627 73.0899244 12 12"></polygon>
+                <polygon id="Fill-8-Copy" fill="url(#linearGradient-6)" points="67.3846154 17.9464884 85.1544727 45.3333333 132 29.6063009 117.999304 7.37037037"></polygon>
+                <polygon id="Fill-11-Copy" fill="url(#linearGradient-7)" points="67.3846154 17.9705677 53.3694316 43.4814815 0 32.6266694 11.5915054 12"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

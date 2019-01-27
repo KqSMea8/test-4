@@ -1,0 +1,28 @@
+@import "variable.styl"
+@import "exchangeInfo.styl"
+@import "otcOrderTitle.styl"
+@import "otcOrderPrice.styl"
+@import "otcOrderItem.styl"
+@import "faq.styl"
+.order-otc-confirm
+	display flex
+	justify-content space-between
+	padding-bottom 40px
+	.otc-confirm-r
+		width 1000px
+		.order-otc-bussiness
+			background $colFFFF
+			display flex
+			align-items center
+			height 40px
+			padding-left 24px
+			p
+				height 20px
+				color $otc-order-font-intro
+				border-left 1px solid $otc-order-line
+				padding 0 20px
+				font-size 14px
+				&:nth-of-type(1)
+					color $otc-order-active
+					border none
+					padding-left 0

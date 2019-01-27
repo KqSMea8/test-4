@@ -1,0 +1,51 @@
+@import "variable.styl"
+.order-fund-info
+  width 100%
+  table
+    width 100%
+    tr
+      td
+        min-width 100px
+        font-size: 14px;
+        color $order-font-content
+        &:first-of-type
+          padding-left 30px
+    thead
+      tr
+        height 40px
+        line-height 40px
+        background $order-title-bg
+        td
+          color $order-font-title
+    tbody
+      tr
+        height 60px
+        line-height 60px
+        border-bottom 1px solid $order-line
+      .nothing-tr
+        text-align center
+        border-bottom none
+        line-height 0
+        td
+          padding-top 190px
+        p
+          font-size 14px
+          color $order-font-title
+          margin-top 10px
+
+  .order-fund-red
+    color $order-font-red
+  .order-fund-green
+    color $order-font-green
+  .order-fund-button
+    width 56px
+    height 36px
+    line-height 36px
+    background $order-bg-main
+    border 1px solid $order-line
+    border-radius 2px
+    margin-left 10px
+    color $order-font-content
+    &:hover
+      border none
+		

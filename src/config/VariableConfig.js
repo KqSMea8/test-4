@@ -1,0 +1,17 @@
+export const EXCHANGE_NAME_CNY = 'QB';
+export const EXCHANGE_NAME_USD = 'QB';
+export const EXCHANGE_URl = 'qb.com';
+export const EXCHANGE_Apply_EMAIL = 'business@qb.com';
+export const EXCHANGE_CONTACT_EMAIL = 'support@qb.com';
+export const EXCHANGE_ADDR = 'Kemp House 152 -160 City Road; London';
+export const EXCHANGE_SERVICE_PHONE = '010-53348151';
+export const EXCHANGE_SERVICE_QQ = '3310267657';
+export const EXCHANGE_COIN = 'QB';
+export const EXCHANGE_OTC = 'QB_OTC';
+export const CURRENT_URL = 'http://192.168.55.105:80';
+export const CURRENT_IMGURL = "http://192.168.55.107/";
+export const EXCHANGE_TWITTER = '@QB_Exchange';
+export const EXCHANGE_WECHAT = 'QBservice';
+export const EXCHANGE_TELEGRAPH = 'https://t.me/QB_ExchangeEN';
+export const STATISTIC_URL = 'https://t.block.fans';//统计渠道地址
+export const OFFICIAL_WEBSITE = 'https://www.qb.com';//统计渠道地址

@@ -1,0 +1,77 @@
+@import "../../css/variableWill.styl"
+.view-popup-wrap
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background $cola2348
+  z-index 1000
+  .err-children
+    top -40px
+  .view-info
+    position absolute
+    left 50%
+    top 50%
+    width 560px
+    height 324px
+    padding 40px
+    background $colFFFF
+    box-shadow 0 2px 20px 10px $cola2342
+    border-radius (.06*100px)
+    transform translateX(-50%) translateY(-50%)
+    .close-popup
+      position absolute
+      top 40px
+      right 40px
+      width 16px
+      height 16px
+      cursor pointer
+    p
+      font-size 14px
+      color $col3333
+      margin-bottom 10px
+    .verify-h2
+      float none
+      font-size 20px
+      color $col3333
+      font-weight bold
+      letter-spacing 0
+      margin 4px 0 40px
+    div
+      //width 5.04*100px
+      position relative
+      .base-input-wrap
+        float left
+        width 100%
+        input
+          width 100%
+          height 48px
+          //background $col2F30
+          //border 1px solid $cola2225
+          border-radius(2px 0 0 2px)
+          &.error
+            border-color $col5C48
+      .verify-btn
+        position absolute
+        top 1px
+        right 1px
+        width auto
+        height 46px
+        padding-right 14px
+        line-height 46px
+        color $col9E2F
+        background-color $colFFFF
+        border-radius(0 2px 2px 0)
+        &.disabled-btn
+          color $colCCCC
+          cursor not-allowed
+    .set-btn
+      position absolute
+      right 40px
+      bottom 40px
+      width 200px
+      height 48px
+      font-size 16px
+      &.disable
+        opacity 0.5

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>otc_newchat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="22" height="20"></rect>
+    </defs>
+    <g id="***切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OTC" transform="translate(-310.000000, -55.000000)">
+            <g id="otc_newchat" transform="translate(310.000000, 55.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+                <g id="分组-12" mask="url(#mask-2)" fill-rule="nonzero">
+                    <g transform="translate(1.000000, 1.000000)">
+                        <path d="M14.4999367,6.5 C13.6718949,6.5 13,7.17211082 13,7.99994831 C13,8.82853525 13.6717937,9.5 14.4999367,9.5 C15.3281051,9.5 16,8.82863861 16,7.99994831 C15.9998734,7.17211082 15.3281051,6.5 14.4999367,6.5" id="路径" stroke="none" fill="#FF9E2F"></path>
+                        <path d="M9.99993672,6.5 C9.1718949,6.5 8.5,7.17211082 8.5,7.99994831 C8.5,8.82853525 9.17179366,9.5 9.99993672,9.5 C10.8281051,9.5 11.5,8.82863861 11.5,7.99994831 C11.4998734,7.17211082 10.8281051,6.5 9.99993672,6.5" id="路径-copy-5" stroke="none" fill="#FF9E2F"></path>
+                        <path d="M5.49993672,6.5 C4.6718949,6.5 4,7.17211082 4,7.99994831 C4,8.82853525 4.67179366,9.5 5.49993672,9.5 C6.3281051,9.5 7,8.82863861 7,7.99994831 C6.99987343,7.17211082 6.32810507,6.5 5.49993672,6.5" id="路径-copy-6" stroke="none" fill="#FF9E2F"></path>
+                        <path d="M10,0.0189501185 C4.47706141,0.0189501185 -3.55271368e-15,3.51497379 -3.55271368e-15,7.82638958 C-3.55271368e-15,9.94157561 1.08126828,11.8570554 2.83070969,13.2626882 L1.81822156,17.3689501 L7.19460252,15.3172091 C8.08550003,15.5194935 9.02529609,15.6339187 10.000023,15.6339187 C15.5229616,15.6339187 20,12.1389263 20,7.82636717 C19.999977,3.51497379 15.5229386,0.0189501185 10,0.0189501185" id="路径" stroke="#FF9E2F" stroke-width="2" fill="none"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,338 @@
+//@import "../../../common/css/variable.styl"
+
+.trade-pro-deal-exchange
+  width 299px
+  height 100%
+  background $trade-pro-model-bg
+  .trade-deal-asset
+    width 100%
+    height 40px
+    //margin .14rem 0 .05rem 0
+    line-height 40px
+    display flex
+    justify-content space-between
+    .deal-asset-wallet
+      width 100%
+      font-size 14px
+      display flex
+      justify-content space-between
+      padding 0 10px
+      span, i, em
+        color $trade-font-normal
+        font-size 14px
+    .deal-asset-charge-sell
+      a
+        color $trade-sell-font
+    .deal-asset-charge-buy
+      a
+        color $trade-buy-font
+  .trader-deal-input
+    width 100%
+    height 30px
+    margin-bottom 5px
+    padding 0 10px
+    display flex
+    justify-content space-between
+    line-height 30px
+    color $trade-deal-input-color
+    .deal-input-label
+      height 30px
+      font-size 12px
+      line-height 30px
+      color $trade-font-thead
+    .deal-input-items
+      width 219px
+      background  $trade-pro-bg-title
+      justify-content space-between
+      display flex
+      input
+        width 180px
+        height 100%
+        color $trade-font-normal
+        padding-left 10px
+        background  $trade-pro-bg-title
+        font-size 12px
+      .deal-input-unit
+        background $trade-pro-bg-title
+        height 100%
+        width 34px
+        font-size 12px
+        color $trade-font-thead
+        //padding-right 10px
+        line-height 30px
+  .deal-number-range
+    width 100%
+    height 22px
+    padding 0 10px
+    line-height 16px
+    //margin 0 auto
+    position relative
+    color $trade-font-thead
+    span
+      width 39px
+      display inline-block
+    .r-buy
+      -webkit-appearance none
+      width 279px
+      //height 4px
+      //position relative
+      margin-top -4px
+      //z-index 999
+      &::-moz-range-progress
+        background $trade-buy-bg
+        height 4px
+      &::-ms-thumb
+        position relative
+        z-index 999
+        cursor pointer
+        width 11px
+        height 11px
+        border-radius 50%
+        background $trade-buy-bg
+        margin-top -6px
+      &::-webkit-slider-thumb
+        position relative
+        z-index 999
+        -webkit-appearance: none
+        cursor pointer
+        width 12px
+        height 12px
+        border-radius 50%
+        background $trade-buy-bg
+        //background $cola2228
+        margin-top -4px
+      &::-moz-range-thumb
+        -moz-appearance: none;
+        position relative
+        z-index 999
+        cursor pointer
+        width 11px
+        height 11px
+        border-radius 50%
+        background $trade-buy-bg
+        margin-top -4px
+      &::-moz-range-track
+        height 4px
+        background $trade-pro-bg-title
+      &::-webkit-slider-runnable-track
+        height 4px
+        background $trade-pro-bg-title
+      &::-ms-track
+        height 4px
+        background $trade-pro-bg-title
+        //border-color: transparent; /*去除原有边框*/
+        //color: transparent; /*去除轨道内的竖线*/
+      &::-ms-fill-lower
+        background $trade-buy-bg
+        height 4px
+      &::-ms-fill-upper
+        height 4px
+        background $trade-pro-bg-title
+      &+ul
+        background -webkit-linear-gradient($trade-pro-buy-bg, $trade-pro-buy-bg) no-repeat, $trade-pro-bg-title
+        background-size 0 100%
+    .r-sell
+      -webkit-appearance none
+      width 279px
+      height 4px
+      //position relative
+      &::-moz-range-progress
+        background $trade-sell-bg
+        height 4px
+      &::-webkit-slider-thumb
+        position relative
+        z-index 999
+        -webkit-appearance: none
+        cursor pointer
+        width 12px
+        height 12px
+        border-radius 50%
+        background $trade-sell-bg
+        //background $cola2228
+        margin-top -4px
+      &::-webkit-slider-runnable-track
+        height 4px
+        background $trade-pro-bg-title
+      &::-moz-range-thumb
+        -moz-appearance: none;
+        position relative
+        z-index 100
+        cursor pointer
+        width 11px
+        height 11px
+        border-radius 50%
+        background $trade-sell-bg
+        margin-top -4px
+      &::-ms-track
+        height 4px
+        background $trade-pro-bg-title
+        //border-color: transparent; /*去除原有边框*/
+        //color: transparent; /*去除轨道内的竖线*/
+      &::-ms-fill-lower
+        background $trade-sell-bg
+        height 4px
+      &::-moz-range-track
+        height 4px
+        background $trade-pro-bg-title
+      &::-ms-thumb
+        position relative
+        z-index 999
+        cursor pointer
+        width 11px
+        height 11px
+        border-radius 50%
+        background $trade-sell-bg
+        margin-top -6px
+      &+ul
+        background -webkit-linear-gradient($trade-pro-sell-bg, $trade-pro-sell-bg) no-repeat, $trade-pro-bg-title;
+        background-size 0 100%
+    ul
+      height 4px
+      top: 7px;
+      width 277px
+      position: absolute;
+      //width: 2.46rem;
+      z-index: 88;
+      left 11px
+      li
+        width 12px
+        z-index 89
+        height 12px
+        border-radius 50%
+        background $trade-pro-bg-title
+        cursor pointer
+        position absolute
+        top -3px
+        &:nth-of-type(1)
+          left -1px
+        &:nth-of-type(2)
+          left 66px
+        &:nth-of-type(3)
+          left 132px
+        &:nth-of-type(4)
+          left 199px
+        &:nth-of-type(5)
+          right -1px
+      .sell-pointer
+        //border 1px solid $trade-pro-sell-bg
+        background $trade-pro-sell-bg
+      .buy-pointer
+        //border 1px solid $trade-pro-buy-bg
+        background $trade-pro-buy-bg
+  .deal-number-percent
+    margin-bottom 5px
+    ul
+      display flex
+      padding-left 12px
+      justify-content space-between
+      li
+        font-size 12px
+  .trade-password
+    width 100%
+    padding 0 10px
+    .trade-password-input
+      width 100%
+      height 30px
+      //line-height .34rem
+      font-size 12px
+      background $trade-pro-bg-title
+      padding 0 3px 0 10px
+      display flex
+      align-items center
+      justify-content space-between
+      span
+        font-size 12px
+        height 100%
+        line-height 30px
+        //vertical-align middle
+        display inline-block
+        color $trade-font-normal
+      .trade-password-input-pro
+        position relative
+        margin-left 10px
+        flex 1 1 auto
+        z-index 887
+			#trade-password-input-pro-fee
+				position absolute
+				right 0
+				color $trade-pro-active
+				cursor pointer
+			input
+				width 70px
+				height 30px
+				color $trade-deal-input-color-white = $cola2228
+			em
+				a
+					color $trade-deal-free-color
+					font-size .12rem
+  .password-msg
+      span:nth-of-type(1)
+        a
+          color $trade-deal-input-color
+          text-decoration underline
+          font-size .1rem
+          margin-right .1rem
+      span:nth-of-type(2)
+        color $trade-deal-free-color
+        font-size .1rem
+  .trade-deal-turnover
+    padding 0 10px
+    margin 20px 0 6px 0
+    .trade-pro-marketD
+      display flex
+      justify-content space-between
+    span
+      //display inline-block
+      //width .6rem
+      font-size 12px
+      color $trade-deal-input-color-white
+    em, i
+      color $trade-deal-input-color-white
+      font-size 12px
+      margin-left 5px
+  .trade-deal-button-buy
+    cursor pointer
+    width 279px
+    height 36px
+    display flex
+    justify-content center
+    line-height 36px
+    margin 0 auto
+    //margin-top .1rem
+    color $trade-font-title
+    font-size 14px
+    background $trade-pro-buy-bg
+    border-radius 2px
+    em
+      color $trade-font-title
+      font-size 14px
+  .trade-deal-button-sell
+    width 279px
+    height 36px
+    //margin-top .1rem
+    text-align center
+    display flex
+    justify-content center
+    line-height 36px
+    margin 0 auto
+    color $trade-font-title
+    font-size 14px
+    background $trade-pro-sell-bg
+    border-radius 2px
+    cursor pointer
+    em
+      color $trade-font-title
+      font-size 14px
+  .trade-deal-none-login
+    width 279px
+    height 36px
+    margin 0 auto
+    background $trade-pro-bg-title
+    line-height 36px
+    text-align center
+    span,em
+      color $trade-font-title
+      font-size 14px
+    a
+      font-size 14px
+      color $trade-pro-active

@@ -1,0 +1,58 @@
+.pwd-limit-wrp
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background rgba(0, 0, 0, .7)
+  z-index 800
+  .err-children
+    top -40px
+  .pwd-limit-con
+    position absolute
+    left 50%
+    top 50%
+    width 560px
+    padding 40px
+    background $user-bg-popup
+    border-radius (6px)
+    transform translateX(-50%) translateY(-50%)
+    .title-wrap
+      margin-bottom 40px
+      .close-popup
+        float right
+        width 16px
+        height 16px
+        margin-top 6px
+        cursor pointer
+      .pop-title
+        float left
+        font-size 20px
+        height 28px
+        line-height 28px
+        background $user-bg-popup
+        color $user-font-safe
+        padding-left 0
+    ul
+      li
+        font-size 14px
+        &:nth-child(1)
+          margin-bottom 20px
+          color $user-font-remind
+        &:nth-child(2)
+          margin-bottom 10px
+        &:nth-child(3)
+          margin-bottom 50px
+          input
+            width 100%
+            height 48px
+        &:nth-child(4)
+          text-align right
+          button
+            width 200px
+            height 48px
+            background $user-bg-btn
+            color $user-font-btn
+            opacity .5
+            &.can-click
+              opacity 1

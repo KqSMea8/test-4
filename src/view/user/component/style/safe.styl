@@ -1,0 +1,384 @@
+//@import "../../../common/css/variable.styl"
+
+.safe-content
+  .hide
+    display none
+  .model-div
+    padding 40px 0 40px 24px
+    border-bottom 1px solid $user-line-main
+  table
+    width 779px
+    th, td
+      font-size 14px
+      padding-bottom 20px
+      text-align left
+      color $user-font-normal
+    th
+      padding-bottom 25px
+      color $user-title-table
+
+  .basic-data
+    padding-bottom 20px
+    ul
+      width 750px
+      li
+        margin-bottom 20px
+        font-size 14px
+        color $user-font-safe
+        a
+          font-size 14px
+          color $user-font-pointLevel
+          &:hover
+            text-decoration underline
+          &.user-score
+            color $user-font-pointNum
+        strong
+          display inline-block
+          width 120px
+          color $user-font-safe
+          font-size 14px
+        b
+          font-size 14px
+          &.basic-popup
+            cursor pointer
+            color $user-font-bind
+        span
+          margin-left 20px
+          color $user-font-set
+          cursor pointer
+          font-size 14px
+        em
+          display inline-block
+          width 142px
+          font-size 14px
+        i
+          color $user-font-set
+          cursor pointer
+          font-size 14px
+          
+  .change-pass
+    div
+      width 800px
+    ol, ul
+      padding-bottom 25px
+      li
+        float left
+        color $user-font-normal
+        font-size 14px
+        &:first-child
+          width 152px
+        &:nth-child(2)
+          margin-right 30px
+          color $user-font-set
+          cursor pointer
+        &:nth-child(3)
+          position relative
+          top 3px
+          font-size 11px
+          color $user-font-remind
+    dl
+      color $user-font-normal
+      dt
+        float left
+        width 152px
+        font-size 14px
+      dd
+        float left
+        margin-right 90px
+        cursor pointer
+        &.en-set-dd
+          margin-right 30px
+        img
+          vertical-align bottom
+          margin-right 5px
+        span
+          font-size 14px
+
+
+  .verify
+    color $user-font-normal
+    div
+      width 800px
+    p
+      //width 8.5rem
+      margin-bottom 25px
+      font-size 12px
+      color $user-font-remind
+    dl
+      width 1000px
+      margin-bottom 20px
+      dt, dd
+        float left
+        font-size 14px
+      dt
+        width 142px
+      dd
+        margin-right 60px
+        cursor pointer
+        &.dd-en
+          margin-right 25px
+        span
+          font-size 14px
+          &.no-bind-span
+            color $user-font-bind
+        //&:nth-of-type(1)
+        //  width 1.62rem
+        img
+          width 14px
+          height 14px
+          margin-right 8px
+          vertical-align top
+        .img-cn
+          position relative
+          top -2px
+          left 5px
+          width 30px
+          height 18px
+        .img-en
+          position relative
+          top -2px
+          left 5px
+          width 80px
+          height 18px
+
+  .other
+    display flex
+    align-items center
+    span
+      display inline-block
+      padding 8px 14px
+      text-align center
+      font-size 14px
+      border 1px solid $user-line-set
+      color $user-font-other
+      cursor pointer
+  .time
+    .time-ul
+      margin-bottom .44rem
+      >li:first-child
+        color $user-font-normal
+        margin-bottom .18rem
+      .select
+        position relative
+        float left
+        input
+          width 4.56rem
+          height .4rem
+          padding-left .1rem
+          margin-right .2rem
+          background $col2F30
+          border 1px solid $col292B
+          border-radius (.02rem)
+          vertical-align bottom
+        &::after
+          position absolute
+          top 0
+          right .1rem
+          content ''
+          width 10.9%
+          height 100%
+          background $icon-xiala no-repeat center center
+          background-size auto 12%
+        .search-list
+          width 4.56rem
+          position absolute
+          li
+            line-height .43rem
+    .time-btn
+      float left
+      width .54rem
+      height .4rem
+      background $colB789
+      color #FFF
+      border-radius (.02rem)
+      border none
+
+  .notify
+    ul
+      margin-top 2px
+      &.en-ul
+        li
+          &:first-child
+            margin-right 120px
+      li
+        float left
+        cursor pointer
+        color $user-font-normal
+        font-size 14px
+        img
+          width 14px
+          height 14px
+          margin-right 10px
+          vertical-align top
+        &:first-child
+          margin-right 204px
+          cursor default
+        &.select-notify
+          span
+            margin-right 60px
+          b
+            font-size 14px
+            &.no-bind-b
+              color $user-font-bind
+    .fish-code
+      margin-top 20px
+      li
+        float left
+        color $user-font-normal
+        font-size 14px
+        &:first-child
+          margin-right 274px
+        &.open-li
+          cursor pointer
+        span
+         font-size 14px
+        img
+          margin-right 10px
+          vertical-align bottom
+    .fish-code-set
+      margin-top 10px
+      .base-input-wrap
+        float left
+        margin-right 20px
+        input
+          width 300px
+          height 36px
+      button
+        float left
+        width 56px
+        height 36px
+        border 1px solid $user-line-btn
+        color $user-font-btnCancel
+        &:hover
+          background  none
+        &.ok-btn
+          margin-right 10px
+          border none
+          color $user-font-btn
+          background $user-bg-btn
+
+  .name-list
+    .ip-show
+      color $user-font-safe
+      text-decoration underline
+      cursor pointer
+    p
+      width 801px
+      padding-bottom 20px
+      color $user-font-remind
+      line-height 19.2px
+      margin-top -3px
+      font-size 12px
+    b
+      display block
+      margin-bottom 10px
+      font-size  12px
+      color $user-font-warn
+    .add-div
+      margin-bottom 16px
+      .input-wrap
+        float left
+        height 36px
+        em
+          top -40px
+      .base-input-wrap
+        input
+          width 480px
+          height 36px
+          padding-left 14px
+          margin-right 20px
+          border-radius (2px)
+          vertical-align bottom
+      .name-btn
+        float left
+        width 56px
+        height 36px
+        background $user-bg-btn
+        color $user-font-btn
+        border-radius (2px)
+        border none
+        opacity .5
+        &.name-btn-active
+          opacity 1
+    span
+      display block
+      font-size 14px
+      margin-bottom 40px
+      color  $user-font-remind
+    table
+      .nothing-text
+        td
+          text-align center
+      .delIp
+        color $user-font-del
+        cursor pointer
+
+  .login-device
+    p
+      font-size 14px
+      margin-bottom 20px
+      color $user-font-normal
+    .login-device-btn
+      //width 140px
+      height 36px
+      background $user-bg-btn
+      color $user-font-btn
+      border-radius (2px)
+      border none
+    .nothing-text
+      text-align center
+      color $user-font-normal
+
+  .record
+    border-bottom none
+
+  .pay-type
+    h2
+      margin-top 7px
+    .pay-con
+      button
+        padding 5px 14px
+        //margin-bottom 20px
+        font-size 14px
+        border-radius 0
+      table
+        width 680px
+        margin-top 20px
+        tr
+          td
+            color $user-font-pay
+            font-size 14px
+            span
+              cursor pointer
+            img
+              width 14px
+              height 14px
+              vertical-align top
+              margin-right 6px
+            span
+              color $user-font-pay
+              font-size 14px
+            &.set-td
+              span
+                color $user-font-set
+
+  .apply-data
+    h2
+      margin-top 10px
+    .apple-btn-group
+      .base-input-wrap
+        float left
+        width 300px
+        height 36px
+        margin-right 20px
+        input
+          width 100%
+          height 36px
+      button
+        float left
+        padding 7px 14px
+        background $user-bg-btn
+        color $user-font-btn
+        opacity .5
+        &.active
+          opacity 1

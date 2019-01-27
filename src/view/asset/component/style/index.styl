@@ -1,0 +1,77 @@
+@import "./variable.styl"
+@import "./charge.styl"
+@import "./history.styl"
+@import "./total.styl"
+@import "./wallet.styl"
+@import "./chargeMessage.styl"
+@import "./transfer.styl"
+.asset
+  position relative
+  padding 55px 0 40px 0
+  color $asset-font-normal
+  background-color $asset-bg-normal
+  .asset-blow
+    display flex
+    justify-content space-between
+    position relative
+    width 1200px
+    margin 0 auto
+    ul.nav
+      // float left
+      width 190px
+      height 760px
+      background $asset-bg-none
+      li
+        width 190px
+        height 53px
+        line-height 53px
+        border-bottom 1px solid $asset-border-nav
+        &:hover a, a.active
+          background $asset-bg-active
+          color $asset-font-normal
+          font-weight bold
+          border-left 4px solid $asset-border-main
+        a
+          display block
+          width 100%
+          height 100%
+          font-size 14px
+          text-align center
+          color $asset-font-normal
+    .route
+      // float right
+      width 1000px
+      min-height 760px
+      padding-bottom 25px
+      background $asset-bg-none
+      &.route-address
+        float none
+        margin 0 auto
+      .asset-nav
+        width 100%
+        height 60px
+        background $asset-bg-title
+        li
+          float left
+          min-width 120px
+          height 60px
+          line-height 60px
+          text-align center
+          font-weight bold
+          a
+            display block
+            padding 5px
+            width 100%
+            height 100%
+            font-size 18px
+            color $asset-font-normal
+            &.active
+              color $asset-font-main
+              background $asset-bg-none
+              font-weight bold
+
+.asset-otc
+  .balance
+    .total-asset
+      height 64px
+      line-height 64px

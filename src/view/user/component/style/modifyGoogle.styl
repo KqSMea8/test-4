@@ -1,0 +1,94 @@
+.modify-google-wrap
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background rgba(0, 0, 0, .5)
+  z-index 9999
+  .modify-google-info
+    position absolute
+    left 50%
+    top 50%
+    width 560px
+    color $user-font-normal
+    padding 40px
+    background $user-bg-popup
+    border-radius (6px)
+    transform translateX(-50%) translateY(-50%)
+    box-shadow 0 2px 20px 10px rgba(25,31,46,0.20)
+    .title-wrap
+      margin-bottom 40px
+      .close-popup
+        float right
+        width 16px
+        height 16px
+        margin-top 6px
+        cursor pointer
+      .pop-title
+        float left
+        font-size 20px
+        height 28px
+        line-height 28px
+        background $user-bg-popup
+        color $user-font-safe
+        padding-left 0
+    ul
+      li
+        margin-bottom 20px
+        input
+          height 48px
+        span
+          display block
+          font-size 14px
+          color $user-font-safe
+          margin-bottom 10px
+        &.copy-li
+          text-align center
+          canvas
+            width 180px !important
+            height 180px !important
+            margin-bottom 10px
+          p
+            input
+              height 20px
+              font-size 14px
+              color $user-font-normal
+            b
+              font-size 14px
+              margin-left 20.5px
+              cursor pointer
+              color $user-font-copy
+        &.new-google-li
+          .base-input-wrap
+            width 100%
+            input
+              width 100%
+        &.verify-li
+          position relative
+          .base-input-wrap
+            width 100%
+            input
+              width 100%
+          button
+            position absolute
+            right 14px
+            top 38px
+            border none
+            font-size 14px
+            color $user-font-verify
+            &:hover
+              background none
+        &.remind-li
+          color $user-font-warn
+        &.btn-li
+          text-align right
+          button
+            width 200px
+            height 48px
+            background $user-bg-btn
+            color $user-font-btn
+            opacity .5
+            &.can-click
+              opacity 1
+

@@ -1,0 +1,87 @@
+@import "variable.styl"
+
+.login-wrap-con
+  padding 130px 0 126px
+.login-wrap
+  position relative
+  left 50%
+  transform translateX(-50%)
+  width 560px
+  //height 470px
+  padding 57px 120px 60px 120px
+  background $login-bg-login
+  .hide
+    display none
+  .err-children
+    top -39px
+  h1
+    margin-bottom 40px
+    font-size 24px
+    text-align center
+  ul
+    li
+      width 320px
+      height 48px
+      margin-bottom 20px
+      input
+        width 320px
+        height 48px
+        border 1px solid $login-bg-code
+      .err-input
+        border 1px solid $login-line-err
+    .login-btn-li
+      margin-bottom 10px
+      button
+        width 320px
+        height 48px
+        background $login-bg-active
+        color $login-font-button
+        opacity .5
+        border none
+      .can-click
+        opacity 1
+    .pass-li
+      position relative
+      .base-input-wrap
+        .disabled
+          border 1px solid $login-line-err
+          cursor not-allowed
+          color $login-font-negative
+    .picture-li
+      .base-input-wrap
+        float left
+        input
+          width 200px
+          border-right none
+          vertical-align top
+          border-radius (2px 0 0 2px)
+      .picture-btn
+        float left
+        width 120px
+        height 48px
+        background $login-bg-img
+        border none
+        border-radius (2px 0 0 2px)
+        text-align center
+        cursor pointer
+        img
+          width 120px
+          height 48px
+    .forget-li
+      height auto
+      margin-bottom 0
+      a
+        top 3px
+        right 0
+        font-size 14px
+        color $login-font-active
+      .forget-a
+        float left
+      span
+        float right
+        font-size 14px
+        color $login-font-remind
+
+
+
+

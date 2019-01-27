@@ -1,0 +1,165 @@
+.pay-type-wrap
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background rgba(0, 0, 0, .7)
+  z-index 9999999999
+  .err-children
+    top -15px
+  .pay-type-con
+    position absolute
+    left 50%
+    top 50%
+    width 560px
+    padding 40px 0
+    background $user-bg-popup
+    border-radius (6px)
+    transform translateX(-50%) translateY(-50%)
+    .title-wrap
+      margin-bottom 20px
+      padding 0 40px
+      &.active-title
+        padding 0 40px 20px
+        margin-bottom 0
+        box-shadow 0 3px 10px 0 rgba(0,0,0,0.05)
+      .close-popup
+        float right
+        width 16px
+        height 16px
+        margin-top 6px
+        cursor pointer
+      .pop-title
+        float left
+        font-size 20px
+        height 28px
+        line-height 28px
+        background $user-bg-popup
+        color $user-font-safe
+        padding-left 0
+    .pay-info
+      padding 20px 40px 0
+    .first-ul
+      width 480px
+      li
+        .title-p
+          margin-bottom 10px
+          font-size 14px
+          color $user-font-pay
+        .select-button
+          width 100%
+          .placeholder-input
+            p
+              color $user-font-pay-select
+          .main
+            line-height 46px
+            &::after
+              bottom 15px
+            &.hidden::after
+              bottom 20px
+          .base-list
+            li
+              height 48px
+              padding 0 14px
+              line-height 48px
+              p
+                text-align left
+        .disabled-p
+          width 100%
+          height 48px
+          padding-left 14px
+          background $user-bg-disable
+          border 1px solid $user-line-slice
+          line-height 48px
+          font-size 14px
+          color $user-font-pay
+        &.next-li
+          width 200px
+          height 48px
+          margin-top 50px
+          margin-left 280px
+          background $user-bg-btn
+          color $user-font-btn
+          border-radius (2px)
+          line-height 48px
+          font-size 16px
+          text-align center
+          cursor pointer
+          opacity .5
+          &.active
+            opacity 1
+    .type-ol
+      margin-top 20px
+      width 480px
+      li
+        margin-bottom 20px
+        p
+          margin-bottom 10px
+          font-size 14px
+          color $user-font-pay
+        .base-input-wrap
+          width 100%
+          input
+            width 100%
+            height 48px
+        .upload-div
+          position relative
+          width 100%
+          padding 20px 0
+          text-align center
+          border 1px dashed $user-line-slice
+          button
+            height 36px
+            padding 8px 14px 8px 34px
+            margin-bottom 10px
+            background $user-upload-default no-repeat 14px 10px/ 14px auto
+            font-size 14px
+            &:hover
+              background $user-upload-hover $user-bg-btn no-repeat 14px 10px/ 14px auto
+          span
+            display block
+            color $user-font-pay-upload
+          .up-img
+            //display block
+            width 100px
+            height 100px
+            //margin 0 auto 10px
+          .loading-wrap
+            position absolute
+            width 100%
+            height 100%
+            left 50%
+            top 50%
+            transform translateX(-50%) translateY(-50%)
+            z-index 99
+            background rgba(0, 0, 0, .5)
+            img
+              position absolute
+              left 50%
+              top 50%
+              transform translateX(-50%) translateY(-50%)
+              width 32px
+              height 32px
+              margin-top -16px
+              margin-left -16px
+              animation loading 1.5s linear infinite;
+              -webkit-animation loading 1.5s linear infinite;
+    .ok-btn-wrap
+      width 100%
+      box-shadow 0 -2px 3px -1px rgba(0,0,0,0.05)
+      .ok-btn
+        width 200px
+        height 48px
+        margin-top 20px
+        margin-left 320px
+        background $user-bg-btn
+        color $user-font-btn
+        border-radius (2px)
+        line-height 48px
+        font-size 16px
+        text-align center
+        cursor pointer
+        opacity .5
+        &.active
+          opacity 1

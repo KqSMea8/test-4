@@ -1,0 +1,270 @@
+.fund-detail
+  width 100%
+  .fund-detail-content
+    width 100%
+    height 376px
+    background $fund-detail-bg
+    .fund-detail-c
+      width 1200px
+      height 100%
+      margin 0 auto
+      display flex
+      justify-content space-between
+      .fund-intro
+        width 650px
+        height 100%
+        padding 30px 0
+        .fund-name
+          width 100%
+          height 36px
+          line-height 36px
+          img
+            width 20px
+            height 20px
+            margin 8px 10px 0 0
+          h3
+            font-size 24px
+            color $fund-detail-font-main
+            position relative
+          span
+            display inline-block
+            width 98px
+            height 36px
+            border 1px solid $fund-detail-active
+            color $fund-detail-active
+            font-size 14px
+            text-align center
+            border-radius 2px
+        .fund-type
+          width 100%
+          height 127px
+          border-bottom 1px solid $fund-detail-line
+          padding 30px 20px
+          display flex
+          justify-content space-between
+          .fund-type-items
+            height 100%
+            display flex
+            flex-direction column
+            justify-content space-between
+            align-items center
+            p
+              font-size 28px
+              color $fund-detail-font-main
+            span
+              font-size 14px
+              color $fund-detail-font-item
+          .fund-type-yields
+            p
+              color $fund-detail-font-red
+              font-weight 600
+              &:nth-of-type(1)
+                font-size 50px
+              em
+                color $fund-detail-font-red
+                font-size 20px
+                font-weight 600
+        .fund-intro-items
+          width 100%
+          height 124px
+          padding 25px 0
+          .fund-limit
+            display flex
+            align-items center
+            justify-content space-around
+            span
+              width auto
+              font-size 14px
+              color $fund-detail-active
+          ul
+            margin-top 25px
+            &.ul-en
+              li
+                &:nth-child(1), &:nth-child(2)
+                  width 190px
+                &:nth-child(4)
+                  width 380px
+                &:nth-child(5)
+                  width 270px
+            li
+              float left
+              margin-bottom 10px
+              font-size 14px
+              line-height 24px
+              &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5)
+                width 230px
+      .fund-buy
+        width 450px
+        height 100%
+        border-left 1px solid $fund-detail-line
+        padding 30px 50px
+        .fund-remain
+          margin-bottom 30px
+          span
+            font-size 24px
+            &:first-of-type
+              color $fund-detail-font-main
+            &:last-of-type
+              color $fund-detail-active
+        .fund-buy-login
+          font-size 14px
+          color $fund-detail-font-main
+          margin-bottom 16px
+          height 24px
+          line-height 24px
+        .fund-asset
+          margin-bottom 16px
+          display flex
+          justify-content space-between
+          align-items center
+          height 24px
+          line-height 24px
+          span
+            font-size 14px
+            color $fund-detail-font-main
+          a
+            display inline-block
+            padding 0 14px
+            height 24px
+            line-height 24px
+            font-size 14px
+            color $fund-detail-active
+            border 1px solid $fund-detail-active
+        .fund-detail-input
+          position relative
+          width 100%
+          margin-bottom 15px
+          input
+            width 225px
+          span
+            width 50px
+          b
+            position absolute
+            top 30px
+            right 0
+            font-size 14px
+        .fund-detail-price
+          display flex
+          justify-content space-between
+          height 24px
+          margin-bottom 5px
+          line-height 24px
+          span, em
+            font-size 14px
+            color $fund-detail-font-main
+          em
+            color $fund-detail-active
+            cursor pointer
+        .fund-buy-remind
+          font-size 14px
+          line-height 24px
+          color $fund-detail-font-main
+          &.fund-buy-remind-first
+            margin-bottom 5px
+          &.fund-buy-remind-second
+            margin-bottom 15px
+        .fund-buy-now
+          width 100%
+          height 48px
+          text-align center
+          line-height 48px
+          background $fund-detail-active
+          cursor pointer
+          &.disable-p
+            background $tlb-bg-btn-disabled
+            cursor not-allowed
+          span, a
+            display block
+            width 100%
+            font-size 14px
+            color $fund-detail-bg
+  .fund-explain
+    width 1200px
+    min-height 1000px
+    margin 20px auto
+    //display flex
+    //justify-content space-between
+    background $fund-detail-bottom-bg
+    .fund-nav-c
+      width 1200px
+      height 60px
+      background $fund-detail-model-bg
+      display flex
+      p
+        height 60px
+        //border-bottom 1px solid $fund-detail-navLine
+        padding 0 24px
+        line-height 60px
+        text-align center
+        //border-left 4px solid $fund-detail-bg
+        font-size 18px
+        color $fund-detail-font-main
+        cursor pointer
+      .nav-active
+        height 60px
+        line-height 60px
+        text-align center
+        color $fund-detail-active
+        //border-left 4px solid $fund-detail-active
+        background $fund-detail-bg
+    .fund-explain-content
+      width 1200px
+      min-height 1000px
+      background $fund-detail-bg
+  .fund-sure-content
+    position fixed
+    top 0
+    left 0
+    bottom 0
+    right 0
+    background rgba(25, 31, 46, .6)
+    z-index 888
+    .fund-sure
+      width 560px
+      height 324px
+      background $fund-detail-bg
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+      border-radius 6px
+      padding 40px
+      .fund-sure-title
+        display flex
+        justify-content space-between
+        margin-bottom 40px
+        span
+          font-size 20px
+          color $fund-detail-font-main
+        em
+          width 16px
+          height 16px
+          background $close-button
+          cursor pointer
+          background-size: contain
+      p
+        font-size 14px
+        color $fund-detail-font-main
+        margin-bottom 10px
+      input
+        width 480px
+        height 48px
+        line-height 48px
+        padding-left 10px
+        border-radius 2px
+        border 1px solid $fund-detail-navLine
+        font-size 14px
+        color $fund-detail-font-main
+
+      .fund-sure-sub
+        margin-top 50px
+        width 100%
+        text-align right
+        button
+          width 200px
+          height 48px
+          text-align center
+          line-height 48px
+          background $fund-detail-active
+          color $fund-detail-bg
+          cursor pointer

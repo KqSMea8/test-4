@@ -1,0 +1,113 @@
+@import "./variable.styl"
+
+ // 通知列表
+.user-notice-wrap
+  width 1200px
+  margin 20px auto 40px
+  background $notice-bg-user-notice
+  padding-bottom 20px
+  .hide
+    display none
+  h1
+    padding 18px 0 18px 24px
+    font-size 18px
+    color $notice-font-nav
+    background $notice-bg-title
+  .nothing-text
+    color $notice-font-para
+    font-size .2rem
+    margin-top .2rem
+    text-align center
+  .table-div
+    width 100%
+    min-height 780px
+    color $notice-font-para
+    //.table-title
+    //  border-bottom .01rem solid $notice-line-light
+    //  padding-bottom .2rem
+    //  span
+    //    display inline-block
+    //    width 10rem
+    //    text-align center
+    //    font-size .18rem
+    //  i
+    //    display inline-block
+    //    width 2rem
+    //    text-align center
+    //    font-size .18rem
+    ul
+      li
+        cursor pointer
+        border-bottom 1px solid $notice-line-light
+        height 52px
+        line-height 52px
+        padding 0 24px 0 34px
+        p
+          float left
+          width 900px
+          overflow hidden
+          white-space nowrap
+          text-overflow ellipsis
+          color $notice-font-info
+          font-size 14px
+          .read-flag
+            display inline-block
+            width 10px
+            height 10px
+            background $notice-bg-notice
+            border-radius 50%
+            margin-right 10px
+            &.no-read
+              display none
+          span
+            font-size 14px
+        i
+          float right
+          display inline-block
+          width 200px
+          color $notice-font-time
+          text-align right
+          font-size 14px
+  .pagination-wrap
+    margin-top 20px
+    margin-right 24px
+    justify-content flex-end
+
+// 内容详情弹窗
+.user-notice-pop-wrap
+  position fixed
+  top 50px
+  left 50%
+  transform translateX(-50%)
+  width 600px
+  background $notice-bg-main
+  z-index 9999
+  border 1px solid $notice-line-light
+  .user-notice-pop-title
+    height 60px
+    padding 0 30px
+    line-height 60px
+    border-bottom  1px solid $notice-line-light
+    span
+      float left
+      font-size 20px
+      color $notice-font-title
+    img
+      float right
+      width 16px
+      height 16px
+      margin-top 20px
+      cursor pointer
+  #user-notice-content
+    p
+      min-height 50px
+      font-size 16px
+      color $notice-font-info
+      line-height 25px
+      word-break break-all
+
+
+
+
+
+

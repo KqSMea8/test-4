@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>pop_warn</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-130.000000, -141.000000)">
+            <g id="pop_warn" transform="translate(130.000000, 141.000000)">
+                <circle id="Oval-9" fill="#FF9E2F" cx="15" cy="15" r="15"></circle>
+                <path d="M15,6 C16.1045695,6 17,6.8954305 17,8 L17,16 C17,17.1045695 16.1045695,18 15,18 C13.8954305,18 13,17.1045695 13,16 L13,8 C13,6.8954305 13.8954305,6 15,6 Z M15,24 C13.8954305,24 13,23.1045695 13,22 C13,20.8954305 13.8954305,20 15,20 C16.1045695,20 17,20.8954305 17,22 C17,23.1045695 16.1045695,24 15,24 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

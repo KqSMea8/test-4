@@ -1,0 +1,54 @@
+// @import "./base.styl"
+.asset
+  .balance
+    .total-asset
+      height 210px
+      .item
+        float left
+        width 100%
+        height 50px
+        padding-left 24px
+        line-height 50px
+        .content
+          float left
+        .select
+          position relative
+          float right
+          left -36px
+          top -2px
+          // padding-top 0.045rem
+          .main
+            width 70px
+            height 34px
+            margin-top 10px
+            // background-color $colFFFF
+        i
+          color $asset-font-main
+        b
+          margin 0 10px
+          font-size 16px
+          color $asset-font-normal
+          text-align justify
+        &.total b
+          font-size 20px
+          color $asset-font-normal
+          text-align justify
+        &.limit
+          a
+            margin-left 30px
+            font-size 12px
+            text-decoration none
+            color $asset-font-main
+            cursor pointer
+          .disable
+            margin-left 30px
+            font-size 12px
+            color $asset-font-legal
+        span
+          font-size 14px
+          color $asset-font-normal
+          letter-spacing 0.06px
+          text-align justify
+          &.legal
+            color $asset-font-legal
+

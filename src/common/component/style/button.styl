@@ -1,0 +1,131 @@
+// @import "../style/variable.styl"
+.base-button
+  display inline-block
+  outline none
+  font-size 0.14*100px
+  letter-spacing 0
+  text-align center
+  border-radius(0.02*100px)
+  cursor pointer
+.export
+  position relative
+  height 36px
+  font-size 14px
+  padding-left 14px
+  padding-right 30px
+  color $common-font-main
+  border 1px solid $common-border-main
+  border-radius(0.02*100px)
+  &::after
+    position absolute
+    content ''
+    right 3px
+    top 0
+    width 24px
+    height 36px
+    background $history-export no-repeat center center
+    background-size 14px 14px
+  &:hover
+    color $common-font-none
+    border-color $common-border-main
+    background $common-bg-main
+    &::after
+      position absolute
+      content ''
+      right 3px
+      top 0
+      width 24px
+      height 36px
+      background $history-export-hover no-repeat center center
+      background-size 14px 14px
+  // &:active
+  //   color $common-font-main-active
+  //   border-color $common-border-main-active
+a.default, button.default
+  border 1px solid $common-border-main-pro
+  color $common-font-main
+  &:hover
+    color $common-font-none
+    background-color $common-bg-main
+  // &.main
+  //   color $common-font-main
+  //   border-color $common-border-main
+  //   &:active
+  //     color $common-font-main-active
+  //     border-color $common-border-main-active
+  // &.positive
+  //   color $common-font-main
+  //   border-color $common-border-main
+  //   &:active
+  //     color $common-font-main-active
+  //     border-color $common-border-main-active
+  // &.warn
+  //   color $common-font-extrude
+  //   border-color $common-border-extrude
+  //   &:active
+  //     color $common-font-extrude-active;
+  //     border-color $common-border-extrude-active;
+  // &.danger
+  //   color $common-font-negative
+  //   border-color $common-border-negative
+  //   &:active
+  //     color $common-font-negative-active;
+  //     border-color $common-border-negative-active;
+  // &.disable
+  //   border-color $common-border-dark;
+  //   color $common-font-dark
+  //   &:hover, &:active
+  //     border-color $common-border-dark;
+  //     color $common-font-dark
+a.base, button.base
+  color $common-font-none
+  background-color $common-bg-main
+  border none
+a.h5, button.h5
+  color $common-font-none
+  font-size 0.14rem
+  background-color $common-bg-main-h5
+  border none
+  &.disable
+    background-color $common-bg-disable-h5
+  // &.main
+  //   background-color $common-bg-main
+  //   &:hover
+  //     color $common-font-none
+  //     background-color $common-bg-main-hover
+  //   &:active
+  //     color $common-font-none
+  //     background-color $common-bg-main-active
+  // &.positive
+  //   background-color $common-bg-main
+  //   &:hover
+  //     color $common-font-none
+  //     background-color $common-bg-main-hover
+  //   &:active
+  //     color $common-font-none
+  //     background-color $common-bg-main-active
+  // &.warn
+  //   background-color $common-bg-extrude
+  //   &:hover
+  //     color $common-font-none
+  //     background-color $common-bg-extrude-hover
+  //   &:active
+  //     color $common-font-none
+  //     background-color $common-bg-extrude-active
+  // &.danger
+  //   background-color $common-bg-negative
+  //   &:hover
+  //     color $common-font-none
+  //     background-color $common-bg-negative-hover
+  //   &:active
+  //     color $common-font-none
+  //     background-color $common-bg-negative-active
+  // &.disable
+  //   opacity 0.5
+  //   background-color $common-bg-main
+  //   border 0.01*100px solid $common-font-dark
+  //   color $common-font-none
+  //   &:hover, &:active
+  //     background-color $common-bg-main
+  //     border 0.01*100px solid $common-font-dark
+  //     color $common-font-none

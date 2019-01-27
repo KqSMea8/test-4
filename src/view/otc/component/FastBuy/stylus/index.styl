@@ -1,0 +1,92 @@
+@import "./variable.styl"
+
+.otc-fast-buy
+	width 100%
+	height 100%
+	background $otc-fast-buy-bg no-repeat center / cover
+	padding 160px 0 0 120px
+	.otc-fast-title
+		font-size 60px
+		color $colFFFF
+	.otc-fast-price
+		font-size 14px
+		color $colFFFF
+		margin 60px 0 10px 0
+	.otc-fast-filter
+		display flex
+		height 50px
+		align-items center
+		.fast-buy-input
+			height 50px
+			width 287px
+			background $colFFFF
+			color $otc-fast-font-input
+			border 1px solid $colE0E0
+		.fast-buy-select
+			height 50px
+			width 113px
+			border 1px solid $otc-fast-border
+			color $otc-fast-font-main
+			background $colFFFF
+			font-size 16px
+			&:after
+				bottom 21px
+			p
+				height 100%
+				line-height 50px
+		.fast-buy-dig
+			line-height 50px
+			text-align center
+			border none
+		img
+			width 16px
+			height 16px
+			margin 0 10px
+		.fast-buy-submit
+			background $otc-fast-active
+			height 50px
+			border-radius 2px
+			font-size 16px
+			color $colFFFF
+			padding 13px 20px
+			margin-left 40px
+			&.disable
+				background: #CCCCCC
+				border none
+	h3
+		font-size 14px
+		margin-top 20px
+		color #F25C48
+	.otc-fast-pay
+		margin-top 40px
+		.otc-pay-title
+			font-size 14px
+			color $colFFFF
+			margin-bottom 10px
+		.otc-pay-way
+			display flex
+			height 20px
+			align-items center
+			.otc-pay-item
+				margin-right 60px
+				display flex
+				height 20px
+				align-items center
+				cursor pointer
+			.otc-pay-check
+				display inline-block
+				width 13px
+				height 13px
+				background $otc-checkbox-select no-repeat center
+			em
+				display inline-block
+				width 13px
+				height 13px
+				background $otc-checkbox-normal no-repeat center
+			img
+				width 18px
+				height 18px
+				margin 0 5px 0 11px
+			span
+				font-size 14px
+				color $colFFFF

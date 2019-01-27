@@ -1,0 +1,77 @@
+.otc-order-collection
+  width 190px
+  .otc-order-collection-content
+    .main
+      .item
+        padding 20px
+        background $order-bg-none
+        border-bottom 1px solid $order-border-main
+        .pay-img
+          float left
+          margin-right 10px
+          img
+            width 24px
+            height 24px
+            padding 1px
+            border 1px solid $order-border-main
+        span
+          float left
+          line-height 24px
+          font-size 14px
+          margin-bottom 6px
+        p
+          float left
+          width 100%
+          font-size 12px
+          line-height 24px
+          text-align left
+          letter-spacing -0.8px
+          b
+            float right
+            position relative
+            color $order-font-main
+            cursor pointer
+            &::before
+              position absolute
+              z-index 999
+              content ''
+              left 17px
+              top 25px
+              border-bottom 7px solid $order-bg-none
+              border-left 7px solid transparent
+              border-right 7px solid transparent
+              // box-shadow 0 0 10px 0 $order-border-shadow
+            span
+              float right
+              padding-right 16px
+              margin-bottom 0
+              line-height 24px
+              cursor pointer
+            i
+              position absolute
+              right 0
+              bottom 10px
+              _rotate(45deg)
+              width 7px
+              height 7px
+              border-right 1px solid $order-border-active
+              border-bottom 1px solid $order-border-active
+              &.active
+                bottom 7px
+                _rotate(-135deg)
+            img
+              position absolute
+              left -66px
+              top 32px
+              width 180px
+              height 180px
+              border 10px solid #FFF
+              background-color #F8F8F8
+              box-shadow: 0px 0px 10px 5px $order-border-shadow
+              border-radius(2px)
+              z-index 99
+            &.none
+              &::before, img
+                display none
+
+

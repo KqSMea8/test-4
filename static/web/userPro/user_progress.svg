@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ing_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="5.个人中心" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人中心-2身份认证-认证中" transform="translate(-474.000000, -184.000000)">
+            <g id="ing_icon" transform="translate(474.000000, 184.000000)">
+                <circle id="Oval-3" fill="#FF9E2F" cx="22" cy="22" r="22"></circle>
+                <rect id="Rectangle-3" fill="#FFFFFF" x="20.5333333" y="9.26666667" width="2.93333333" height="16"></rect>
+                <rect id="Rectangle-3" fill="#FFFFFF" transform="translate(28.866667, 24.133333) rotate(90.000000) translate(-28.866667, -24.133333) " x="27.4" y="16.1333333" width="2.93333333" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

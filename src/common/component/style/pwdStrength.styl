@@ -1,0 +1,22 @@
+.pwd-strength-wrap
+  &.low-bg
+    span
+      &:first-child
+        background $common-bg-pwd-low
+  &.middle-bg
+    span
+      &:nth-child(1), &:nth-child(2)
+        background $common-bg-pwd-middle
+  &.high-bg
+    span
+      background $common-bg-pwd-high
+  span
+    display inline-block
+    width 60px
+    height 10px
+    margin-right 10px
+    background $common-bg-pwd-normal
+    &:nth-child(3)
+      margin-right 20px
+  b
+    color $common-font-pwd

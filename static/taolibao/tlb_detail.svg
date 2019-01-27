@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>tlb_detail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="***切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="其他" transform="translate(-617.000000, -492.000000)" fill="#FF9E2F">
+            <path d="M617,512 L617,510 L637,510 L637,512 L617,512 Z M617,508 L617,503 L619,503 L619,508 L617,508 Z M621,508 L621,500 L623,500 L623,508 L621,508 Z M626,508 L626,502 L628,502 L628,508 L626,508 Z M630,508 L630,500 L632,500 L632,508 L630,508 Z M635,508.001 L635,497 L637,497 L637,508.001 L635,508.001 Z M637,492 L637,494.278 L627.822,499.284 L624.827,496.288 L617,500.636 L617,498.349 L625.174,493.807 L628.178,496.811 L637,492 Z" id="tlb_detail"></path>
+        </g>
+    </g>
+</svg>

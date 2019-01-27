@@ -1,0 +1,292 @@
+@import "./variable.styl"
+.help-wrap-pro
+  background-color $help-bg-main
+  padding 20px 0 40px 0
+  .route
+    width 1200px
+    margin 0 auto
+  //服务协议
+  .help-terms
+    padding 40px 24px
+    color $help-font-normal
+    background-color $help-bg-none
+    .title
+      height 33px
+      margin-bottom 40px
+      line-height 33px
+      text-align center
+      font-size 24px
+      color $help-font-normal
+      font-weight bold
+    ul
+      padding-left 30px
+    p,li
+      margin-bottom 6px
+      font-size 14px
+      color $help-font-normal
+      text-align justify
+      line-height 24px
+    h3
+      margin 18px 0
+      font-weight bold
+      font-size 18px
+      color $help-font-normal
+      text-align justify
+      line-height 27px
+    ol
+      li
+        text-indent 2em
+        padding 5px 0
+        margin 0
+  //api文档
+  // .help-api
+  //   color $help-font-normal
+  //   .title
+  //     margin 0.05rem 0 0.1rem 0
+  //   span
+  //     font-size 0.14rem
+  //     padding 0 0.05rem 0
+  //     font-family NotoSansHans-Regular
+  //     display inline-block
+  //     height 0.19rem
+  //     line-height 0.19rem
+  //     color $help-font-negative
+  //     background $help-bg-negative-op
+  //     border-radius(0.04rem)
+  //   h3
+  //     margin 0.05rem 0 0.1rem 0
+  //   .content
+  //       font-size 0.14rem
+  //       letter-spacing 0.01rem
+  //       text-align left
+  //       margin 0.25rem 0 0.35rem 0.4rem
+  //       ol
+  //         li
+  //           margin-bottom  0.1rem
+  //           line-height 0.23rem
+  //       pre
+  //         display block
+  //         padding 0.095rem 0.095rem 0.095rem 0.2rem
+  //         margin 0.1rem 0 0.1rem 0
+  //         font-size 0.13rem
+  //         line-height 1.42857143
+  //         word-break break-all
+  //         word-wrap break-word
+  //         background-color $help-bg-deep
+  //         border-radius(0.02rem)
+  //         code
+  //           font-family NotoSansHans-Regular
+  //           font-size 0.14rem
+  //           text-align justify
+  //           background none
+  //   .summarize
+  //       p
+  //         text-indent 0.15rem
+  //         line-height 0.22rem
+  //   .api-list
+  //     margin 0.2rem 0 0
+  //     table
+  //       text-align left
+  //       td,th
+  //         height 0.52rem
+  //         padding-left 0.34rem
+  //         line-height 0.52rem
+  //         border 0.01rem solid $help-border-minor
+  //       thead
+  //         tr
+  //           background-color $help-bg-medium
+  //           th:first-children
+  //             width 2rem
+  //           th:nth-children(2)
+  //             width 2.2rem
+  //           th:nth-children(3)
+  //             width 7.5rem
+  //     ol
+  //       li:nth-children(3)
+  //         text-indent 1em
+  //     h5
+  //       margin 0.3rem 0 0.2rem 0
+  //       span
+  //         height 0.23rem
+  //         line-height 0.23rem
+  //         font-size 0.18rem
+  // 币种资料
+  .help-coin
+    color $help-font-normal
+    .title
+      height 60px
+      line-height 60px
+      padding-left 24px
+      font-size 18px
+      color $help-font-main
+      font-weight bold
+      background-color $help-bg-title
+    .left
+      float left
+      width 230px
+      height 760px
+      background-color $help-bg-none
+      .coin-list
+        overflow hidden
+        height 700px
+        ul
+          width 230px
+          li
+            position relative
+            font-size 14px
+            color $help-font-dark
+            height 52px
+            line-height 52px
+            padding-left 24px
+            border-bottom 1px solid $help-border-list
+            cursor pointer
+            &.active, &:hover
+              background $help-bg-coin-title-op
+              font-weight bold
+              &::before
+                position absolute
+                content ''
+                width 6px
+                height 100%
+                left 0
+                top 0
+                background-color $help-bg-coin-title
+    .right
+      float right
+      width 960px
+      min-height 760px
+      background-color $help-bg-none
+      .title
+        position relative
+        padding 0 24px 0 58px
+        img
+          position absolute
+          top 18px
+          left 24px
+          width 24px
+          height 24px
+        button
+          float right
+          width 70px
+          height 36px
+          margin-top 12px
+    .content
+      padding 20px 24px 0
+      .info
+        li
+          float left
+          min-width 33.33%
+          height 30px
+          line-height 30px
+          font-size 14px
+          color $help-font-dark
+          a
+            font-size 14px
+            color $help-font-dark
+            margin-left 10px
+            &:hover
+              color $help-font-main
+      .intro
+        h4
+          height 48px
+          line-height 48px
+          font-size 16px
+          color $help-font-dark
+        p
+          font-size 14px
+          color $help-font-dark
+          line-height 22.4px
+      .button
+        height 36px
+        margin-top 27px
+        a,button
+          float left
+          height 36px
+          line-height 36px
+          margin-right 20px
+          font-size 14px
+          color $help-font-normal
+          background-color transparent
+          border 1px solid #CCCCCC
+          border-radius(2px)
+          &:hover
+            color $help-font-main
+            border-color $help-border-main
+        a
+          padding 0 20px
+    // .content
+    //   position relative
+    //   padding-left 1rem
+    //   color $help-font-minor
+    //   img
+    //     position absolute
+    //     top 0
+    //     left 0
+    //     width 0.66rem
+    //     height 0.66rem
+    //   .info
+    //     margin-bottom 0.5rem
+    //     color $help-font-normal
+    //     .left
+    //       float left
+    //       min-width 2.02rem
+    //       padding-right 0.32rem
+    //       border-right 1px solid $help-line-normal
+    //       p:nth-children(1)
+    //         font-size 0.18rem
+    //         margin-bottom 0.2rem
+    //       p:nth-children(2)
+    //         font-size 0.28rem
+    //         margin-bottom 0.2rem
+    //       a:nth-children(3)
+    //         font-size 0.14rem
+    //         color $help-font-main
+    //         text-decoration underline
+    //         cursor pointer
+    //         &:hover
+    //           color $help-font-main-hover
+    //         &:active
+    //           color $help-font-main-active
+    //     .right
+    //       float left
+    //       font-size 0.14rem
+    //       padding-left 0.3rem
+    //       p
+    //         overflow hidden
+    //       span
+    //         float left
+    //       span:nth-children(1)
+    //         width 2.82rem
+    //       p:nth-children(1)
+    //         margin 0.03rem 0 0.28rem 0
+    //         span:nth-children(2)
+    //           min-width 2.08rem
+    //       p:nth-children(2)
+    //         margin 0 0 0.28rem 0
+    //       P:nth-children(3)
+    //         span
+    //           width 0.72rem
+    //         a
+    //           margin-right 0.16rem
+    //           color $help-font-main
+    //           text-decoration underline
+    //           cursor pointer
+    //           &:hover
+    //             color $help-font-main-hover
+    //           &:active
+    //             color $help-font-main-active
+    //   .detail
+    //     p
+    //       width 8.7rem
+    //       line-height 0.3rem
+    //       letter-spacing 0
+    //     .button
+    //       height 0.36rem
+    //       margin-top 0.27rem
+    //       a,button
+    //         float left
+    //         height 0.36rem
+    //         line-height 0.36rem
+    //         margin-right 0.2rem
+    //       a
+    //         padding 0 0.20rem

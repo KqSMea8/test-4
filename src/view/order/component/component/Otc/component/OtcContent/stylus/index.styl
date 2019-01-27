@@ -1,0 +1,31 @@
+@import 'variable.styl'
+@import 'appeal.styl'
+@import "../../OtcConfirm/stylus/exchangeInfo.styl"
+@import "../../OtcConfirm/stylus/otcOrderItem.styl"
+@import "../../OtcConfirm/stylus/otcOrderTitle.styl"
+@import "../../OtcConfirm/stylus/faq.styl"
+@import "otcChat.styl"
+@import './collection.styl'
+.order-otc-content
+	display flex
+	justify-content space-between
+	.otc-content-l
+		width 190px
+	.otc-content-r
+		width 1000px
+		margin-bottom 40px
+		.otc-content-fee
+			height 60px
+			background $colFFFF
+			line-height 60px
+			padding 0 24px
+			display flex
+			justify-content space-between
+			.otc-content-bussiness
+				font-size 14px
+				color $otc-order-font-main
+			.fee-item
+				font-size 12px
+				color $otc-order-font-title
+		.order-otc-chat
+			margin 10px 0

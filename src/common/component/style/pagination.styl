@@ -1,0 +1,82 @@
+.pagination-wrap
+  display flex
+  justify-content center
+  p
+    height 36px
+    line-height 36px
+    font-size 12px
+    color $common-font-normal
+    letter-spacing 0
+    &.total
+      margin-right 0.1*100px
+      span
+        color $common-font-normal
+    &.jump
+      margin-left 0.1*100px
+      input
+        position relative
+        top -2px
+        width 56px
+        height 36px
+        line-height 36px
+        font-size 14px
+        color $common-font-normal
+        margin 0 0.06*100px 0
+        text-align center
+        border 0.01*100px solid $common-border-dark
+        border-radius 0.02*100px
+        &:focus
+          border 0.01*100px solid $common-font-main
+      button
+        width 56px
+        height 36px
+        line-height 36px
+        margin-left 0.1*100px
+        color $common-font-normal
+        background $common-bg-none
+        border 1px solid $common-border-dark
+        border-radius(2px)
+        &:hover
+          background-color $common-bg-main
+          color $common-font-none
+          border-color $common-border-main
+  .pagination
+    overflow hidden
+    li
+      float left
+      min-width 36px
+      height 36px
+      line-height 36px
+      font-size 14px
+      color $common-font-normal
+      letter-spacing 0
+      border 0.01*100px solid $common-border-dark
+      border-radius(2px)
+      //border-right none
+      text-align center
+      cursor pointer
+      &.last
+        background $pre-month no-repeat center center
+        background-size 0.13*100px 0.13*100px
+        &.disable
+          display none
+      &.next
+        background $next-month no-repeat center center
+        background-size 0.13*100px 0.13*100px
+        &.disable, &.disable:hover
+          background-color $common-bg-deep
+      &.page-button, &.last, &.next
+        padding 0 0.09*100px 0 0.09*100px
+        margin-right 10px
+        &:hover
+          color $common-font-main
+        &.active
+          background $common-bg-main
+          color $common-font-none
+          border none
+        &.omit
+          color $common-border-dark
+          &:hover
+            color $common-border-dark
+      &.next
+        border-right 0.01*100px solid $common-border-dark

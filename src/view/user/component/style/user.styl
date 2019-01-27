@@ -1,0 +1,80 @@
+//@import "../../../common/css/variable.styl"
+
+.user-big-wrap
+  width 100%
+.user-wrap
+  width 1200px
+  margin 20px auto 40px
+  .user-nav
+    width 190px
+    height 760px
+    margin-right 10px
+    background $user-bg-main
+    li
+      height 52px
+      line-height 52px
+      text-align center
+      border-bottom 1px solid $user-slide-line
+      a
+        display block
+        width 100%
+        height 100%
+        font-size 14px
+        color $user-slide-font-main
+        border-left 4px solid $user-bg-main
+        &.active
+          font-weight bold
+          border-left 4px solid  $user-slide-line-active
+          background $user-slide-bg-active
+        &:hover
+          font-weight bold
+          border-left 4px solid  $user-slide-line-active
+          background $user-slide-bg-active
+
+  .user-content
+    width 1000px
+    background $user-bg-main
+    h1
+      height 60px
+      line-height 60px
+      padding-left 24px
+      color $user-title-main
+      background $user-title-bg
+      font-size 18px
+    h2
+      float left
+      font-size 16px
+      color $user-title-second
+      width 130px
+      &.h2-en
+        width 150px
+
+  // ip弹窗
+  .ip-popup-wrap
+    position fixed
+    left 0
+    right 0
+    top 0
+    bottom 0
+    background rgba(0, 0, 0, .5)
+  .ip-popup
+    position absolute
+    top 50%
+    left 50%
+    transform translateX(-50%) translateY(-50%)
+    width 500px
+    height 200px
+    text-align center
+    line-height 200px
+    background $user-bg-ipPopup
+    border-radius 5px
+    img
+      position absolute
+      top 10px
+      right 10px
+      cursor pointer
+    p
+      font-size 20px
+      color $user-font-safe
+
+

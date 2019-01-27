@@ -1,0 +1,103 @@
+@import "variable.styl"
+.order-otc-info
+	width 100%
+	border-top 1px solid $order-line
+	.order-otc-filter
+		display flex
+		justify-content space-between
+		height 80px
+		align-items center
+		line-height 80px
+		padding 0 24px
+		.order-otc-input
+			width 144px
+			height 36px
+			border 1px solid $order-line
+			color $colCCCC
+			margin-right 20px
+			font-size 14px
+		span
+			font-size 14px
+			color $order-font-title
+		.order-otc-select
+			width 100px
+			height 36px
+			border 1px solid $order-line
+			color $order-font-content
+			margin 0 20px 0 10px
+			font-size 14px
+		.date-interval
+			margin-right 5px
+		.order-otc-button
+			height 36px
+			padding 0 14px
+			border 1px solid $order-line
+			color $order-font-content
+			margin-left 10px
+		.order-filter-search
+			color $colFFFF
+			background $order-line-active
+	.order-otc-info-table
+		width 100%
+		thead
+			tr
+				height 36px
+				background $order-title-bg
+				line-height 36px
+				td
+					color $order-font-title
+					font-size 12px
+					&:nth-of-type(1)
+						padding-left 24px
+		tbody
+			tr
+				height 60px
+				//line-height 60px
+				border-bottom 1px solid $order-line
+				td
+					height 60px
+					font-size 14px
+					color $order-font-content
+					vertical-align middle
+					&:nth-of-type(1)
+						padding-left 24px
+					.otc-sell
+						color $col5C48
+						font-size 14px
+					.otc-buy
+						color $colB36A
+						font-size 14px
+					span
+						font-size 14px
+					a
+						font-size 14px
+						display inline-block
+						vertical-align middle
+						color $order-line-active
+						cursor pointer
+					.otc-remark
+						height 60px
+						line-height 60px
+						display inline-block
+						width 54px
+						margin-right 10px
+						overflow hidden
+						white-space nowrap
+						-ms-text-overflow: ellipsis
+						text-overflow: ellipsis
+					em
+						font-size 14px
+						color $order-line-active
+						position relative
+						b
+							color: $colFFFF
+							position: absolute;
+							top: -4px;
+							right: -5px;
+							-webkit-border-radius: 50%;
+							-moz-border-radius: 50%;
+							border-radius: 50%;
+							width: 12px;
+							height: 12px;
+							background: #F25C48;
+							text-align: center;

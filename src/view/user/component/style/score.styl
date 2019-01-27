@@ -1,0 +1,99 @@
+//@import "../../../common/css/variable.styl"
+
+.integration-wrap
+  .hide
+    display none
+  .info
+    padding 40px 0 40px 24px
+    border-bottom 1px solid $user-line-main
+    .integration-title
+      width 1rem
+    h3
+      margin-bottom 20px
+      b
+        font-size 14px
+        color $user-font-normal
+        margin-right 20px
+      a
+        font-size 14px
+        color $user-font-pointLevel
+    ul
+      margin-bottom 60px
+      li
+        float left
+        width 120px
+        color $user-font-normal
+        em
+          font-size 14px
+          color $user-font-pointLevel
+        i
+          font-size 12px
+          color $user-font-levelNum
+    .progress-line
+      position relative
+      width 720px
+      height 10px
+      background $user-bg-progress
+      border-radius (100px)
+      p
+        height 10px
+        border-radius (100px)
+        background linear-gradient(90deg, #FAD961 0%, #F76B1C 100%)
+      ol
+        position absolute
+        top 0
+        li
+          float left
+          width 119px
+          height 10px
+          border-right 1px solid  $user-line-slice
+      span
+        position absolute
+        display block
+        top -35px
+        transform translateX(-50%)
+        padding 5px 13px
+        //background linear-gradient(-90deg, $colB789 0%, $colCDA1 100%)
+        background $user-bg-progressLine
+        border-radius (2px)
+        color $user-font-pointScore
+        &::after
+          position absolute
+          top 21px
+          left 50%
+          transform translateX(-50%)
+          content ''
+          border-width 6px
+          border-style solid dashed dashed
+          border-color $user-bg-progressLine transparent transparent
+          font-size 0
+          line-height 0
+
+
+  .item
+    padding 40px 0 40px 24px
+    min-height 450px
+    border-bottom 1px solid $user-line-main
+    margin-bottom 20px
+    a
+      display block
+      margin-bottom 20px
+      color $user-font-getScore
+      font-size 14px
+      font-weight 200
+    table
+      width 715px
+      th, td
+        height 20px
+        padding-bottom 15px
+        text-align left
+        color $user-font-normal
+        font-size 14px
+      th
+        color $user-title-table
+        padding-bottom 20px
+
+  .pagination-wrap
+    justify-content flex-end
+    padding-right 24px
+    margin-bottom 20px

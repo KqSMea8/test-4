@@ -1,0 +1,75 @@
+@import "./variable.styl"
+
+.notice-wrap
+  width 1200px
+  margin 20px auto 40px
+  .hide
+    display none
+  .notice-nav
+    width 190px
+    height 856px
+    margin-right 10px
+    background $notice-bg-main
+    li
+      height 52px
+      line-height 52px
+      text-align center
+      border-bottom 1px solid $notice-slide-line
+      a
+        display block
+        width 100%
+        height 100%
+        font-size 14px
+        color $notice-slide-font-main
+        border-left 4px solid $notice-bg-main
+        &.active
+          font-weight bold
+          border-left 4px solid  $notice-slide-line-active
+          background $notice-slide-bg-active
+        &:hover
+          font-weight bold
+          border-left 4px solid  $notice-slide-line-active
+          background $notice-slide-bg-active
+  .notice-content
+    width 1000px
+    background $notice-bg-main
+    min-height 856px
+    h1
+      height 60px
+      line-height 60px
+      padding-left 24px
+      color $notice-title-main
+      background $notice-title-bg
+      font-size 18px
+    h2
+      float left
+      font-size 16px
+      color $notice-title-second
+      width 130px
+
+    // 资讯公告
+    .notice-content-wrap
+      .nothing-div
+        margin-top 350px
+        text-align center
+        p
+          color $notice-font-nothing
+          font-size 18px
+      .con-ul
+        min-height 780px
+        li
+          height 52px
+          padding 0 24px
+          line-height 52px
+          border-bottom 1px solid $notice-slide-line
+          i
+            float left
+            font-size 14px
+            color $notice-font-info
+          span
+            float right
+            font-size 14px
+            color $notice-font-time
+      .pagination-wrap
+        justify-content flex-end
+        padding 20px 20px 20px 0

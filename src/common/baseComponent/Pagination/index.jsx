@@ -1,0 +1,146 @@
+import React, { Component } from "react";
+import exchangeViewBase from "../../../components/ExchangeViewBase";
+import Button from "../Button/index";
+/*
+  currentPage	当前页码，默认为1
+  total	数据总条数
+  pageSize 每页数据条数
+  showTotal 是否显示数据总条数
+  showQuickJumper 是否显示快速跳转
+  onChange页码跳转的回调
+*/
+
+export default class Pagination extends exchangeViewBase {
+  constructor(props) {
+    super(props);
+    this.state = { currentPage: props.currentPage ? props.currentPage : 1 };
+  }
+  list(totalPage, currentPage) {
+    if (totalPage < 7) {
+      return Array.from({ length: totalPage }, (item, index) => index + 1);
+    }
+    if (currentPage <= 4) {
+      return [1, 2, 3, 4, 5, "...", totalPage];
+    }
+    if (currentPage < totalPage - 3) {
+      return [
+        1,
+        "...",
+        currentPage - 1,
+        currentPage,
+        currentPage + 1,
+        "...",
+        totalPage
+      ];
+    }
+    if (currentPage >= totalPage - 3) {
+      return [
+        1,
+        "...",
+        totalPage - 4,
+        totalPage - 3,
+        totalPage - 2,
+        totalPage - 1,
+        totalPage
+      ];
+    }
+  }
+
+  shouldComponentUpdate (nextProps,nextState){
+    if (nextState.currentPage !== this.state.currentPage) {
+      this.props.onChange && this.props.onChange(nextState.currentPage);
+    };
+    if (nextProps.currentPage !== this.props.currentPage) {
+      this.state.currentPage !== nextProps.currentPage && this.setState({currentPage: nextProps.currentPage})
+    }
+    return true;
+  }
+
+
+  render() {
+    let { total, showTotal, showQuickJumper, pageSize } = this.props,
+        totalPage = this.props.total % this.props.pageSize === 0 ? parseInt(this.props.total / this.props.pageSize) : parseInt(this.props.total / this.props.pageSize) + 1;
+    let currentPage = this.props.currentPage;
+    return (
+      <div className="pagination-wrap" style={{ display: (total / pageSize) <= 1 ? 'none' : 'flex'}}>
+        {showTotal && (
+          <p className="total">
+            {this.intl.get('inTotal')} <span>{total}</span> {this.intl.get('items')}
+          </p>
+        )}
+        <ul className="pagination">
+          <li
+            className={`last ${currentPage === 1 ? "disable" : ""}`}
+            style={{display: currentPage === 1 ? "none" : "block"}}
+            onClick={() => {
+              if (currentPage - 1 < 1) return;
+              this.setState({ currentPage: currentPage - 1 });
+            }}
+          />
+          {this.list(totalPage, currentPage).map((item, index) => {
+            return (
+              <li
+                key={index}
+                className={`page-button ${
+                  item === currentPage ? "active" : ""
+                } ${item === "..." ? "omit" : ""}`}
+                onClick={() => {
+                  if (item === "...") return;
+                  this.setState({ currentPage: item });
+                }}
+              >
+                {item}
+              </li>
+            );
+          })}
+          <li
+            className={`next ${
+              currentPage === totalPage ? "disable" : ""
+            }`}
+            style={{display: currentPage === totalPage ? "none" : "block"}}
+            onClick={() => {
+              if (currentPage + 1 > totalPage) return;
+              this.setState({ currentPage: currentPage + 1 });
+            }}
+          />
+        </ul>
+        {showQuickJumper && (
+          <p className="jump">
+            {this.intl.get('to')}<input
+              ref="input"
+              type="text"
+              onInput={() => {
+                let value = this.refs.input.value;
+                if (!/(^[0-9]\d*$)/.test(value)) {
+                  value = value.replace(/[^0-9]/g, "");
+                }
+                if (value == 0 || value > totalPage) {
+                  value = value.substring(0, value.length - 1);
+                }
+                this.refs.input.value = value;
+              }}
+              onKeyDown={e => {
+                if (e.nativeEvent.keyCode === 13) {
+                  this.setState({
+                    currentPage: Number(this.refs.input.value)
+                  });
+                  this.refs.input.blur();
+                }
+              }}
+            /> {this.intl.get('page')}
+            <Button
+              title={this.intl.get('go')}
+              type="base"
+              onClick={() => {
+                if (this.refs.input.value === '') return;
+                this.setState({
+                  currentPage: Number(this.refs.input.value)
+                });
+              }}
+            />
+          </p>
+        )}
+      </div>
+    );
+  }
+}

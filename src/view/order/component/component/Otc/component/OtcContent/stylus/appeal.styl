@@ -1,0 +1,107 @@
+.otc-order-appeal
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  margin auto auto
+  background $order-bg-popup
+  z-index 1000
+  #appeal_scroll
+    .scrollbot-scrollbar-holder
+      right 10px !important
+  .otc-order-appeal-content
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    margin auto auto
+    width 560px
+    height 618px
+    background $order-bg-none
+    box-shadow 0 2px 20px 10px $order-bg-shadow
+    border-radius(6px)
+    .otc-order-appeal-title
+      position relative
+      height 88px
+      color $order-font-content
+      padding 40px
+      font-size 20px
+      background transparent
+      line-height 28px
+      letter-spacing 0
+      font-weight bold
+      box-shadow 0 3px 10px 0 rgba(0,0,0,0.05)
+      img
+        position absolute
+        right 40px
+        top 46px
+        cursor pointer
+    .otc-order-appeal-main
+      padding 0 40px 0 40px
+      .appeal-rules
+        padding-left 20px
+        margin-bottom 40px
+        li
+          font-size 14px
+          color $order-font-appeal
+          line-height 30px
+          list-style decimal
+      .appeal-radio
+        margin-bottom 5px
+        h4
+          font-size 16px
+          color $order-font-appeal
+          font-weight bold
+          margin-bottom 20px
+        ul
+          li
+            label
+              font-size 14px
+              color $order-font-appeal
+              line-height 30px
+              cursor pointer
+              img
+                position relative
+                top 1px
+                margin-right 6px
+      .textarea
+        margin-bottom 20px
+        textarea
+          width 450px
+          height 70px
+      .contact
+        padding-bottom 20px
+        h4
+          font-size 16px
+          color $order-font-appeal
+          font-weight bold
+          margin-bottom 20px
+          &::before
+            content '*'
+            color $order-font-negative
+            margin-right 5px
+        .base-input-wrap
+          width 320px
+        input
+          width 320px
+          height 36px
+    .otc-order-appeal-foot
+      position absolute
+      right 0
+      bottom 0
+      width 100%
+      height 108px
+      background $order-bg-none
+      border-radius(0 0 6px 6px)
+      box-shadow 0 -3px 3px 1px rgba(0,0,0,0.05)
+      button
+        position absolute
+        bottom 40px
+        right 40px
+        font-size: 16px;
+        width 200px
+        height 48px
+        &.disable
+          opacity 0.5

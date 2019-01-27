@@ -1,0 +1,171 @@
+.wrap
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  z-index 999999999;
+  .h5
+    position absolute
+    right 50%
+    bottom 60%
+    transform translateX(50%) translateY(50%)
+    -ms-transform translateX(50%) translateY(50%)
+    -moz-transform translateX(50%) translateY(50%)
+    -webkit-transform translateX(50%) translateY(50%)
+    -o-transform translateX(50%) translateY(50%)
+    padding 0.08*100px 0.24*100px
+    background $common-bg-h5-tip
+    min-width 1.1*100px
+    max-width 2*100px
+    text-align center
+    background $common-bg-h5-tip
+    border-radius(0.04*100px)
+    p
+      font-size 0.16*100px
+      color $common-font-none
+      line-height 0.35*100px
+      letter-spacing 0
+      text-align center
+    img
+      width 0.62*100px
+      margin-bottom 0.05*100px
+    &.tip3, &.tip1
+      min-height 1.1*100px
+      padding 0.14*100px 0.24*100px 0
+      span
+        font-size 16px
+  &.trans
+    background-color transparent
+  .base-popup
+    box-sizing()
+    position fixed
+    right 50%
+    bottom 50%
+    transform translateX(50%) translateY(50%)
+    -ms-transform translateX(50%) translateY(50%)
+    -moz-transform translateX(50%) translateY(50%)
+    -webkit-transform translateX(50%) translateY(50%)
+    -o-transform translateX(50%) translateY(50%)
+    background $common-bg-none
+    border 0.01*100px solid $common-border-shadow
+    box-shadow 0 0.02*100px 0.04*100px 0 rgba(0,0,0,0.12), 0 0 0.06*100px 0 rgba(0,0,0,0.04)
+    border-radius 0.02*100px
+    &.default, &.confirm, &.custom
+      width 320px
+      min-height 160px
+      padding 32px 24px 60px
+      border-radius(6px)
+    &.default
+      min-height 1.72*100px
+      h5
+        margin-bottom 0.3*100px
+        img
+          width 0.13*100px
+          height 0.13*100px
+      p
+        line-height 26px
+        color $common-font-normal
+        margin-bottom 0.2*100px
+      .button
+        width 0.74*100px
+        height 0.36*100px
+    &.confirm, &.custom
+      min-height 160px
+      background $common-bg-none
+      box-shadow: 0 2px 20px 0 rgba(25,31,46,0.20);
+      //h5
+      //  //display none
+      //  margin-bottom 0.3*100px
+      p
+        color $common-font-normal
+        font-size 16px
+        line-height 26px
+        img
+          float left
+          width 30px
+          height 30px
+          margin-right 14px
+        span
+          float: right;
+          color: #333;
+          font-size: 16px;
+          width: 225px;
+          margin-bottom: 10px;
+      .popup-button
+        position absolute
+        right 24px
+        bottom 24px
+      .button
+        height 36px
+        padding 8px 14px
+        &.cancel
+          color $common-font-normal
+          background $common-bg-none
+          border-color $common-border-dark
+          &:hover
+            color $common-font-main
+            border-color $common-border-main
+    &.base
+      width 3.2*100px
+      padding 0.2*100px
+      h5
+        margin-bottom 0.1*100px
+      p
+        color $common-font-normal
+        letter-spacing 0
+        line-height 0.21*100px
+    &.tip1,&.tip2,&.tip3,&.tip4
+      // right 0.1*100px
+      // bottom 0.1*100px
+      // transform translateX(0%) translateY(0%)
+      // -ms-transform translateX(0%) translateY(0%)
+      // -moz-transform translateX(0%) translateY(0%)
+      // -webkit-transform translateX(0%) translateY(0%)
+      // -o-transform translateX(0%) translateY(0%)
+      width 240px
+      min-height 70px
+      line-height 70px
+      font-size 16px
+      color $common-font-normal
+      box-shadow: 0 2px 20px 0 rgba(25,31,46,0.20);
+      padding 20px 20px 20px 0.74*100px
+      border-radius(10px)
+      h5
+        margin-bottom 0.1*100px
+      .img
+        position absolute
+        left 24px
+        top 20px
+        width 30px
+        height 30px
+      p
+        font-size 16px
+        text-align left
+        color $common-font-normal
+        letter-spacing 0
+        line-height 30px
+        span
+          font-size 16px
+    &.trade-intro
+      background #303543
+      p
+        color #FFF
+        span
+          color #FFF
+    h5
+      font-size 0.16*100px
+      color $common-font-normal
+      letter-spacing 0
+      line-height 0.16*100px
+      img
+        float right
+        width 0.12*100px
+        height 0.12*100px
+        cursor pointer
+        margin-top -10px
+        &.hide
+          display none
+    .button
+      float right
+      margin-left 0.1*100px

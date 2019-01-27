@@ -1,0 +1,97 @@
+.connect-wrap
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background-color $common-bg-popup
+  z-index 1010
+  .connect-content
+    position absolute
+    width 560px
+    height 228px
+    top 50%
+    left 50%
+    padding 40px
+    margin-top -114px
+    margin-left -280px
+    background-color $common-bg-none
+    box-shadow 0 2px 20px 10px $common-bg-shadow-connect
+    border-radius(6px)
+    .connect-title
+      overflow hidden
+      margin-bottom 40px
+      span
+        float left
+        height 28px
+        font-size 20px
+        line-height 28px
+        font-weight bold
+        color $common-font-normal
+        letter-spacing 0
+      img
+        float right
+        position relative
+        top 6px
+        cursor pointer
+    p
+      height 20px
+      margin-bottom 20px
+      line-height 20px
+      font-size 14px
+      color $common-font-normal
+      letter-spacing: 0
+      &.tip
+        text-align center
+    .bar-wrap
+      overflow hidden
+      position relative
+      height 10px
+      margin-bottom 10px
+      background rgba(224,224,224,0.50)
+      border-radius 100px
+      .bar
+        position absolute
+        width 100px
+        height 10px
+        left 0
+        top 0
+        background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+        border-radius: 100px;
+        animation mymove 2s linear infinite
+        -o-animation mymove 2s linear infinite
+        -ms-animation mymove 2s linear infinite
+        -moz-animation mymove 2s linear infinite
+        -webkit-animation mymove 2s linear infinite
+    @keyframes mymove
+    {
+      0% {left:-100px;}
+      100% {left:480px;}
+    }
+
+    @-moz-keyframes mymove /* Firefox */
+    {
+      0% {left:-100px;}
+      100% {left:480px;}
+    }
+
+    @-webkit-keyframes mymove /* Safari 和 Chrome */
+    {
+      0% {left:-100px;}
+      100% {left:480px;}
+    }
+
+    @-o-keyframes mymove /* Opera */
+    {
+      0% {left:-100px;}
+      100% {left:480px;}
+    }
+  .black
+    background $common-bg-select-tradePro
+    .connect-title
+      span
+        color $common-font-trade
+    .bar-wrap
+      background $common-bg-popup
+    p,span
+      color $common-font-trade
